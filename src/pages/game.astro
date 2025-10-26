@@ -1,0 +1,140 @@
+---
+import RecentGame from "../components/RecentGame.astro";
+import Layout from "../layouts/Layout.astro";
+
+const title = "midway";
+const subtitle = "games";
+const bannerImage =
+    "https://64.media.tumblr.com/99b70718b6ff487f24540e2cd6d0273d/9c43fc7019c2455b-d8/s1280x1920/d36e094eb9de6e5805ab4721db789962ff5be5e0.gifv";
+const tinyImage = "/smalls/sm-ds.gif";
+---
+
+<Layout
+    title={title}
+    subtitle={subtitle}
+    bannerImage={bannerImage}
+    tinyImage={tinyImage}
+>
+    <div slot="after-navl">
+        <img src="/images/cranegame.gif" />
+    </div>
+    <div slot="main-text">
+        <div class="center">
+            <RecentGame />
+        </div>
+    </div>
+
+    <div slot="full">
+        <h2>game shelf</h2>
+
+        <div class="flexbox" style="flex-direction: row;">
+            <div>
+                <div class="shrine">
+                    <img src="/images/lifeM.jpg" style="max-width: 200px;" />
+                </div>
+                <div class="center">
+                    <a href="/tags/gakumas/"><h4>gakuen idolmaster</h4></a>
+                </div>
+            </div>
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://4.bp.blogspot.com/--nxLDk2oE78/XQBAWkfHEII/AAAAAAAAB9Y/lXCFEDEpg7I-BYF60GzlXGNWltR2fydxgCK4BGAYYCw/s640/ACNH_E3_Banner.png"
+                    />
+                </div>
+                <div class="center">
+                    <a href="/tags/acnh/"><h4>acnh</h4></a>
+                </div>
+            </div>
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://images.pushsquare.com/f6b5a9a5050bd/stardew-valley-1-5-ps4.900x.jpg"
+                    />
+                </div>
+                <div class="center"><h4>stardew valley</h4></div>
+            </div>
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcf.geekdo-images.com%2FdJXRGYfWhUK2UKoK6RslDg__opengraph%2Fimg%2FYuAWb8Lehi2OvZtUrVXEUfZq_CA%3D%2F0x286%3A989x805%2Ffit-in%2F1200x630%2Ffilters%3Astrip_icc()%2Fpic741881.jpg&f=1&nofb=1&ipt=08d02c2d3f9533b2cb058038746fa1164be187414a4c5f317e879ae83d31b94c"
+                    />
+                </div>
+                <div class="center"><h4>the sims</h4></div>
+            </div>
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://fieldsofmistria.wiki.gg/images/f/fb/Key-Art-Group.png?237f3e"
+                    />
+                </div>
+                <div class="center"><h4>fields of mystria</h4></div>
+            </div>
+        </div>
+        <div class="center">
+            <br />
+            <a href="/you/otome.html" class="button">looking for otomes?</a>
+        </div>
+        <br />
+    </div>
+
+    <div slot="left-half">
+        <!--dont forget to copy the css if using elsewhere -->
+        <div class="hero">
+            <a href="/umpd.html" class="button" style="font-size: 1.25rem;"
+                >looking for uma in your area?</a
+            >
+        </div>
+    </div>
+
+    <div slot="right-half">
+        <h2>web games</h2>
+        <a href="https://rosedryad.com/"
+            ><img src="/link-backs/rosedryad88x31button3.gif" /></a
+        >
+        <a href="http://pixeldolls.net/" target="_blank">
+            <img src="https://i.postimg.cc/4yB9zVPG/banner.gif" /></a
+        >
+        <a
+            href="http://www.styledollz.com/dollmakers/dollmakers.html"
+            target="_blank"><img src="/link-backs/Banner_StyleDollz5.gif" /></a
+        >
+        <ul>
+            <li>
+                <a href="https://neal.fun/stimulation-clicker/"
+                    >Stimulation Clicker</a
+                > I beat it but at what cost to my brain <div></div>
+            </li>
+
+            <style>
+                .posts-grid {
+                    display: grid;
+                    grid-template-columns: repeat(
+                        auto-fill,
+                        minmax(140px, 1fr)
+                    );
+                    gap: 0.5rem;
+                    margin-top: 1rem;
+                }
+
+                .hero {
+                    background: url("/tables/buntingframe.png"),
+                        url("/umpd/groupphoto.png");
+                    background-size: cover, cover;
+                    background-position: center, center;
+                    background-repeat: no-repeat, no-repeat;
+                    height: 400px;
+                    position: relative;
+                }
+                .hero a {
+                    margin: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                }
+            </style>
+        </ul>
+    </div></Layout
+>

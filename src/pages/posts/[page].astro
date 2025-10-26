@@ -1,0 +1,64 @@
+---
+import BlogLayout from "../../layouts/BlogLayout.astro";
+import BlogPost from "../../components/BlogPost.astro";
+import MyTags from "../../components/MyTags.astro";
+import { getCollection } from "astro:content";
+
+// Generate static paths
+export async function getStaticPaths() {
+    const posts = await getCollection("blog");
+    posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+    const pageSize = 10;
+    const numPages = Math.ceil(posts.length / pageSize);
+
+    return Array.from({ length: numPages }, (_, i) => ({
+        params: { page: String(i + 1) },
+    }));
+}
+
+// Current page
+const pageNumber = Number(Astro.params.page || 1);
+
+// All posts sorted newest first
+const allPosts = await getCollection("blog");
+allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+// ✅ Make sure paginatedPosts is declared **inside the frontmatter**
+const pageSize = 10;
+const startIndex = (pageNumber - 1) * pageSize;
+const endIndex = startIndex + pageSize;
+const paginatedPosts = allPosts.slice(startIndex, endIndex);
+---
+
+<BlogLayout title="All Posts" subtitle="Archive">
+    <div slot="full">
+        <h1>All Posts</h1>
+        <div class="posts-grid">
+            {
+                paginatedPosts.map((post) => (
+                    <BlogPost
+                        url={`/posts/${post.slug}/`}
+                        title={post.data.title}
+                        image={post.data.image}
+                        date={post.data.pubDate}
+                    />
+                ))
+            }
+        </div>
+
+        <div class="pagination">
+            {pageNumber > 1 && <a href={`/posts/${pageNumber - 1}`}>← Newer</a>}
+            {
+                endIndex < allPosts.length && (
+                    <a href={`/posts/${pageNumber + 1}`}>Older →</a>
+                )
+            }
+        </div>
+    </div>
+
+    <div slot="tags">
+        <h1>All Post Tags</h1>
+        <MyTags />
+    </div>
+</BlogLayout>

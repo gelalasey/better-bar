@@ -1,0 +1,173 @@
+---
+import RecentMusic from "../components/RecentMusic.astro";
+import Layout from "../layouts/Layout.astro";
+
+const title = "concert stage";
+const subtitle = "music";
+const bannerImage =
+    "https://64.media.tumblr.com/15dcc5e65415fe8cd0515cba362115b5/56727c752895dbbc-96/s400x600/463d3714a22af980d41794814f1dadde2bfda5fb.gifv";
+const tinyImage = "/smalls/sm-note.gif";
+---
+
+<Layout
+    title={title}
+    subtitle={subtitle}
+    bannerImage={bannerImage}
+    tinyImage={tinyImage}
+>
+    <div slot="main-text">
+        <div class="center">
+            <p>
+                Idol hell is a hell like no other. welcome to my mental prison.
+            </p>
+            <img src="/images/concerthall.png" />
+
+            <div class="posts-grid">
+                <RecentMusic />
+            </div>
+        </div>
+    </div>
+
+    <div slot="full">
+        <h2>favorites/oshis</h2>
+        <div class="flexbox" style="flex-direction: row;">
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://new-img.barks.jp/image/review/1000191756/top.jpg"
+                    />
+                </div>
+                <div class="center"><h4>SUPER☆GiRLS</h4></div>
+            </div>
+
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://incs-toenter.jp/images/66/18a/a783bd58d86b1216c0fe0a44950a6.jpg"
+                    />
+                </div>
+                <div class="center">
+                    <h4>可憐なアイボリー</h4><h5>karen na ivory</h5>
+                </div>
+            </div>
+
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://d1uzk9o9cg136f.cloudfront.net/f/16782308/rc/2025/01/17/31b11092e08e5869f3459bc5867b4c7f46f33611_xlarge.jpg"
+                    />
+                </div>
+                <div class="center">
+                    <h4>高嶺のなでしこ</h4><h5>takane no nadeshiko</h5>
+                </div>
+            </div>
+
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://imusic.b-cdn.net/images/item/original/441/4988064613441.jpg?cho-tokimeki-sendenbu-2023-kawaii-memorial-cd&class=scaled&v=1690730918"
+                    />
+                </div>
+                <div class="center">
+                    <h4>超ときめき♡宣伝部</h4><h5>cho tokimeki sendenbu</h5>
+                </div>
+            </div>
+
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://bigtimewrites.wordpress.com/wp-content/uploads/2019/12/mamamoo.jpg"
+                    />
+                </div>
+                <div class="center"><h4>mamamoo</h4></div>
+            </div>
+
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdyVZz5hwq5HMPds-u9yOqHiGtY3MVYZGd7w&s"
+                    />
+                </div>
+                <div class="center"><h4>newjeans</h4></div>
+            </div>
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGGOqd1YYu2GL33l_1yil7zB5BxpemSrIF86QZQggH2zlXm1ER9_4CoS6vnDV9VPgOwvZbHnkbBlxMfzb1Jl7Vy00nGirzo9H6rDR_c4LEmlG7tndf8izpEEz6btVPozsFBOG-SMTVlVA/s400/Sakura+Gakuin+2011+Message+Album+Regular.jpg"
+                    />
+                </div>
+                <div class="center">
+                    <h4>さくら学院</h4><h5>sakura gakuen</h5>
+                </div>
+            </div>
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://i.scdn.co/image/ab67616d0000b27366852d000ca411c484f849fe"
+                    />
+                </div>
+                <div class="center">
+                    <h4>Wake Up, girls!</h4><h5>WUG</h5>
+                </div>
+            </div>
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://s1.qwant.com/thumbr/474x533/1/2/2f8dbfd9468c64853d468f300760d7522b5c163a3c726dded86e83caf1fdd6/OIP.I3trz61qYE81U4tmDnFSiAHaIV.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%2Fid%2FOIP.I3trz61qYE81U4tmDnFSiAHaIV%3Fr%3D0%26pid%3DApi&q=0&b=1&p=0&a=0"
+                    />
+                </div>
+                <div class="center">
+                    <a href="/posts/post-m4/"> <h4>µ's</h4><h5>Muse</h5></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div slot="left-half">
+        <h2>honorable mentions</h2>
+        <br />
+        <h3>jpop</h3>
+        <ul>
+            <li>
+                <a href="/tags/lovesick/">#らぶしっく (lovesick)</a>
+            </li>
+            <li>chuning candy</li>
+            <li>f5ve</li>
+            <li>dempagumi.inc</li>
+            <li>akb48</li>
+            <li>keyakizaka46</li>
+            <li>empire</li>
+        </ul>
+        <br />
+        <h3>kpop</h3>
+        <ul>
+            <li>twice</li>
+            <li>ive</li>
+            <li>lesserafim</li>
+            <li>i-dle</li>
+            <li>jeon somi</li>
+            <li>tripleS</li>
+            <li>VCHA</li>
+        </ul>
+        <br />
+        <h3>global//misc.</h3>
+        <ul>
+            <li>xg</li>
+            <li>ghost</li>
+            <li>b52s</li>
+            <li>oingo boingo</li>
+            <li>babymetal</li>
+            <li>marina</li>
+            <li>lady gaga</li>
+            <li>pussycat dolls</li>
+        </ul>
+    </div>
+    <div slot="right-half">
+        <h2>Links</h2>
+        <p>
+            <a href="https://everynoise.com/">Every Noise at Once</a> a long-running
+            attempt at an algorithmically-generated, readability-adjusted scatter-plot
+            of the musical genre-space
+        </p>
+        <img src="/images/boombox_by_king_lulu_deer-dba4z2s.gif" />
+    </div>
+</Layout>

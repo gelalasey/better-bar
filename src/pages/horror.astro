@@ -1,0 +1,134 @@
+---
+import RecentArt from "../components/RecentArt.astro";
+import RecentHorror from "../components/RecentHorror.astro";
+import Layout from "../layouts/Layout.astro";
+
+const title = "haunted house";
+const subtitle = "horror";
+const bannerImage =
+    "https://64.media.tumblr.com/dfde4bf8726a258275072ae1cb011dd3/80f2cdcb43cd1375-76/s540x810/33165b2e94a7a4980fd65e72bf637984929a710d.gifv";
+const tinyImage = "/smalls/sm-gf.gif";
+---
+
+<style>
+    li {
+        list-style: url(/smalls/skull10.gif);
+    }
+</style>
+<Layout
+    title={title}
+    subtitle={subtitle}
+    bannerImage={bannerImage}
+    tinyImage={tinyImage}
+>
+    <div slot="after-navl">
+        <img
+            src="https://64.media.tumblr.com/933361ea2c6adddf291959ff1c2fa024/9a1d6e3f0ad4d037-32/s540x810/0b1cd2b2eb43d374bba699dd21b4253463644ee5.gifv"
+        />
+    </div>
+    <div slot="main-text">
+        <h3><b>boo</b></h3>
+        <p>apologies for startling you</p>
+
+        <p>
+            every themepark needs a haunted. every year comes with halloween. I
+            love the spooky, creepy, dastardly nasty stuff about as much as i
+            love kawaii sparkle kira kira bullshit.
+        </p>
+        <div class="center"><img src="/images/spongebw.gif" /></div>
+        <p>
+            I hope i gave enough ample warning for the pastle cuties that this
+            area is going to be a little spookier...if you didn't get the
+            warning yet i really can't blame myself. just reiterating <b
+                >warning: horror content. clowns. stabbing. unaliving. dark
+                things. jump scares. all that stuff.</b
+            >
+        </p>
+        <div class="center">
+            <br />
+            <a href="/home.html" class="button"
+                >oh... whoops i didn't know take me back</a
+            >
+        </div>
+    </div>
+
+    <div slot="full">
+        <h2>favorites</h2>
+        <div class="flexbox">
+            <div class="center" style="width:250px">
+                <img src="/smalls/sm-coffee.gif" />
+                <h3>movies</h3>
+                <ul class="spooky">
+                    <li>1br</li>
+                    <li>midsommar</li>
+                    <li>hell house llc</li>
+                    <li>silence of the lambs</li>
+                    <li>suicide club</li>
+                    <li>get out</li>
+                    <li>se7en</li>
+                </ul>
+            </div>
+            <div class="center" style="width:250px">
+                <img src="/smalls/sm-candle.gif" />
+                <h3>GAMES</h3>
+                <ul class="spooky">
+                    <li>mad father</li>
+                    <li>
+                        <a
+                            href="/posts/post-h1">five nights at freddy's</a>
+                    <li>diabolik lovers</li>
+                    <li>needy streamer overload</li>
+                    <li>doki doki literature club</li>
+                </ul>
+            </div>
+            <div class="center" style="width:250px">
+                <img src="/smalls/sm-bfish.gif" />
+                <h3>misc</h3>
+                <ul class="spooky">
+                    <li>haunted houses</li>
+                    <li>args</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div slot="left-half">
+        <h2>Thalassophobia</h2>
+        <p><i>for all my other homies who hate the ocean</i></p>
+
+                    <div class="center" style="background-color: #0D1126;">
+                        <br />
+                        <img src="/div/ocdiv.jpg" />
+                        <img src="/mine/thas01.jpg" />
+                        <iframe
+                            width="280"
+                            height="157"
+                            src="https://www.youtube.com/embed/SpoqgjauXSg?si=PSXud1U-3CDzXj_B"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                        <iframe
+                            width="280"
+                            height="157"
+                            src="https://www.youtube.com/embed/jCWop491Q9Y?si=Pd2SFWLeSsSlihfI"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                        <img src="/div/ocdiv.jpg" />
+                    </div>
+                </div>
+                <div slot="right-half">
+                    <div class="posts-grid">
+                        <div class="center">
+                            <RecentHorror />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></Layout
+>

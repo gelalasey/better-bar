@@ -1,0 +1,142 @@
+---
+import UmaLayout from "../../layouts/UmaLayout.astro";
+import Music from "../../components/widget/Music.astro";
+
+const title = "Vodka";
+const cardname = "Wild Top Gear";
+const date = "06-26-2025";
+const rank = "★★★";
+const racetype = "turf, mile, medium";
+const strat = "late";
+const potential = "3";
+const cardimg =
+    "https://gametora.com/images/umamusume/characters/chara_stand_1008_100801.png";
+---
+
+<UmaLayout
+    title={title}
+    ,
+    cardname={cardname}
+    ,
+    date={date}
+    ,
+    rank={rank}
+    ,
+    racetype={racetype}
+    ,
+    strat={strat}
+    ,
+    potential={potential}
+    ,
+    cardimg={cardimg}
+>
+    <div slot="box-left">
+        <table>
+            <tr>
+                <th>trait</th>
+                <th>base</th>
+                <th>bonus</th>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>102</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>Stam</td>
+                <td>64</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Power</td>
+                <td>111</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Guts</td>
+                <td>79</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Wit</td>
+                <td>94</td>
+                <td></td>
+            </tr>
+        </table>
+        <button type="button" class="collapsible">skills</button>
+        <div class="colcontent">
+            <h3>skills</h3>
+            <table>
+                <tr>
+                    <th>skill</th>
+                    <th>name</th>
+                    <th>conditions</th>
+                    <th>effect</th>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png"
+                        /></td
+                    >
+                    <td>Cut and Drive!</td>
+                    <td
+                        >If 3rd place or lower, uma 1 horse length in front or
+                        behind, less than 200 m to finish, and in first half of
+                        the pack
+                    </td>
+                    <td>Increase target speed 35% for 5 sec</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div slot="box-right">
+        <h3>URA Build</h3>
+        <ul>
+            <li>
+                <b>Goal stats:</b> - # speed, # stam, # power, # guts, # wit
+            </li>
+            <li><b>Support Recs:</b></li>
+            <div class="small">
+                <!--images for support cards here -->
+            </div>
+            <li>
+                <b>Parents:</b>
+            </li>
+            <li>
+                <b>legacy sparks:</b>9★
+            </li>
+            <li>
+                <b>Skills:</b><ul>
+                    <li></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div slot="the-whole">
+        <h3>URA Schedule</h3>
+        <h4>overall goals</h4>
+        <ul></ul>
+        <h4>classic year</h4>
+        <ul>
+            <li></li>
+        </ul>
+        <h4>senior year</h4>
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+    <div slot="the-whole2">
+        <img src="https://i.postimg.cc/gcZz3Dxf/IMG_1122.png" />
+        <p>
+            Fun fact - the VA for Vodka is also the VA for Uzuki from Cinderella
+            Girls
+        </p>
+        <img src="https://i.postimg.cc/0Qq2wy3H/IMG_8864.gif" />
+        <p>
+            dividers sourced from <a href="https://www.tumblr.com/pueriled"
+                >@pueriled
+            </a>
+        </p>
+    </div>
+</UmaLayout>

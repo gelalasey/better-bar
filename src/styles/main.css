@@ -1,0 +1,484 @@
+/* start light mode styling */
+	:root {
+		--text: #4e3d42;
+		--border: #FFECB6;
+		--accent: teal;
+		--background: url(/bg/star1a_purple.gif);
+		--bg: #dce3e1;
+		--gradientTop: white;
+		--gradientBottom: rgb(240, 248, 255, .8);
+		a:link { color: teal; }
+	}
+	header {
+		background: url(/bg/bmbg041.gif);
+	}
+	body{
+			background:url(/bg/star1a_purple.gif);
+		}
+/* end light mode styling */
+
+
+/* start dark mode styling */
+	@media (prefers-color-scheme: light) {
+		
+	}
+/* end dark mode styling */
+
+
+* { 
+	box-sizing: border-box;
+}
+body {
+	padding: 10px;
+	font-family: 'popppins-regular';
+	color: var(--text);
+	text-transform: lowercase;
+
+	/* page background pattern */
+	background-color: var(--gradientTop);
+	background: var(--);
+	background-size: 20px 35px;
+	background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+}
+
+
+.container {
+	max-width: 55rem;
+	margin: 5vw auto 12px auto;
+	border: 6px ridge var(--border);
+	outline: 3px solid var(--gradientTop);
+	outline-offset: 4px;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+	gap: 5px;
+	
+	
+
+/* container background pattern */
+	background-color: var(--gradientBottom);
+	background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--gradientBottom) 9px ), repeating-linear-gradient( var(--bg), var(--bg));
+}
+/* these control the column widths */
+.small { flex: 1 1 9%; max-width: 15rem;}
+.large { flex: 1 1 82%; max-width: 32.1rem;}
+.full { flex: 1 1 100%; max-width: 55rem;}
+.half { flex: 1 1 49%;  max-width: 27.5rem;}
+
+
+header {
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px; /* change banner height here*/
+	border: 2px ridge var(--border);
+	border-radius: 5px;
+	position: relative;
+	font-family: "Fontdiner Swanky", serif;
+	
+}
+header span {
+	font-size: 4em;
+	font-family: "Fontdiner Swanky", serif;
+    -webkit-text-fill-color: #FFECB6;
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+	margin: 10px;
+	text-shadow: 1px 1px var(--text),
+		-1px 1px var(--text),
+		1px -1px var(--accent),
+		-1px -1px var(--accent);
+	color: var(--gradientTop);
+}
+
+
+
+nav {
+	border: 2px ridge var(--border);
+	border-radius: 5px;
+	padding: 5px;
+	background: linear-gradient(var(--gradientTop),var(--gradientBottom));
+	
+}
+nav div {
+	text-align: center;
+	font-size: 1.25rem;
+	margin: 5px 5px 10px 5px;
+	
+}
+nav a {
+	display: block;
+	margin: 5px;
+	background: linear-gradient(to right,var(--bg),var(--gradientBottom));
+	border-radius: 5px;
+	padding: 2px 7px;
+	text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+	background: linear-gradient(to right,var(--bg), var(--gradientBottom), var(--gradientTop));
+}
+
+/* optional button styling like in the preview */
+div.small > img {
+	display: block;
+	margin: 5px auto;
+	border:2px ridge var(--border);
+	border-radius: 5px;
+}
+/*this is for lists*/
+li {
+  list-style: url(/smalls/littleice.gif);
+}
+
+ul{
+	list-style-position: inside;
+	display: inline-block;
+}
+
+
+section {
+	border: 2px ridge var(--border);
+	border-radius: 5px;
+	background: linear-gradient(var(--gradientTop),var(--gradientBottom));
+	padding: 5px;
+	
+}
+
+
+/*For specific Image and Pic Formats*/
+.dividerimg {
+	background-repeat: repeat-x;
+	background-position: center;
+	background-size: auto 20px;
+	width: 100%;
+	height: 20px;
+	object-fit: contain;
+}
+
+.divider-balloon{
+	background-repeat: repeat-x;
+		background-position: center;
+		background-size: auto 20px;
+		width: 100%;
+		height: 20px;
+	background-image: url('/div/pbballoondiv.png');
+	object-fit: contain;
+}
+
+.divider-ticket {
+	background-repeat: repeat-x;
+	background-position: center;
+	background-size: auto 20px;
+	width: 100%;
+	height: 20px;
+	background-image: url('/div/ticketdiv.png');
+	object-fit: contain;
+}
+
+.shrine {
+padding: 10px;
+overflow: hidden;
+width: 160px;
+height: 90px;
+}
+
+.shrine > div{
+text-align: center;	
+}
+
+.shrine img{
+border-radius: 25px;	
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+/* too lazy to recode so let's just reuse this format */
+.medart {
+	padding: 10px;
+	overflow: hidden;
+	width: 150px;
+	height: 150px;
+}
+
+.medart>div {
+	text-align: center;
+}
+
+.medart img {
+	border-radius: 15px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* my updates section for the front page */
+.card {
+	width: 330px;
+	height: 320px;
+	background-color: white;
+	font: 11px Times, serif;
+	border-radius: 20px;
+	border: 1px solid #ccc;
+	margin: 10px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.card-header {
+	background: url('/bg/d08-bg-twinkle.gif') repeat-x center top;
+	width: 100%;
+	height: 66px;
+	margin-bottom: -10px;
+	position: relative;
+	z-index: 100;
+}
+
+.card-title {
+	font: 3em "Fontdiner Swanky", cursive;
+	color: #FFECB6;
+	text-shadow: 0.1em 0.1em 0.2em #000;
+	padding: 5px;
+	text-align: right;
+}
+
+.card-content {
+	height: 265px;
+	overflow: scroll;
+	text-align: left;
+	margin-right: 13px;
+}
+
+.update {
+	border-bottom: 1px dashed #DECCE5;
+	padding: 3px;
+	margin: 3px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row-reverse;
+}
+
+.update-icon {
+	height: 40px;
+	width: 40px;
+	border-radius: 10px;
+	align-items: right;
+}
+
+.update-date {
+	font-weight: bold;
+}
+
+.update-text {
+	padding: 0 10px;
+	flex: wrap;
+	width: 200px;
+}
+
+
+.bottom{
+	background: url(/bg/80x80th_cloud1a.gif);
+	background-position: top;
+	background-repeat: repeat-x;
+	height: 100px;
+	max-width: 55rem;
+	margin: -1vw auto 12px auto;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+footer {
+	
+	text-align: center;
+	bottom: 0;
+	margin-top: -1vw;
+	font-size: 0.8rem;
+	
+}
+footer a { 
+	text-decoration: none;
+	
+}
+
+a img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+a:hover img {
+  transform: scale(1.1);    /* Slight zoom */
+  opacity: 0.8;             /* Slight fade */
+}
+
+
+h1, h2, h3, h4, h5, h6, p  { 
+	margin: 5px;
+	line-height: 1.2;
+	color: #4E3D42;
+}
+h1 { 
+	font-size: 1.4rem;
+	letter-spacing: 2px;
+	font-weight: normal;
+	text-align: center;
+	border-bottom: 2px ridge var(--border);
+	padding-bottom: 5px;
+}
+h2 { 
+	font-size: 1.25rem;
+	font-weight: normal;
+	text-align: center;
+}
+h3 { 
+	font-size: 1.1rem;
+}
+h4 { 
+	font-size: 1rem;
+	color: var(--accent);
+	padding-left: 12px;
+}
+
+
+/* prevents overflow on smaller screens */
+img { max-width: 100%; }
+pre { overflow-x: auto; }
+
+
+a:hover, a:focus {
+	font-style: italic;
+}
+a:visited {
+	color: var(--accent);
+}
+
+table {
+	margin: 0 auto;
+	padding: 5px;
+	border-collapse: collapse; border-spacing: 0;
+}
+
+hr{
+	border-top: dotted;
+	border-top-color: #DECCE5;
+}
+mark{
+	background: #DECCE5!important;
+}
+
+.center{
+	text-align: center;
+	
+}
+/* art arrays */
+.artmini{
+    flex-direction: row;
+    flex: 1 1 600px;
+}
+.artmini img{
+    max-width:33px;
+}
+
+.artsmall{
+    flex-direction: row;
+    flex: 1 1 600px;
+}
+.artsmall img{
+    max-width:50px;
+}
+
+.artlarge{
+    flex-direction: row;
+    flex: 1 1 600px;
+}
+.artlarge img{
+    max-width:100px;
+}
+
+.flexbox{
+	display: flex;
+	flex: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: baseline;
+	white-space: wrap;
+	margin: auto;
+}
+
+
+.flexbox img{
+	max-width: 200px;
+	
+}
+
+.textbox{
+	border: 2px ridge var(--border);
+	border-radius: 5px;
+	width: 60%;
+	margin: auto;
+}
+
+embed{
+	width:100%;
+	height: 100%;
+	overflow: visible;
+}
+/* for profiles */
+
+.icon {margin:auto;}
+.icon img {
+  /*this makes it a circle, lower the number for a rounded square*/
+  border-radius:50%;
+  width:200px;
+	object-fit: fill;
+}
+
+.button{
+	border: 2px ridge var(--border);
+	border-radius: 5px;
+	background: #FFECB6;
+	padding: 5px;	
+	font-weight: bold;
+	text-align: center;
+
+}
+
+.codebox{
+	display: block;
+ 	width: 150px;
+	overflow: auto;
+	background-image: url(/bg/hoshi_y_t.gif);
+	overflow-x: hidden; /* Hide horizontal scrollbar */	
+	padding: 5px;
+	
+}
+/*Status Cafe CSS*/
+#statuscafe {
+    padding: .5em;
+    background-color: #FFECB6;
+    border: 1px solid teal;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
+
+
+
+/* fonts */
+.fontdiner-swanky-regular {
+  font-family: "Fontdiner Swanky", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+

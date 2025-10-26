@@ -1,0 +1,146 @@
+---
+import UmaLayout from "../../layouts/UmaLayout.astro";
+import Music from "../../components/widget/Music.astro";
+
+const title = "TM Opera O";
+const cardname = "O Sole So";
+const date = "07-28-2025";
+const rank = "★★★";
+const racetype = "turf, med, long";
+const strat = "pace, late";
+const potential = "4";
+const cardimg =
+    "https://gametora.com/images/umamusume/characters/chara_stand_1015_101501.png";
+---
+
+const date = "07-03-2025"; const rank = "★★★"; const racetype = "turf, dirt,
+mile, sprint"; const strat = "pace"; const potential = "3";
+<UmaLayout
+    title={title}
+    ,
+    cardname={cardname}
+    ,
+    date={date}
+    ,
+    rank={rank}
+    ,
+    racetype={racetype}
+    ,
+    strat={strat}
+    ,
+    potential={potential}
+    ,
+    cardimg={cardimg}
+>
+    <div slot="box-left">
+        <table>
+            <tr>
+                <th>trait</th>
+                <th>base</th>
+                <th>bonus</th>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>75</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Stam</td>
+                <td>108</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Power</td>
+                <td>75</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guts</td>
+                <td>102</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Wit</td>
+                <td>90</td>
+                <td>10%</td>
+            </tr>
+        </table>
+        <button type="button" class="collapsible">skills</button>
+        <div class="colcontent">
+            <h3>skills</h3>
+            <table>
+                <tr>
+                    <th>skill</th>
+                    <th>name</th>
+                    <th>conditions</th>
+                    <th>effect</th>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png"
+                        /></td
+                    >
+                    <td>This Dance Is for Vittoria!</td>
+                    <td
+                        >If uma 1 horse length or less behind or infront, in 4th
+                        place or higher, and on or beyond the last corner</td
+                    >
+                    <td>Increase target speed 35% for 5 sec</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div slot="box-right">
+        <h3>URA Build</h3>
+        <ul>
+            <li>
+                <b>Goal stats:</b> - # speed, # stam, # power, # guts, # wit
+            </li>
+            <li><b>Support Recs:</b></li>
+            <div class="small">
+                <!--images for support cards here -->
+            </div>
+            <li>
+                <b>Parents:</b>
+            </li>
+            <li>
+                <b>legacy sparks:</b>9★
+            </li>
+            <li>
+                <b>Skills:</b><ul>
+                    <li></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div slot="the-whole">
+        <h3>URA Schedule</h3>
+        <h4>overall goals</h4>
+        <ul></ul>
+        <h4>classic year</h4>
+        <ul>
+            <li></li>
+        </ul>
+        <h4>senior year</h4>
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+    <div slot="the-whole2">
+        <div class="large">
+            <img src="/umpd/tmframe.png" />
+        </div>
+        <p>I love this stupid horse so much. There's no hill i wouldn't die on for her. She's been one of my favorites since the early days because her solo song hits so <b>good</b>. You bet your ass I am screaming "TM Opera O" during the call and response part. She deserves it. Her story is unhinged and magical. Her self-absorbed nature doesn't interfere with her ability to be a good person, especially to Meisho Doto. She really does want others to be happy and to help make the world a better place. It's giving "fleeting" a la bangdream.</p>
+        <p>
+            Fun fact - the VA for TM Opera O is also the VA for Nico from
+            LoveLive
+        </p>
+        <img src="https://i.postimg.cc/9FsQvnvX/IMG_1161.png" />
+        <p>
+            dividers sourced from <a href="https://www.tumblr.com/pueriled"
+                >@pueriled
+            </a>
+        </p>
+    </div>
+</UmaLayout>

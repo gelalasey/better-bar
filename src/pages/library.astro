@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const title = "???";
+const subtitle = "library";
+const bannerImage = "/bg/hoshi_y_t.gif";
+const tinyImage = "/smalls/sm-ds.gif";
+---
+
+<Layout
+    title={title}
+    subtitle={subtitle}
+    bannerImage={bannerImage}
+    tinyImage={tinyImage}
+>
+    <div slot="after-navl"></div>
+    <div slot="main-text">
+        <p>
+            This section here will be a section for collecting links to useful
+            videos and etc.
+        </p>
+    </div>
+
+    <div slot="full">
+        <h4>
+            <a href="https://www.evilfemale.blog/p/how-to-watch-a-movie"
+                >How to Watch a Movie</a
+            > by charlie squire
+        </h4>
+        <p>
+            Talks about how to really take in the art of the film, how to notice
+            smaller details and meanings.
+        </p>
+        <h4>
+            <a
+                href="https://gist.github.com/cemerson/043d3b455317d762bb1378aeac3679f3"
+                >Arvice.org Scanned Book Downloader</a
+            > by cemerson
+        </h4>
+        <p>Download scanned books from archive.org</p>
+
+        <p>
+            <a href="https://xoxo.girlonthemoon.xyz/posts"> Idol Image Board</a>
+        </p>
+        <div slot="left-half">
+            <h2>Misc Links</h2>
+            <a href="https://marginalia-search.com/">Marginalia Search</a> Search engine that prioritizes non-commerical content to help find tiny and old websites </div>
+                <div slot="right-half"></div>
+            
+            <style>
+                .posts-grid {
+                    display: grid;
+                    grid-template-columns: repeat(
+                        auto-fill,
+                        minmax(140px, 1fr)
+                    );
+                    gap: 0.5rem;
+                    margin-top: 1rem;
+                }
+            </style>
+        </div>
+    </div></Layout
+>

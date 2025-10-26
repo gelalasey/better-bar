@@ -1,0 +1,155 @@
+---
+import InnerToyBox from "../components/InnerToyBox.astro";
+import Layout from "../layouts/Layout.astro";
+
+const title = "Prize Counter";
+const subtitle = "toybox";
+const bannerImage =
+    "https://64.media.tumblr.com/ac2361e1bac6c8b5c8e52d709757ccf4/ea6622a7cd114412-e8/s400x600/8d1e037f1bfb75aa90271fe15c9c8ab2e180e87f.gifv";
+const tinyImage = "/smalls/sm-tent.gif";
+---
+
+<Layout
+    title={title}
+    subtitle={subtitle}
+    bannerImage={bannerImage}
+    tinyImage={tinyImage}
+>
+    <div slot="main-text">
+        <p>
+            Below is a collection of the graphics used on the site categorized
+            by type and the creator tagged below. Reminder I cannot gaurantee I
+            will keep these graphics on my site forever, be sure to download
+            from the original sources.
+        </p>
+        <br />
+        <div class="flexbox">
+            <a href="https://graphic.neocities.org/"
+                ><img src="https://graphic.neocities.org/Button2.png" /></a
+            >
+            <a href="https://heartette.net/" target="_blank"
+                ><img src="/link-backs/whimsical.gif" /></a
+            >
+            <a href="http://www.asterism-m.com/" target="_blank"
+                ><img
+                    src="http://www.asterism-m.com/88x31.gif"
+                    width="88"
+                    height="31"
+                    alt="ASTERISM"
+                /></a
+            >
+
+            <a href="https://goodmode.neocities.org" target="_blank"
+                ><img src="/link-backs/gmbadge.png" /></a
+            >
+            <a href="https://artwork.neocities.org/"
+                ><img src="/link-backs/00buttonartwork.gif" /></a
+            >
+            <a href="https://kawaiiattic.arunyi.art/#" target="_blank"
+                ><img src="/link-backs/KAWAIIATTIC.gif" /></a
+            >
+            <a href="https://cinni.net/directory/" target="_blank">
+                <img src="https://cinni.net/directory/img/88x31.png" /></a
+            >
+            <a href="https://foollovers.com/Administrator" target="_blank">
+                <img src="/link-backs/foollovers8826.gif" /></a
+            >
+            <a href="http://1kbsozai.com" target="_blank"
+                ><img
+                    src="/link-backs/sozaibana.gif"
+                    alt="1キロバイトの素材屋さん"
+                /></a
+            >
+            <a href="https://blinkies.cafe/?t=bp1" target="_blank"
+                ><img src="/link-backs/anakin.gif" /></a
+            >
+            <a href="https://raining-starss.neocities.org/index.html"
+                ><img
+                    src="https://raining-starss.neocities.org/raining-starss-button%20(1).gif"
+                /></a
+            >
+            <a href="https://hillhouse.neocities.org">
+                <img
+                    src="/link-backs/hillhouse-rainbow.png"
+                    width="88"
+                    height="31"
+                    alt="hillhouse"
+                    style="image-rendering:pixelated"
+                />
+            </a>
+
+            <a href="https://allyratworld.com/home">
+                <img
+                    src="/link-backs/buttonneo.png"
+                    width="88"
+                    height="31"
+                    alt="hillhouse"
+                    style="image-rendering:pixelated"
+                />
+            </a>
+            <a href="https://www1.flightrising.com/forums/cc/3078623"
+                ><img src="https://i.imgur.com/YMPbu9R.png" /></a
+            >
+            <a href="https://plasticdino.net/blinkie/blinkies" target="_blank"
+                ><img src="/link-backs/plasticdinogif.gif" /></a
+            >
+            <a href="http://engrampixel.tumblr.com">
+                <img
+                    src="http://media.tumblr.com/tumblr_m5106aHKT11qid2nw.gif"
+                /></a
+            >
+            <a href="https://rentry.co/candyshoppe">
+                <img
+                    src="https://file.garden/Zl2CmebwmXKvGhRN/Untitled1044_20240719141427.png"
+                    style="max-width: 88px;"
+                /></a
+            >
+            <a href="https://pastelhello.com/" target="_blank"
+                ><img src="/link-backs/b4.png" /></a
+            >
+            <a href="http://sweetcharm.net/" target="_blank"
+                ><img
+                    src="/link-backs/bannericeream.gif"
+                    width="88"
+                    height="31"
+                /></a
+            >
+            <a href="https://blissnet.neocities.org/Home" target="_blank"
+                ><img src="/link-backs/blissnet.png" /></a
+            >
+            <a href="https://arunyi.art" target="blank"
+                ><img src="https://imgur.com/lW03tad.gif" /></a
+            >
+            <a href="mypillowfort.net" target="blank"
+                ><img
+                    src="https://mypillowfort.nekoweb.org/media/0BUTTON2.gif"
+                /></a
+            >
+
+            <a href="https://pixelsafari.neocities.org" target="_blank"
+                ><img
+                    src="https://pixelsafari.neocities.org/about/pixelsafari.gif"
+                /></a
+            >
+            <a
+                href="https://web.archive.org/web/20070611151709/http://www.fianakiara.de/"
+                target="_blank"
+                ><img
+                    src="/link-backs/fianakiara.gif"
+                    alt="Visit Fianna's Toybox"
+                /></a
+            >
+        </div>
+        <br />
+        <div class="center">
+            <br />
+            <a href="/art.html" class="button"
+                >Looking for my original graphics? Check out my creations</a
+            >
+        </div>
+    </div>
+
+    <div slot="full">
+        <InnerToyBox />
+    </div>
+</Layout>

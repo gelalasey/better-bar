@@ -1,0 +1,139 @@
+---
+import UmaLayout from "../../layouts/UmaLayout.astro";
+import Music from "../../components/widget/Music.astro";
+
+const title = "El Condor Pasa";
+const cardname = "El ☆ Numero 1";
+const date = "07-28-2025";
+const rank = "★★";
+const racetype = "turf, mile, med";
+const strat = "pace, late";
+const potential = "3";
+const cardimg =
+    "https://gametora.com/images/umamusume/characters/chara_stand_1014_101401.png";
+---
+
+<UmaLayout
+    title={title}
+    ,
+    cardname={cardname}
+    ,
+    date={date}
+    ,
+    rank={rank}
+    ,
+    racetype={racetype}
+    ,
+    strat={strat}
+    ,
+    potential={potential}
+    ,
+    cardimg={cardimg}
+>
+    <div slot="box-left">
+        <table>
+            <tr>
+                <th>trait</th>
+                <th>base</th>
+                <th>bonus</th>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>85</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Stam</td>
+                <td>76</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Power</td>
+                <td>80</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guts</td>
+                <td>93</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Wit</td>
+                <td>91</td>
+                <td>10%</td>
+            </tr>
+        </table>
+        <button type="button" class="collapsible">skills</button>
+        <div class="colcontent">
+            <h3>skills</h3>
+            <table>
+                <tr>
+                    <th>skill</th>
+                    <th>name</th>
+                    <th>conditions</th>
+                    <th>effect</th>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png"
+                        /></td
+                    >
+                    <td>Corazón ☆ Ardiente</td>
+                    <td
+                        >If on the final corner, stamina is at least 30%, and
+                        currently in first or 2nd</td
+                    >
+                    <td
+                        >Increase target speed 15% and acceleration 20% for 5
+                        seconds</td
+                    >
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div slot="box-right">
+        <h3>URA Build</h3>
+        <ul>
+            <li>
+                <b>Goal stats:</b> - # speed, # stam, # power, # guts, # wit
+            </li>
+            <li><b>Support Recs:</b></li>
+            <div class="small">
+                <!--images for support cards here -->
+            </div>
+            <li>
+                <b>Parents:</b>
+            </li>
+            <li>
+                <b>legacy sparks:</b>9★
+            </li>
+            <li>
+                <b>Skills:</b><ul>
+                    <li></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div slot="the-whole">
+        <h3>URA Schedule</h3>
+        <h4>junior goals</h4>
+        <ul></ul>
+        <h4>classic year</h4>
+        <ul>
+            <li></li>
+        </ul>
+        <h4>senior year</h4>
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+    <div slot="the-whole2">
+        <img src="https://i.postimg.cc/k56tyLDk/IMG_9185.png" />
+        <p>
+            dividers sourced from <a href="https://www.tumblr.com/pueriled"
+                >@pueriled
+            </a>
+        </p>
+    </div>
+</UmaLayout>

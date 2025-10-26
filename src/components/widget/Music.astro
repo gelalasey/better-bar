@@ -1,0 +1,16 @@
+---
+import LocalPlayer from "./LocalPlayer.svelte";
+
+const { songname, songlink, songcover } = Astro.props;
+console.log({ songname, songlink, songcover });
+
+const audioList = [
+  {
+    name: songname,
+    src: songlink,
+    cover: songcover,
+  },
+];
+---
+
+<LocalPlayer client:load {audioList} />

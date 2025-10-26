@@ -1,0 +1,206 @@
+---
+import UmaLayout from "../../layouts/UmaLayout.astro";
+import Music from "../../components/widget/Music.astro";
+
+const title = "Mihono Bourbon";
+const cardname = "MB-19890425";
+const date = "08-17-2025";
+const rank = "★★★";
+const racetype = "turf, medium";
+const strat = "front";
+const potential = "3";
+const cardimg =
+    "https://gametora.com/images/umamusume/characters/chara_stand_1026_102601.png";
+---
+
+<UmaLayout
+    title={title}
+    ,
+    cardname={cardname}
+    ,
+    date={date}
+    ,
+    rank={rank}
+    ,
+    racetype={racetype}
+    ,
+    strat={strat}
+    ,
+    potential={potential}
+    ,
+    cardimg={cardimg}
+>
+    <div slot="box-left">
+        <table>
+            <tr>
+                <th>trait</th>
+                <th>base</th>
+                <th>bonus</th>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>96</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Stam</td>
+                <td>72</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Power</td>
+                <td>92</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>Guts</td>
+                <td>102</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Wit</td>
+                <td>88</td>
+                <td></td>
+            </tr>
+        </table>
+        <button type="button" class="collapsible">skills</button>
+        <div class="colcontent">
+            <h3>skills</h3>
+            <table>
+                <tr>
+                    <th>skill</th>
+                    <th>name</th>
+                    <th>conditions</th>
+                    <th>effect</th>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png"
+                        /></td
+                    >
+                    <td>G00 1st. F∞;</td>
+                    <td
+                        >If on the final corner, no bad start or rush, and in
+                        third place or higher
+                    </td>
+                    <td>Increase target speed 35% for 5 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10041.png"
+                        /></td
+                    >
+                    <td>Rainy Days</td>
+                    <td>If weather rainy</td>
+                    <td>Guts up 40/60</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20041.png"
+                        /></td
+                    >
+                    <td>Early Lead</td>
+                    <td
+                        >If front runner, early race and 5 sec since race start
+                    </td>
+                    <td>Increase acceleration by 20% for 1.2s</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png"
+                        /></td
+                    >
+                    <td>Rosy Outlook</td>
+                    <td
+                        >If race medium distance, mid-race, wit check passed and
+                        front runner</td
+                    >
+                    <td>Stamina recovers 1.5%</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png"
+                        /></td
+                    >
+                    <td>Front Runner Straightaways</td>
+                    <td>If front runner and on random straight </td>
+                    <td>Increase target speed by 15% for 3 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20042.png"
+                        /></td
+                    >
+                    <td>Taking the Lead</td>
+                    <td
+                        >If front runner in early race and 5 seconds have passed</td
+                    >
+                    <td>Increase acceleration 40% for 1.2 sec</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div slot="box-right">
+        <h3>URA Build</h3>
+        <ul>
+            <li>
+                <b>Goal stats:</b> - # speed, # stam, # power, # guts, # wit
+            </li>
+            <li><b>Support Recs:</b></li>
+            <div class="small">
+                <!--images for support cards here -->
+            </div>
+            <li>
+                <b>Parents:</b>
+            </li>
+            <li>
+                <b>legacy sparks:</b>9★
+            </li>
+            <li>
+                <b>Skills:</b><ul>
+                    <li></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div slot="the-whole">
+        <h3>URA Schedule</h3>
+        <h4>overall goals</h4>
+        <ul>
+            <li>distances include 4 medium, 3 mile, 1 long, 1 short</li>
+            <li>grades include 10 G5's</li>
+        </ul>
+        <h4>classic year</h4>
+        <ul>
+            <li>
+                Early July - Run in the Radio Nikkei Show to get +3 stat boost,
+                60 skills, +1 mood, and hot topic status
+            </li>
+        </ul>
+    </div>
+    <div slot="the-whole2">
+        <img src="https://i.postimg.cc/mZ6LRjjr/IMG_8436.png" />
+        <div class="large">
+            <img src="mb1.jpg" />
+        </div>
+        <p>
+            Automatic, hydromatic, why she could even be.... <i>autistic!</i> She
+            really reminds me of one of my partners - it's uncanny. I ended up liking
+            her story more than I thought, her dynamic with her dad is really cute
+            and the robot discovers emotions for the first time isn't done terribly.
+            I also think good call on JP to avoid directly translating " マスター
+            (Master)".
+        </p>
+        <p>
+            dividers sourced from <a href="https://www.tumblr.com/pueriled"
+                >@pueriled
+            </a>
+        </p>
+    </div>
+</UmaLayout>

@@ -1,0 +1,133 @@
+---
+import RecentOtome from "../components/RecentOtome.astro";
+import Layout from "../layouts/Layout.astro";
+
+const title = "tunnel of love";
+const subtitle = "otome";
+const bannerImage = "/bg/wonderful_land_41.gif";
+const tinyImage = "/smalls/sm-dripheart.gif";
+---
+
+<Layout
+    title={title}
+    subtitle={subtitle}
+    bannerImage={bannerImage}
+    tinyImage={tinyImage}
+>
+    <div slot="main-text">
+        <div class="flexbox">
+            <p>
+                why classify otome in a different section of the park? well
+                first of all i wanted to pay tribute to the iconography of the
+                tunnel of love. i think they're just hilariously specific. like
+                ... really what a concept. you know what this park needs? a
+                private space to bone.
+            </p>
+            <div class="center"><img src="/images/swan.gif" /></div>
+
+            <p>
+                also i wanted the spicier content to exist separately from the
+                other sfw things. it just felt weird putting up half naked sylus
+                next to tom nook you know?
+            </p>
+        </div>
+    </div>
+
+    <div slot="full">
+        <h2>memorable games</h2>
+        <div class="flexbox" style="flex-direction: row;">
+            <div>
+                <div class="shrine">
+                    <img src="/images/whatdyousaycaleb.png" />
+                </div>
+                <div class="center">
+                    <h4>
+                        <a href="/posts/post-o1/">love and deepspace</a>
+                    </h4>
+                </div>
+            </div>
+
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://www.allkeyshop.com/blog/wp-content/uploads/diabolik-lovers-chaos-lineage-nintendo-switch-800x500-4.jpg"
+                    />
+                </div>
+                <div class="center"><h4>diabolik lovers*</h4></div>
+            </div>
+
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://capiora.ru/userfiles/local/a/Mystic-Messenger.jpg"
+                    />
+                </div>
+                <div class="center"><h4>mystic messenger</h4></div>
+            </div>
+
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000022647/8e47b9480fcbd50087c4aff74bf95e054e5c1a941e1dc2e1ecc019ad049c7ee3"
+                    />
+                </div>
+                <div class="center"><h4>code realize</h4></div>
+            </div>
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2311350/ss_ad97f2f4d298a3bb443dd5898168eba146ecd056.1920x1080.jpg?t=1684463689"
+                    />
+                </div>
+                <div class="center">
+                    <h4>kissed by the<br /> baddest bidder</h4>
+                </div>
+            </div>
+
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://64.media.tumblr.com/5925b99301a07a3be37cd51d6e3932da/tumblr_inline_p9iq2rlXB81t6rnmr_540.jpg"
+                    />
+                </div>
+                <div class="center"><h4>rose in the embers</h4></div>
+            </div>
+
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://s2.qwant.com/thumbr/474x266/4/b/f072a68780c3a8c6eddbdc9c30094328bdc6a71f1d796948cbc8f73d1089be/OIP.g3pJCEjgVRA-sYsArf_ZyAHaEK.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%2Fid%2FOIP.g3pJCEjgVRA-sYsArf_ZyAHaEK%3Fr%3D0%26pid%3DApi&q=0&b=1&p=0&a=0"
+                    />
+                </div>
+                <div class="center"><h4>obey me</h4></div>
+            </div>
+            <div>
+                <div class="shrine">
+                    <img
+                        src="https://www.pockettactics.com/wp-content/sites/pockettactics/2022/05/otome-games-nu-carnival-550x309.jpg"
+                    />
+                </div>
+                <div class="center"><h4>nu carnival</h4></div>
+            </div>
+        </div>
+
+        <br />
+        *this game falls weirdly inbetween horror and otome due to extremely dark
+        elements, sensitive viewers beware
+    </div>
+
+    <div slot="left-half">
+        <h2>wishlist</h2>
+        <p>otomes i either need to play or need to finish a single route</p>
+        <ul>
+            <li>ikemen sengoku</li>
+            <li>collar x mallice</li>
+            <li>love unholyc</li>
+        </ul>
+    </div>
+    <div slot="right-half">
+        <div class="posts-grid">
+            <RecentOtome />
+        </div>
+    </div>
+</Layout>

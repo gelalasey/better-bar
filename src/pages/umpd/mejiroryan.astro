@@ -1,0 +1,276 @@
+---
+import UmaLayout from "../../layouts/UmaLayout.astro";
+import Music from "../../components/widget/Music.astro";
+
+const title = "Mejiro Ryan";
+const cardname = "Straight Line";
+const date = "07-28-2025";
+const rank = "★★★";
+const racetype = "turf, med, long";
+const strat = "pace, late";
+const potential = "4";
+const cardimg =
+    "https://gametora.com/images/umamusume/characters/chara_stand_1027_102701.png";
+---
+
+<UmaLayout
+    title={title}
+    ,
+    cardname={cardname}
+    ,
+    date={date}
+    ,
+    rank={rank}
+    ,
+    racetype={racetype}
+    ,
+    strat={strat}
+    ,
+    potential={potential}
+    ,
+    cardimg={cardimg}
+>
+    <div slot="box-left">
+        <table>
+            <tr>
+                <th>trait</th>
+                <th>base</th>
+                <th>bonus</th>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>98</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Stam</td>
+                <td>74</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Power</td>
+                <td>106</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Guts</td>
+                <td>80</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Wit</td>
+                <td>92</td>
+                <td>10%</td>
+            </tr>
+        </table>
+        <button type="button" class="collapsible">skills</button>
+        <div class="colcontent">
+            <h3>skills</h3>
+            <table>
+                <tr>
+                    <th>skill</th>
+                    <th>name</th>
+                    <th>conditions</th>
+                    <th>effect</th>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20043.png"
+                        /></td
+                    >
+                    <td>Let's Pump Some Iron!</td>
+                    <td
+                        >If on corner, in late race, and between 6th and 12th
+                        place.
+                    </td>
+                    <td>Increase acceleration 40% for 4 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10041.png"
+                        /></td
+                    >
+                    <td>Rainy Days ○</td>
+                    <td>If weather is rainy </td>
+                    <td>Guts up 40-60</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png"
+                        /></td
+                    >
+                    <td>Outer Swell</td>
+                    <td
+                        >If wit check passed, late surger, past the final
+                        corner, over taken one uma, and uma behind is closer to
+                        the inner fence than you
+                    </td>
+                    <td>Increase target speed up 15% for 3 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png"
+                        /></td
+                    >
+                    <td>Pace Strategy</td>
+                    <td
+                        >If wit check passed, been overtaken one time, and in
+                        mid race
+                    </td>
+                    <td>Stamina recovery by 1.5%</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png"
+                        /></td
+                    >
+                    <td>Killer Tunes</td>
+                    <td
+                        >If medium distance, wit check passed, mid race, and in
+                        top 50%
+                    </td>
+                    <td>Increase target speed 35% for .9 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png"
+                        /></td
+                    >
+                    <td>Medium Straightaways ○</td>
+                    <td
+                        >If wit check passed, medium distance, and on random
+                        straight
+                    </td>
+                    <td>Increase target speed 15% for 3 sec</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div slot="box-right">
+        <h3>URA Build</h3>
+        <ul>
+            <li>
+                <b>Goal stats:</b> - 1000 speed, 800 stam, 700 (1100 if going for
+                spark) power, 300 guts, 300 wit
+            </li>
+            <li>
+                <b>Support Recs:</b> I like to go for 4 speed and 2 power, maybe
+                a wit thrown in there for funsies
+            </li>
+            <div class="small">
+                <img
+                    src="https://img.game8.co/4216913/4d6bd93fa56fbfc5e0cd0030d2e2a9f6.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4217015/153838608e154b6d9fc4f2739cab45c7.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4218616/5381cc866a49ad65f83876f47662001e.png/show"
+                />
+
+                <img
+                    src="https://img.game8.co/4217009/addcf67073760c7d6819b1de161f8ac4.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4216976/2534fb62fff784e4c60681a94f8d463f.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4216988/65712f78efdb6c1097a6f28ede3bf38a.png/show"
+                />
+            </div>
+            <li>
+                <b>Parents: </b>Oguri Cap's green spark pairs nicely with her's,
+                Grass, Vodka, and WT do well affinity wise.
+            </li>
+            <li>
+                <b>legacy sparks:</b>3-6★ Long, 9-12★ Stamina, 3★ Late,
+            </li>
+            <li>
+                <b>Skills:</b><ul>
+                    <li>Homestretch haste</li>
+                    <li>Professor of Curvature</li>
+                    <li>Swinging Maestro</li>
+                    <li>Gourmand</li>
+                    <li>Medium Straightaways</li>
+                    <li>Straightaway Adept</li>
+                    <li>Slick Surge</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>other notes</h3>
+        <ul>
+            <li>
+                I really only run her for her skill "Let's Pump Some Iron" as a
+                parent, so getting good sparks is crucial
+            </li>
+        </ul>
+    </div>
+    <div slot="the-whole">
+        <h3>URA Schedule</h3>
+        <h4>junior goals</h4>
+        <ul>
+            <li>
+                <b>12</b> Participate in the Junior Make Debut [Turf – 2000m – Medium]
+            </li>
+        </ul>
+        <h4>classic year</h4>
+        <ul>
+            <li>
+                <b>25</b> Place 3rd or better in the Junior Cup [OP – Turf – 1600m
+                – Mile]
+            </li>
+            <li>
+                <b>31</b> Place 5th or better in the Satsuki Sho [G1 – Turf – 2000m
+                – Medium]
+            </li>
+            <li>
+                <b>34</b> Place 5th or better in the Tokyo Yushun (Japanese Derby)
+                [G1 – Turf – 2400m – Medium]
+            </li>
+            <li>
+                <b>44</b> Place 3rd or better in the Kikuka Sho [G1 – Turf – 3000m
+                – Long]
+            </li>
+            <li>
+                <b>48</b> Place 3rd or better in the Arima Kinen [G1 – Turf – 2500m
+                – Long]
+            </li>
+        </ul>
+        <h4>senior year</h4>
+        <ul>
+            <li>
+                <b>56</b> Place 3rd or better in the Tenno Sho (Spring) [G1 – Turf
+                – 3200m – Long]
+            </li>
+            <li>
+                <b>60</b> Place 1st in the Takarazuka Kinen [G1 – Turf – 2200m –
+                Medium]
+            </li>
+            <li>
+                <b>72</b> Place 1st in the Arima Kinen [G1 – Turf – 2500m – Long]
+            </li>
+        </ul>
+    </div>
+    <div slot="the-whole2">
+        <div id="music" class="flex flex-col w-full gap-4">
+            <Music
+                songname="希望ディスカバリー (Kibo Discovery) "
+                songlink="https://file.garden/aOJjY5VloELMsNHX/Kibou%20Discovery.mp3"
+                songcover="https://media.tenor.com/2tDlb7NAF_QAAAA1/uma-musume-mejiro-ryan.webp"
+            />
+        </div>
+        <img src="https://i.postimg.cc/FK7LGKDF/IMG_0698.gif" />
+        <img src="https://i.postimg.cc/Z5fNrNPD/IMG_0699.gif" />
+        <p>
+            dividers sourced from <a href="https://www.tumblr.com/pueriled"
+                >@pueriled
+            </a>
+        </p>
+    </div>
+</UmaLayout>

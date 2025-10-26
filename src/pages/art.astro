@@ -1,0 +1,93 @@
+---
+import RecentArt from "../components/RecentArt.astro";
+import Layout from "../layouts/Layout.astro";
+
+const title = "carousel";
+const subtitle = "my creations";
+const bannerImage =
+    "https://64.media.tumblr.com/b3ff5236ec87e082a72055affce3eced/73f2176b49545e06-bc/s400x600/ff97eb4257ae0a3c06a4077692290353bfebe960.gifv";
+const tinyImage = "/smalls/sm-mcrown.gif";
+---
+
+<Layout
+    title={title}
+    subtitle={subtitle}
+    bannerImage={bannerImage}
+    tinyImage={tinyImage}
+>
+    <div slot="main-text">
+        <div class="flexbox">
+            <p>
+                i am a jack of all trades and master of none - truly. adhd is a
+                disease. here are some of thefun things I've created that span
+                all types of works. i hope you enjoy.
+            </p>
+            <p>
+                i'm an artist and a perfectionist - meaning i hate showing off
+                my work. but maybe you won't see all the tiny mistakes i hate.
+                hell you might even enjoy it.
+            </p>
+        </div>
+        <div class="center">
+            <RecentArt />
+        </div>
+    </div>
+
+    <div slot="full">
+        <h1>gallery</h1>
+        <h2>miniatures</h2>
+        <div class="flexbox">
+            <div class="center">
+                <img src="/blog/art/garden7.jpg" />
+                <a href="#"><h4>mini garden</h4></a>
+            </div>
+        </div>
+    </div>
+
+    <div slot="left-half">
+        <h2>free use!</h2>
+        <p>
+            credit not needed to display, but claim as your own and hair will
+            grow on your teeth <img src="/smalls/sm-gf.gif" />
+        </p>
+        <hr />
+        <img src="/mine/thas01.jpg" />
+        <div class="artsmall">
+            <img src="/mine/ls_01.png" alt="purple light stick" />
+            <img src="/mine/ls_02.png" alt="red light stick" />
+            <img src="/mine/ls_03.png" alt="green light stick" />
+            <img src="/mine/ls_04.png" alt="yellow light stick" />
+            <img src="/mine/ls_05.png" alt="orange light stick" />
+            <img src="/mine/ls_06.png" alt="dark blue light stick" />
+            <img src="/mine/ls_07.png" alt="white light stick" />
+            <img src="/mine/ls_09.png" alt="pink light stick" />
+            <img src="/mine/ls_08.png" alt="blue light stick" />
+            <img src="/mine/balldog.webp" alt="pillowed af balloon dog" />
+            <img src="/mine/pombud.png" />
+            <img src="/mine/icefora.png" />
+        </div>
+    </div>
+    <div slot="right-half">
+        <h2>piccrews</h2>
+        <div class="flexbox" style="flex-direction: row;">
+            <a href="https://picrew.me/en/image_maker/58420" target="_blank"
+                ><img src="/avatar/gamergel.png" /></a
+            >
+            <a href="https://picrew.me/en/image_maker/58420" target="_blank"
+                ><img src="/avatar/wotagel.png" /></a
+            >
+            <a href="https://picrew.me/en/image_maker/2675184" target="_blank"
+                ><img src="/avatar/animegel.png" /></a
+            >
+            <a href="https://picrew.me/en/image_maker/2307052" target="_blank"
+                ><img src="/avatar/blogicon.png" /></a
+            >
+            <a href="https://picrew.me/en/image_maker/549603" target="_blank"
+                ><img src="/avatar/clowncreator.png" /></a
+            >
+            <a href="https://picrew.me/ja/image_maker/596695" target="_blank"
+                ><img src="/avatar/egg.png" /></a
+            >
+        </div>
+    </div>
+</Layout>

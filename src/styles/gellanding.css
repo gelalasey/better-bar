@@ -1,0 +1,309 @@
+
+/* elements */
+body {
+  background-image: url("https://64.media.tumblr.com/efe2f38687e945a0ed5f2db476f7d52f/tumblr_inline_mll04648CG1r53miq.png");
+  background-repeat: repeat;
+}
+
+.container {
+	max-width: 55rem;
+	margin: 5vw auto 12px auto;
+	border: 6px ridge var(--border);
+	outline: 3px solid var(--gradientTop);
+	outline-offset: 4px;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 5px;
+	gap: 5px;
+	
+} 
+
+
+h1 {
+    font-size: 4em;
+    font-family: "Fontdiner Swanky";
+    font-weight: normal;
+    font-style: normal;
+    -webkit-text-stroke: 3px #FFFFFF;
+    -webkit-text-fill-color: #FFECB6;
+    
+}
+#title {
+font-size: 4em;
+    font-family: "Fontdiner Swanky";
+    font-weight: normal;
+    font-style: normal;
+    -webkit-text-stroke: 3px #FFFFFF;
+    -webkit-text-fill-color: #FFECB6;
+  text-shadow: 200px;  
+  
+}
+
+#page {
+  margin-left:auto;
+  margin-right:auto;
+  width:960px;
+}
+
+h2 {
+    color: #f78aa8
+}
+
+.cta{
+  color: #c2DFE0;
+  width: 75%;
+  background: white;
+  border-radius: 40px;
+  font-size: large;
+  font-family: "fontdiner swanky";
+ text-align: center;
+}
+
+
+p {
+    color: #4E3D42;
+    font-family: "poppins";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.25em;
+    margin: 30px;
+}
+a:link {
+  color: #f78aa8;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fee8ee;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c2dfe0;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #DECCE5;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/*contianers*/
+.outer {
+border: 2px  dotted #f78aa8;
+border-image-slice: 15 9 fill;
+border-image-outset:  5 1.1;
+border-radius: 40px;
+width:800px;
+height:450px;
+display: flex;  
+ background-image: url("https://64.media.tumblr.com/ec5b874929981c7738298e13e2e346ef/tumblr_inline_mlkxraUJhY1r53miq.png");
+  
+  /*https://css-tricks.com/almanac/properties/b/border-image-slice/ figure out slicing properly here*/
+}
+.inner{
+ padding: 10px;
+  font-size: 1em; 
+    width: 50%;
+  top: -10;
+  bottom: -20;
+  background: url("gl-pixels/80x80bh_cloud1a.gif");
+    background-position-y: bottom;
+  background-repeat: repeat-x;
+} 
+
+
+.graphic-title{
+  display:flex;
+  column-gap: 5px;
+  justify-content: space-between;
+  margin-bottom: -75px;
+  background: url(gl-pixels/80x80th_lacebow2c.gif);
+  background-position-y: bottom;
+  background-repeat: repeat-x; 
+  position: relative;
+  width: 800px;
+}
+
+
+.flex-container{
+  display:flex;
+}
+
+    /* Ornate Div Scroll */
+.innerornate::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background: transparent;    
+}  
+.innerornate::-webkit-scrollbar {
+	width: 5px;
+}
+.innerornate::-webkit-scrollbar-thumb {
+	background-color: #ffc821;
+	border: 1px solid #5f2403;
+}
+.innerornate {
+width: 200px;
+height:221px;
+margin-left: auto;
+margin-right:auto;
+margin-top:20px;
+color:#102e1c;
+font-family: Verdana; 
+font-size:9px; 
+letter-spacing: 1.5px;
+line-height: 12px;
+overflow-y: auto;
+overflow-x: hidden;
+
+}
+.ornatediv {
+	width: 244px;
+	height: 265px;
+  background-image: url('https://i.ibb.co/TLW4K5h/freeframe.png');
+	overflow:hidden;
+	margin-left: auto;
+	margin-right:auto;
+	background-repeat: no-repeat;	
+}
+
+
+
+  /*  Rollover image styles  */
+  .figure {
+    position: relative;
+    width: 360px; /* can be omitted for a regular non-lazy image */
+    max-width: 100%;
+  }
+  .figure img.Sirv.image-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+  }
+  .figure:hover img.Sirv.image-hover {
+    opacity: 1;
+  }
+
+/* fonts */
+.fontdiner-swanky-regular {
+  font-family: "Fontdiner Swanky", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}

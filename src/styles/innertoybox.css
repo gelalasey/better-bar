@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #111827;
+  font-family: 'popppins-regular';
+  text-transform: lowercase;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+ 
+}
+
+.gallery {
+  column-count: 1;
+  column-gap: 1.5rem;
+background-image: url(/bg/sprankles.webp);
+}
+@media (min-width: 600px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+@media (min-width: 900px) {
+  .gallery {
+    column-count: 3;
+  }
+}
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  background: #f5f0f5;
+  border-color: #FFECB6;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  break-inside: avoid;
+}
+
+
+#flexer{
+  display: flex;
+   margin-left: auto;
+  margin-right: auto;
+    max-width: 250px;
+  height: auto;
+}
+.gallery-item img {
+   margin-left: auto;
+  margin-right: auto;
+  max-width: 250px;
+  height: auto;
+
+}
+
+.gallery-item flexbox{
+  display: flex;
+  white-space: wrap;
+}
+
+.gallery-item table {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 250px;
+  height: auto;
+  display: block;
+}
+.gallery-item p {
+  margin: 0;
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.hideme{
+  display:none
+}
+
+a{
+  color: teal;
+}
+
+
+/* ON HOLD UNTIL SORTING COMES BACK */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+#searchBox {
+  padding: 0.75rem 1rem;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #fee8ee;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #f78aa8;
+  color: #ffffff;
+}

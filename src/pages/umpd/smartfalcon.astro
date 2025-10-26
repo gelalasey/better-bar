@@ -1,0 +1,254 @@
+---
+import UmaLayout from "../../layouts/UmaLayout.astro";
+import Music from "../../components/widget/Music.astro";
+
+const title = "smart falcon";
+const cardname = "Absolute ☆ LOVE";
+const date = "08-11-2025";
+const rank = "★★★";
+const racetype = "dirt, mile, med";
+const strat = "front";
+const potential = "3";
+const cardimg =
+    "https://gametora.com/images/umamusume/characters/chara_stand_1046_104601.png";
+---
+
+<UmaLayout
+    title={title}
+    ,
+    cardname={cardname}
+    ,
+    date={date}
+    ,
+    rank={rank}
+    ,
+    racetype={racetype}
+    ,
+    strat={strat}
+    ,
+    potential={potential}
+    ,
+    cardimg={cardimg}
+>
+    <div slot="box-left">
+        <table>
+            <tr>
+                <th>trait</th>
+                <th>base</th>
+                <th>bonus</th>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>94</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Stam</td>
+                <td>85</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Power</td>
+                <td>85</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>Guts</td>
+                <td>100</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Wit</td>
+                <td>86</td>
+                <td></td>
+            </tr>
+        </table>
+        <button type="button" class="collapsible">skills</button>
+        <div class="colcontent">
+            <h3>skills</h3>
+            <table>
+                <tr>
+                    <th>skill</th>
+                    <th>name</th>
+                    <th>conditions</th>
+                    <th>effect</th>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png"
+                        /></td
+                    >
+                    <td>SPARKLY☆STARDOM</td>
+                    <td
+                        >If one uma is less than 1 horse length behind, on a
+                        corner, order is ≤2, and mid race</td
+                    >
+                    <td
+                        >target speed increased 25% and acceleration 30% for 5
+                        sec</td
+                    >
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20051.png"
+                        /></td
+                    >
+                    <td>Prudent Positioning</td>
+                    <td>Random point</td>
+                    <td>Increase lane movement speed by 2.5% for 3 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10051.png"
+                        /></td
+                    >
+                    <td>Front Runner Savvy </td>
+                    <td>If front runner </td>
+                    <td>Wisdom stat up 40/60, Increase field of view 5/10</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png"
+                        /></td
+                    >
+                    <td>Top Pick </td>
+                    <td>If long distance </td>
+                    <td>Increase target speed by 15% for 1.8s</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10031.png"
+                        /></td
+                    >
+                    <td>Wet Conditions</td>
+                    <td>If track is slightly heavy, heavy, or bad </td>
+                    <td>Power up 40/60</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20052.png"
+                        /></td
+                    >
+                    <td>Center Stage</td>
+                    <td>If early race</td>
+                    <td>Increase lane movement speed 3.5% for 3 sec</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div slot="box-right">
+        <h3>URA Build</h3>
+        <ul>
+            <li>
+                <b>Goal stats:</b> - # speed, # stam, # power, # guts, # wit
+            </li>
+            <li><b>Support Recs:</b></li>
+            <div class="small">
+                <!--images for support cards here -->
+            </div>
+            <li>
+                <b>Parents:</b>
+            </li>
+            <li>
+                <b>legacy sparks:</b>9★
+            </li>
+            <li>
+                <b>Skills:</b><ul>
+                    <li></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div slot="the-whole">
+        <h3>URA Schedule</h3>
+        <h4>overall goals</h4>
+        <ul>
+            <li>Can technically raise turf but best used for dirt medium</li>
+            <li>distances include 7 medium, 3 mile</li>
+            <li>grades include 10 G5's</li>
+        </ul>
+        <h4>junior year</h4>
+        <ul>
+            <li>
+                <b>12</b>Participate in the Junior Make Debut [Dirt – 1600m –
+                Mile]
+            </li>
+        </ul>
+        <h4>classic year</h4>
+        <ul>
+            <li>
+                <b>25</b>Place 1st in 2 Pre-OP or higher races
+            </li>
+            <li>
+                <b>31</b>Participate in the Satsuki Sho [G1 – Turf – 2000m –
+                Medium]
+            </li>
+            <li>
+                The Satsuki sho is pretty easy to beat if you get your turf
+                skill bumped up by parents
+            </li>
+            <li>
+                <b>37</b>Place 5th or better in the Japan Dirt Derby [G1 – Dirt
+                – 2000m – Medium]
+            </li>
+            <li>
+                <b>45</b>Place 3rd or better in the JBC Classic [G1 – Dirt –
+                2000m – Medium]
+            </li>
+            <li>
+                <b>48</b>Place 3rd or better in the Tokyo Daishoten [G1 – Dirt –
+                2000m – Medium]
+            </li>
+        </ul>
+        <h4>senior year</h4>
+        <ul>
+            <li>
+                <b>52</b>Place 1st in the February Stakes [Dirt – 1600m – Mile]
+            </li>
+            <li>
+                <b>60</b>Place 1st in the Teio Sho [G1 – Dirt – 2000m – Medium]
+            </li>
+            <li>
+                <b>69</b>Place 1st in the JBC Classic [G1 – Dirt – 2000m –
+                Medium]
+            </li>
+            <li>
+                <b>71</b>Place 1st in the Champions Cup [G1 – Dirt – 1800m –
+                Mile]
+            </li>
+            <li>
+                <b>72</b>Place 1st in the Tokyo Daishoten [G1 – Dirt – 2000m –
+                Medium]
+            </li>
+        </ul>
+    </div>
+    <div slot="the-whole2">
+        <img src="https://i.postimg.cc/R0YwkxHZ/IMG_1011.png" />
+        <p>
+            As of writing this - Smart Falcon is currently my background home
+            screen uma. I love this sweet darling Umadol so much. Idols are one
+            of my favorite archetype and she hits all the notes needed for a
+            classic idol underdog tale. She's positive, hard working, and
+            dedicated to her fans even if she's apparently dancing under a
+            bridge. I also like how despite aiming to be a perfect idol, she's
+            pretty shit in school. It gives her dimension and makes her fun to
+            read about. Go go Falco!
+        </p>
+        <div class="large">
+            <img src="/umpd/smpicprev.png" />
+            <img src="/umpd/smeditlove.jpg" />
+        </div>
+        <img src="https://i.postimg.cc/t423zxRP/IMG_1012.png" />
+        <p>
+            dividers sourced from <a href="https://www.tumblr.com/pueriled"
+                >@pueriled
+            </a>
+        </p>
+    </div>
+</UmaLayout>

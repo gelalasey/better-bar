@@ -1,0 +1,280 @@
+---
+import UmaLayout from "../../layouts/UmaLayout.astro";
+import Music from "../../components/widget/Music.astro";
+
+const title = "Biwa Hiyahide";
+const cardname = "pf.Victory Formula...";
+const date = "07-28-2025";
+const rank = "★★★";
+const racetype = "turf, med, long";
+const strat = "pace";
+const potential = "3";
+const cardimg =
+    "https://gametora.com/images/umamusume/characters/chara_stand_1023_102301.png";
+---
+
+<UmaLayout
+    title={title}
+    ,
+    cardname={cardname}
+    ,
+    date={date}
+    ,
+    rank={rank}
+    ,
+    racetype={racetype}
+    ,
+    strat={strat}
+    ,
+    potential={potential}
+    ,
+    cardimg={cardimg}
+>
+    <div slot="box-left">
+        <table>
+            <tr><th>trait</th> <th>base</th><th>bonus</th> </tr>
+            <tr><td>Speed</td><td>85</td><td></td></tr>
+            <tr><td>Stam</td><td>93</td><td></td></tr>
+            <tr><td>Power</td><td>82</td><td></td></tr><tr
+                ><td>Guts</td><td>93</td><td>10%</td></tr
+            ><tr><td>Wit</td><td>97</td><td>20%</td> </tr>
+        </table><button type="button" class="collapsible">skills</button><div
+            class="colcontent"
+        >
+            <h3>skills</h3>
+            <table>
+                <tr>
+                    <th>skill</th>
+                    <th>name</th>
+                    <th>conditions</th>
+                    <th>effect</th>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png"
+                        /></td
+                    >
+                    <td>∴win Q.E.D.</td>
+                    <td
+                        >If on the final corner in late race or laste spurt, no
+                        rush, and order is ≤ 4</td
+                    >
+                    <td>Increase target speed 35% for 5 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png"
+                        /></td
+                    >
+                    <td>Wet Conditions ○</td>
+                    <td
+                        >If ground conditions are slightly heavy, heavy, or bad</td
+                    >
+                    <td>Power stat up 40/60</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png"
+                        /></td
+                    >
+                    <td>Deep Breaths</td>
+                    <td>If wit check, long distance, and random straight</td>
+                    <td>Stamina recovery 15%</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10011.png"
+                        /></td
+                    >
+                    <td>Outer Post Proficiency ○</td>
+                    <td>If post number is ≥ 6</td>
+                    <td>Speed stat up 40/60</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20022.png"
+                        /></td
+                    >
+                    <td>Calm and Collected (Stamina to Spare)</td>
+                    <td
+                        >If wit check passed, pace chased, early race, at least
+                        5 seconds in, and top 50%</td
+                    >
+                    <td>Stamina recovered by 5.5% </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div slot="box-right">
+        <h3>URA Build</h3>
+        <ul>
+            <li>
+                <b>Goal stats:</b> - 800-1000 speed, 900-1000 stam, 500-600 power,
+                300-400 guts, 400-500 wit
+            </li>
+            <li>
+                <b>Support Recs:</b> 3 speed, 2 stamina, 1 wit (which could be replaced
+                with speed)
+            </li>
+            <div class="small">
+                <img
+                    src="https://img.game8.co/4217015/153838608e154b6d9fc4f2739cab45c7.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4218616/5381cc866a49ad65f83876f47662001e.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4216909/51948a362a139d9db95f858673d39164.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4216916/3c352856b5348f43d8c4f057c6a40b84.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4216926/2bc1f9e84ecbf9679cdd487ffeaf9e26.png/show"
+                />
+
+                <img
+                    src="https://img.game8.co/4216967/4f3a2e381dc8d111a93fe38c85ad99af.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4216934/8ed4f64c8e2d6d323ef3c37497d037cc.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4217009/addcf67073760c7d6819b1de161f8ac4.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4216994/d4101a28256f6e1f77751492dd3d66c0.png/show"
+                />
+            </div>
+            <li>
+                <b>Parents:</b> McQueen, Symboli, Goldship, Mayano Top Gun
+            </li>
+            <li>
+                <b>legacy sparks:</b> 9★ stamina, 9★ power, 3★ mile to get aptitutde
+                to B, 3★ pace chaser
+            </li>
+            <li>
+                <b>Skills:</b><ul>
+                    <li>
+                        Speed star (this works best with pace chaser strats)
+                    </li>
+                    <li>Swinging Maestro</li>
+                    <li>Gourmand</li>
+                    <li>Pace Chaser skills like Savvy, Corners</li>
+                    <li>Homestretch Haste</li>
+                    <li>Straightaway Adept</li>
+                    <li>Preferred Position</li>
+                    <li>Other corner skills as needed</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>other notes</h3>
+        <ul>
+            <li>
+                Alternatively if you want to cheese to an <a
+                    href="https://www.youtube.com/watch?v=4eVCETpG6ww">s rank</a
+                > you could use a build with wit and gut on the current system. I
+                have not tested this out yet but I will report when I do.
+            </li>
+        </ul>
+    </div>
+    <div slot="the-whole">
+        <h3>URA Schedule</h3>
+        <h4>junior goals</h4>
+        <ul>
+            <li>
+                <b>12</b> Participate in the Junior Make Debut [Turf – 1600m – Mile]
+            </li>
+            <li>
+                <b>23</b> Place 5th or better in the Asahi Hai Futurity Stakes [G1
+                – Turf – 1600m – Mile]
+            </li>
+        </ul>
+        <h4>classic year</h4>
+        <ul>
+            <li>
+                <b>31</b> Place 5th or better in the Satsuki Sho [G1 – Turf – 2000m
+                – Medium]
+            </li>
+            <li>
+                <b>34</b> Place 5th or better in the Tokyo Yushun (Japanese Derby)
+                [G1 – Turf – 2400m – Medium]
+            </li>
+            <li>
+                <b>44</b> Place 3rd or better in the Kikuka Sho [G1 – Turf – 3000m
+                – Long]
+            </li>
+        </ul>
+        <h4>senior year</h4>
+        <ul>
+            <li>
+                <b>56</b> Place 3rd or better in the Tenno Sho (Spring) [G1 – Turf
+                – 3200m – Long]
+            </li>
+            <li>
+                <b>60</b> Place 1st in the Takarazuka Kinen [G1 – Turf – 2200m –
+                Medium]
+            </li>
+            <li>
+                <b>68</b> Place 3rd or better in the Tenno Sho (Autumn) [G1 – Turf
+                – 2000m – Medium]
+            </li>
+            <li>
+                <b>72</b> Place 1st in the Arima Kinen [G1 – Turf – 2500m – Long]
+            </li>
+        </ul>
+    </div>
+    <div slot="the-whole2">
+        <img
+            src="https://64.media.tumblr.com/e14f2a63c71337d0f7ab428b629646ea/12bc8f256de569fd-97/s540x810/cefbd9d6b70b84bdcee41b4f7c5d773954d7a10a.pnj"
+        />
+        <div id="music" class="flex flex-col w-full gap-4">
+            <div id="music" class="flex flex-col w-full gap-4">
+                <Music
+                    songname="手綱と絆 (Bridle and Bonds"
+                    songlink="https://file.garden/aOJjY5VloELMsNHX/Tazuna%20to%20Kizuna.mp3"
+                    songcover="/umpd/bh-proud.png"
+                />
+            </div>
+        </div>
+        <p>
+            Biwa was not the honors student I expected to love, in fact her
+            special skill animation made me think I was going to hate her. So
+            when I played JP i wasn't really interested. And way back when her
+            starting gate album came out I was already starting to be less
+            impressed by the original songs coming out. English really was a
+            good chance for me to get to know her for real and I'm glad I did.
+        </p>
+        <div class="large">
+            <img src="/umpd/bh-proud.png" />
+        </div>
+        <p>
+            I'm always a sucker for a story about sisters - you know seeing as I
+            have a good relationship with my sister. And I loved the idea of one
+            working so hard to just be better than the other. With only having
+            read a bit of Brian's story - you can tell them both have so much
+            love yet so much envy for each other. I see a lot of that in my
+            relationship with my sister. We're total opposites and both of us
+            value things about the other. And maybe it's our own insecurities
+            but you can really see how each of them thinks of the other as
+            stronger for the thing they can't do. And these types of
+            insecurities are born so early within us they're hard to grow out
+            of. I'll always be the less responsible carefree older sibling when
+            I'm around my sister, no matter how many tax returns I file.
+        </p>
+        <img
+            src="https://64.media.tumblr.com/ee090b1560a5f82e77bb3cfb1d94f2ca/12bc8f256de569fd-c6/s540x810/b6b3fd87ec781ccf14951f5d523cbcaa809e3a5c.pnj"
+        />
+        <p>
+            dividers sourced from <a
+                href="https://www.tumblr.com/diviniyae/tagged/pink%20dividers"
+                >@diviniyae</a
+            >
+        </p>
+    </div>
+</UmaLayout>

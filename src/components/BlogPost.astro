@@ -1,0 +1,56 @@
+---
+const { url, title, image } = Astro.props;
+
+// Normalize image into a single shape
+let displayImage: { src: string; alt: string };
+
+if (typeof image === "string") {
+    displayImage = { src: image, alt: title };
+} else if (image && typeof image === "object" && "src" in image) {
+    displayImage = { src: image.src, alt: image.alt ?? title };
+} else {
+    // fallback
+    displayImage = {
+        src: "/images/jesterlord.webp",
+        alt: "Placeholder image",
+    };
+}
+
+import "../styles/blog.css";
+---
+
+<a href={url} class="post-card">
+    <img src={displayImage.src} alt={displayImage.alt} class="post-image" />
+    <h2 class="post-title">{title}</h2>
+</a>
+
+<style>
+    .post-card {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s ease;
+    }
+
+    .post-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .post-image {
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+    }
+
+    .post-title {
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 0.5rem;
+        color: #333;
+    }
+</style>

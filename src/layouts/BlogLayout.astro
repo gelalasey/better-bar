@@ -1,0 +1,61 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Navr from "../components/Navr.astro";
+import Navl from "../components/Navl.astro";
+
+import "../styles/main.css";
+import "../styles/blog.css";
+import "@fontsource/fontdiner-swanky";
+
+const { title, subtitle } = Astro.props;
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{title}</title>
+        <link rel="icon" type="image/x-icon" href="/favicon.png" />
+    </head>
+
+    <body>
+        <div class="container">
+            <Header />
+
+            <section class="small">
+                <Navl />
+                <slot name="after-navl" />
+            </section>
+            <section class="half">
+                <h1>
+                    <img src="/smalls/sm-diary.gif" />
+                    {title}
+                    <img src="/smalls/sm-diary.gif" />
+                </h1>
+                <h2>{subtitle}</h2>
+
+                <slot name="main-text" />
+                <!-- your content is injected here -->
+            </section>
+
+            <section class="small">
+                <slot name="before-navr" />
+                <Navr />
+                <slot name="after-navr" />
+            </section>
+            <section class="full">
+                <slot name="full" />
+                <!-- add additional full and half sections as needed for the page -->
+            </section>
+
+            <section class="full">
+                <slot name="tags"></slot>
+                <!--I WANT TO PUT A COMMENT BOX HERE EVENTUALLY -->
+            </section>
+        </div>
+        <div class="bottom"></div>
+        <footer></footer>
+        <Footer />
+    </body>
+</html>

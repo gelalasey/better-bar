@@ -1,0 +1,63 @@
+---
+import BlogLayout from "./BlogLayout.astro";
+import "../styles/blog.css";
+import MyTags from "../components/MyTags.astro";
+
+const { frontmatter } = Astro.props;
+
+// normalize image for external URLs or object-style frontmatter
+let displayImage: string | null = null;
+if (typeof frontmatter.image === "string") {
+    displayImage = frontmatter.image;
+} else if (
+    frontmatter.image &&
+    typeof frontmatter.image === "object" &&
+    "src" in frontmatter.image
+) {
+    displayImage = frontmatter.image.src;
+}
+---
+
+<BlogLayout title={frontmatter.title}>
+    <!-- main text (description + image) -->
+    <div slot="main-text">
+        {
+            frontmatter.description && (
+                <p>
+                    <em>{frontmatter.description}</em>
+                </p>
+            )
+        }
+        <br />
+        {
+            displayImage && (
+                <div class="flexbox">
+                    <img src={displayImage} alt={frontmatter.title} />
+                </div>
+            )
+        }
+        <br />
+        {frontmatter.intro && <p>{frontmatter.intro}</p>}
+    </div>
+
+    <!-- full content (markdown body + tags) -->
+    <div slot="full">
+        <div class="markdown">
+            <slot />
+
+            <hr />
+
+            {
+                frontmatter.tags && (
+                    <div class="tags">
+                        {frontmatter.tags.map((tag: string) => (
+                            <button class="learn-more">
+                                <a href={`/tags/${tag}`}>{tag}</a>
+                            </button>
+                        ))}
+                    </div>
+                )
+            }
+        </div>
+    </div>
+</BlogLayout>

@@ -1,0 +1,182 @@
+---
+import UmaLayout from "../../layouts/UmaLayout.astro";
+import Music from "../../components/widget/Music.astro";
+
+const title = "Goldship";
+const cardname = "Red Strife";
+const date = "06-26-2025";
+const rank = "★★";
+const racetype = "turf, med, long";
+const strat = "end";
+const potential = "4";
+const cardimg =
+    "https://gametora.com/images/umamusume/characters/chara_stand_1007_100701.png";
+---
+
+<UmaLayout
+    title={title}
+    ,
+    cardname={cardname}
+    ,
+    date={date}
+    ,
+    rank={rank}
+    ,
+    racetype={racetype}
+    ,
+    strat={strat}
+    ,
+    potential={potential}
+    ,
+    cardimg={cardimg}
+>
+    <div slot="box-left">
+        <table>
+            <tr>
+                <th>trait</th>
+                <th>base</th>
+                <th>bonus</th>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>82</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Stam</td>
+                <td>96</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Power</td>
+                <td>129</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>Guts</td>
+                <td>99</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Wit</td>
+                <td>92</td>
+                <td>20%</td>
+            </tr>
+        </table>
+        <button type="button" class="collapsible">skills</button>
+        <div class="colcontent">
+            <h3>skills</h3>
+            <table>
+                <tr>
+                    <th>skill</th>
+                    <th>name</th>
+                    <th>conditions</th>
+                    <th>effect</th>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png"
+                        /></td
+                    >
+                    <td>Warning Shot!</td>
+                    <td>
+                        If race is 50-60% through, in second half of the pack,
+                    </td>
+                    <td>Increase target speed 15% for 6 sec</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div slot="box-right">
+        <h3>URA Build</h3>
+        <ul>
+            <li>
+                <b>Goal stats:</b> - # speed, # stam, # power, # guts, # wit
+            </li>
+            <li><b>Support Recs:</b></li>
+            <div class="small">
+                <!--images for support cards here -->
+            </div>
+            <li>
+                <b>Parents:</b>
+            </li>
+            <li>
+                <b>legacy sparks:</b>9★
+            </li>
+            <li>
+                <b>Skills:</b><ul>
+                    <li></li>
+                </ul>
+            </li>
+        </ul>
+        <h3>other notes</h3>
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+    <div slot="the-whole">
+        <h3>URA Schedule</h3>
+        <h4>overall goals</h4>
+        <ul></ul>
+        <h4>junior year</h4>
+        <ul>
+            <li><b>12</b> Participate in the Junior Make Debut</li>
+            <li>
+                <b>24</b> 5th or better in the Hopeful Stakes [G1 – Turf – 2000m
+                – Medium]
+            </li>
+        </ul>
+        <h4>classic year</h4>
+        <ul>
+            <li>
+                <b>31</b> 5th or better in Satsuki Show [G1 – Turf – 2000m – Medium]
+            </li>
+            <li>
+                <b>44</b> 3rd or better in the Kikuka Sho [G1 – Turf – 3000m – Long]
+            </li>
+            <li>
+                <b>48</b> 3rd or better in the Arima Kinen [G1 – Turf – 2500m – Long]
+            </li>
+        </ul>
+        <h4>senior year</h4>
+        <ul>
+            <li>
+                Final stats: 800 Speed, 600 Stam, 800 Power, 400 Guts, 400 Wit
+            </li>
+            <li>
+                <b>56</b> 3rd or better in the Tenno Sho (Spring) [G1 – Turf – 3200m
+                – Long]
+            </li>
+            <li>
+                <b>60</b> 1st in the Takarazuka Kinen [G1 – Turf – 2200m – Medium]
+            </li>
+            <li>
+                <b>68</b> 1st in the Tenno Sho (Autumn) [G1 – Turf – 2000m – Medium]
+            </li>
+            <li>
+                <b>72</b> 1st in the Arima Kinen [G1 – Turf – 2500m – Long]
+            </li>
+        </ul>
+    </div>
+    <div slot="the-whole2">
+        <div class="large">
+            <img src="/umpd/gs1.jpg" />
+            <img src="/umpd/gs2.jpg" />
+            <img src="/umpd/gs3.jpg" />
+            <img src="/umpd/gs4.jpg" />
+            <img src="/umpd/gs5.jpg" />
+            <img src="/umpd/gs6.jpg" />
+            <img src="/umpd/gs7.jpg" />
+            <img src="/umpd/gs8.jpg" />
+            <img src="/umpd/gs9.jpg" />
+            <img src="/umpd/golshiedit.jpg" />
+        </div>
+        <img src="https://i.postimg.cc/sgLHgB87/IMG_8368.gif" />
+        <p>
+            dividers sourced from <a href="https://www.tumblr.com/pueriled"
+                >@pueriled
+            </a>
+        </p>
+    </div>
+</UmaLayout>

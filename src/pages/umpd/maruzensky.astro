@@ -1,0 +1,214 @@
+---
+import UmaLayout from "../../layouts/UmaLayout.astro";
+import Music from "../../components/widget/Music.astro";
+
+const title = "Maruzensky";
+const cardname = "Rouge Formula";
+const date = "08-17-2025";
+const rank = "★★★";
+const racetype = "turf, mile";
+const strat = "front";
+const potential = "3";
+const cardimg =
+    "https://gametora.com/images/umamusume/characters/chara_stand_1004_100401.png";
+---
+
+<UmaLayout
+    title={title}
+    ,
+    cardname={cardname}
+    ,
+    date={date}
+    ,
+    rank={rank}
+    ,
+    racetype={racetype}
+    ,
+    strat={strat}
+    ,
+    potential={potential}
+    ,
+    cardimg={cardimg}
+>
+    <div slot="box-left">
+        <table>
+            <tr>
+                <th>trait</th>
+                <th>base</th>
+                <th>bonus</th>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>96</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>Stam</td>
+                <td>68</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Power</td>
+                <td>86</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guts</td>
+                <td>100</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Wit</td>
+                <td>100</td>
+                <td>20%</td>
+            </tr>
+        </table>
+        <button type="button" class="collapsible">skills</button>
+        <div class="colcontent">
+            <h3>skills</h3>
+            <table>
+                <tr>
+                    <th>skill</th>
+                    <th>name</th>
+                    <th>conditions</th>
+                    <th>effect</th>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png"
+                        /></td
+                    >
+                    <td>Red Shift/LP1211-M</td>
+                    <td
+                        >If on the final corner or beyond it, order is ≤ 5, and
+                        in first half of the pack</td
+                    >
+                    <td>Increase acceleration 40% for 4 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png"
+                        /></td
+                    >
+                    <td>Straightaway Adept</td>
+                    <td>Random straight</td>
+                    <td
+                        >Increase target speed by 15% for .9s with 30 sec
+                        cooldown</td
+                    >
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png"
+                        /></td
+                    >
+                    <td>Shifting Gears </td>
+                    <td>If mile, mid race, and in front half of the pack </td>
+                    <td>Increase target speed by 15% for 1.2 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20041.png"
+                        /></td
+                    >
+                    <td>Early Lead</td>
+                    <td
+                        >If front runner, early race and 5 sec since race start
+                    </td>
+                    <td>Increase acceleration by 20% for 1.2s</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20041.png"
+                        /></td
+                    >
+                    <td>Acceleration</td>
+                    <td>If mile, mid race, and overtaken one uma </td>
+                    <td>Increase acceleration by 20% for 1.2 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20012.png"
+                        /></td
+                    >
+                    <td>Changing Gears</td>
+                    <td>If mile, mid race, and in front of pack</td>
+                    <td>Increase target speed 35% for 1.2 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20061.png"
+                        /></td
+                    >
+                    <td>Focus</td>
+                    <td>If wit check passed</td>
+                    <td>Improve start reaction time by 90%</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div slot="box-right">
+        <h3>URA Build</h3>
+        <ul>
+            <li>
+                <b>Goal stats:</b> - # speed, # stam, # power, # guts, # wit
+            </li>
+            <li><b>Support Recs:</b></li>
+            <div class="small">
+                <!--images for support cards here -->
+            </div>
+            <li>
+                <b>Parents:</b>
+            </li>
+            <li>
+                <b>legacy sparks:</b>9★
+            </li>
+            <li>
+                <b>Skills:</b><ul>
+                    <li></li>
+                </ul>
+            </li>
+        </ul>
+        <h3>other notes</h3>
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+    <div slot="the-whole">
+        <h3>URA Schedule</h3>
+        <h4>overall goals</h4>
+        <ul>
+            <li>distances include 4 medium, 3 mile, 1 long, 1 short</li>
+            <li>grades include 10 G5's</li>
+        </ul>
+        <h4>classic year</h4>
+        <ul>
+            <li>
+                Early July - Run in the Radio Nikkei Show to get +3 stat boost,
+                60 skills, +1 mood, and hot topic status
+            </li>
+        </ul>
+    </div>
+    <div slot="the-whole2">
+        <img src="https://i.postimg.cc/RFKrw1fc/IMG_8684.gif" />
+        <p>
+            She makes me feel old...idk how but she does. Maybe it's because
+            everytime she suggests a trendy activity I'm like "ooo that sounds
+            fun". What's not to like about disco and tiramisu??
+        </p>
+        <img src="https://i.postimg.cc/RCgkxYg3/IMG_9544.gif" />
+        <img src="https://i.postimg.cc/JhzSdVX4/IMG_8803.gif" />
+        <p>
+            dividers sourced from <a href="https://www.tumblr.com/pueriled"
+                >@pueriled
+            </a>
+        </p>
+    </div>
+</UmaLayout>

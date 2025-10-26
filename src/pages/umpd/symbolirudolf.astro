@@ -1,0 +1,344 @@
+---
+import UmaLayout from "../../layouts/UmaLayout.astro";
+import Music from "../../components/widget/Music.astro";
+
+const title = "Symboli Rudolph";
+const cardname = "Road of Emperor";
+const date = "06-26-2025";
+const rank = "★★★";
+const racetype = "long";
+const strat = "pace, late";
+const potential = "4";
+const cardimg =
+    "https://gametora.com/images/umamusume/characters/chara_stand_1017_101701.png";
+---
+
+<UmaLayout
+    title={title}
+    ,
+    cardname={cardname}
+    ,
+    date={date}
+    ,
+    rank={rank}
+    ,
+    racetype={racetype}
+    ,
+    strat={strat}
+    ,
+    potential={potential}
+    ,
+    cardimg={cardimg}
+>
+    <div slot="box-left">
+        <table>
+            <tr>
+                <th>trait</th>
+                <th>base</th>
+                <th>bonus</th>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>86</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Stam</td>
+                <td>91</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Power</td>
+                <td>83</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guts</td>
+                <td>96</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>Wit</td>
+                <td>94</td>
+                <td></td>
+            </tr>
+        </table>
+        <button type="button" class="collapsible">skills</button>
+        <div class="colcontent">
+            <h3>skills</h3>
+            <table>
+                <tr>
+                    <th>skill</th>
+                    <th>name</th>
+                    <th>conditions</th>
+                    <th>effect</th>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png"
+                        /></td
+                    >
+                    <td>Behold Thine Emperor's Divine Might </td>
+                    <td>If last straight and overtake 3 umas</td>
+                    <td>Increase target speed 45% for 5 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png"
+                        /></td
+                    >
+                    <td>Corner Adept</td>
+                    <td>On all corners</td>
+                    <td>Increase target speed 15% for 1.8 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png"
+                        /></td
+                    >
+                    <td>Preferred Position</td>
+                    <td>If last straight and overtake 3 umas</td>
+                    <td>Recovery stamina by 1.5%</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_30051.png"
+                        /></td
+                    >
+                    <td>Subdued Late Surgers</td>
+                    <td
+                        >If 5 secs have passed, early race and at least one uma
+                        is a pace chaser</td
+                    >
+                    <td>All other late surgers stamina down 1%</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_30012.png"
+                        /></td
+                    >
+                    <td>Dominator (Upgrade of Tether)</td>
+                    <td
+                        >If medium distance, late race and in second half of the
+                        pack</td
+                    >
+                    <td
+                        >Decrease speed of all enemies ahead by 25% for 3
+                        seconds</td
+                    >
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png"
+                        /></td
+                    >
+                    <td>Pace Chaser Corners</td>
+                    <td>If pace chaser on every corner</td>
+                    <td> Target speed increases 15%/25% for 3 sec</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div slot="box-right">
+        <h3>URA Build</h3>
+        <ul>
+            <li>
+                <b>Goal stats:</b> 900 speed, 900 stamina, 700 power, 300 guts, 300
+                wit
+            </li>
+            <li><b>support Recs:</b></li>
+            <div class="small">
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_30028.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_30025.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_30016.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_30018.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_30010.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_30005.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_20008.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_20007.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_20013.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_20003.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_30010.png"
+                />
+            </div>
+            <li>
+                <b>legacy sparks:</b>9★ Stamina, 9★ Power,3★ Pace Chaser, 3★
+                Late Surger, 3★ Medium, 3★ Long
+            </li>
+            <li>
+                <b>Skills:</b><ul>
+                    <li>Straightaway Acceleration</li>
+                    <li>Homestretch Haste</li>
+                    <li>Gourmand</li>
+                    <li>Swinging Maestro</li>
+                    <li>Professor of Curvature</li>
+                    <li>Go with the Flow</li>
+                </ul>
+            </li>
+        </ul>
+        <button type="button" class="collapsible">Gemini CM Build</button>
+        <div class="colcontent">
+            <ul>
+                <li>
+                    <b>Goal stats:</b> 1100 speed, 1050+ stamina, 600 power, 400
+                    guts, 400 wit
+                </li>
+                <li>
+                    <b>Parents:</b> Maruzensky (Red Shift/LP1211-M) or Oguri Cap
+                    (Triumphant Pulse)
+                </li>
+                <li><b>SSR Recs:</b></li>
+                <div class="small">
+                    <img
+                        src="https://gametora.com/images/umamusume/supports/support_card_s_30028.png"
+                    />
+                    <img
+                        src="https://gametora.com/images/umamusume/supports/support_card_s_30025.png"
+                    />
+                    <img
+                        src="https://gametora.com/images/umamusume/supports/support_card_s_20023.png"
+                    />
+                    <img
+                        src="https://gametora.com/images/umamusume/supports/support_card_s_30016.png"
+                    />
+                    <img
+                        src="https://gametora.com/images/umamusume/supports/support_card_s_20007.png"
+                    />
+                    <img
+                        src="https://gametora.com/images/umamusume/supports/support_card_s_20028.png"
+                    />
+                </div>
+                <li>
+                    <b>Skills:</b><ul>
+                        <li>Straightaway Adept</li>
+                        <li>Homestretch Haste</li>
+                        <li>Gourmand</li>
+                        <li>Swinging Maestro</li>
+                        <li>Pace Chaser Savvy</li>
+                        <li>Professor of Curvature</li>
+                        <li>Slipstream</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <h3>other notes</h3>
+        <ul>
+            <li>
+                Pace chaser and late surger both are qualified builds for her.
+                Late is best for it's debuffs and pace for winning.
+            </li>
+        </ul>
+    </div>
+
+    <div slot="the-whole">
+        <h3>URA Schedule</h3>
+        <h4>overall goals</h4>
+        <ul>
+            <li>
+                Late goal stats: 1000 speed, 600 stamina, 700 power, 300 guts,
+                600 wit
+            </li>
+        </ul>
+        <h4>junior year</h4>
+        <ul>
+            <li><b>12:</b> Make Debut [Turf – 2000m – Medium]</li>
+            <li>
+                <b>19:</b> 5th or better in the Saudi Arabia Royal Cup [G3 – Turf
+                – 1600m – Mile]
+            </li>
+            <li>Run in hopeful stakes</li>
+            <li><b>EOY:</b> Get speed to training level 4</li>
+        </ul>
+        <h4>classic year</h4>
+        <ul>
+            <li>
+                <b>31:</b> 5th or better in the Satsuki Sho [G1 – Turf – 2000m –
+                Medium]
+            </li>
+            <li>
+                <b>34:</b> 5th or better in the Tokyo Yushun (Japan Derby) [G1 –
+                Turf – 2400m – Medium]
+            </li>
+            <li>Run in takarazuka kinen</li>
+            <li>
+                <b>44:</b> 3rd or better in the Kikka Sho [G1 – Turf – 3000m – Long]
+            </li>
+            <li>Run in queen elizabeth II cup</li>
+            <li>
+                <b>48:</b> 3rd or better in the Arima Kinen [G1 – Turf – 2500m –
+                Long]
+            </li>
+        </ul>
+        <h4>senior year</h4>
+        <ul>
+            <li>Run in Osaka Hai</li>
+            <li>
+                <b>56:</b> 3rd or better in the Tenno Sho (Spring) [G1 – Turf – 3200m
+                – Long]
+            </li>
+            <li>Run in Yasua Kinen</li>
+            <li>Run in Tenno Show Autumn</li>
+            <li>
+                <b>70:</b> 2nd or better in the Japan Cup [G1 – Turf – 2400m – Medium]
+            </li>
+            <li>
+                <b>72:</b> 1st in the Arima Kinen [G1 – Turf – 2500m – Long]
+            </li>
+        </ul>
+    </div>
+    <div slot="the-whole2">
+        <div id="music" class="flex flex-col w-full gap-4">
+            <div id="music" class="flex flex-col w-full gap-4">
+                <Music
+                    songname="Seven"
+                    songlink="https://file.garden/aOJjY5VloELMsNHX/ytmp3free.cc_seven-2021-remastered-version-youtubemp3free.org.mp3"
+                    songcover="https://media1.tenor.com/m/bqIFZL73aSkAAAAC/uma-musume-pretty-derby.gif"
+                />
+            </div>
+        </div>
+        <img
+            src="https://64.media.tumblr.com/dff564a977c693df00aaf3b847dea575/678d46422abc212d-29/s540x810/082bed5c8afafb33ef14898985a9e706dc07a512.pnj"
+        />
+        <p>
+            Rudolph Symboli was my first ever love - the moment I heard <i
+                >SEVEN</i
+            > I was like - this is the uma for me.
+        </p>
+        <div class="large">
+            <img src="/umpd/srquotehappy.png" />
+            <img src="/umpd/rshappyedit.png" />
+        </div>
+        <img
+            src="https://64.media.tumblr.com/ba256fb0343231b733582faee99cac69/717ade9cdc988b8c-8a/s540x810/bf1923a25231e254e5fafc017a096609fb7285d1.pnj"
+        />
+        <p></p>
+        dividers by <a href="https://www.tumblr.com/pommecita">@pommecita</a>
+    </div>
+</UmaLayout>

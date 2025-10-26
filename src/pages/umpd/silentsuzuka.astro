@@ -1,0 +1,274 @@
+---
+import UmaLayout from "../../layouts/UmaLayout.astro";
+import Music from "../../components/widget/Music.astro";
+
+const title = "Silent Suzuka";
+const cardname = "Innocent Silence";
+const date = "06-26-2025";
+const rank = "★★★";
+const racetype = "turf, mile, med";
+const strat = "front";
+const potential = "3";
+const cardimg =
+    "https://gametora.com/images/umamusume/characters/chara_stand_1002_100201.png";
+---
+
+<UmaLayout
+    title={title}
+    ,
+    cardname={cardname}
+    ,
+    date={date}
+    ,
+    rank={rank}
+    ,
+    racetype={racetype}
+    ,
+    strat={strat}
+    ,
+    potential={potential}
+    ,
+    cardimg={cardimg}
+>
+    <div slot="box-left">
+        <table>
+            <tr>
+                <th>trait</th>
+                <th>base</th>
+                <th>bonus</th>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>101</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Stam</td>
+                <td>84</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Power</td>
+                <td>77</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guts</td>
+                <td>100</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>Wit</td>
+                <td>88</td>
+                <td></td>
+            </tr>
+        </table>
+        <button type="button" class="collapsible">skills</button>
+        <div class="colcontent">
+            <h3>skills</h3>
+            <table>
+                <tr>
+                    <th>skill</th>
+                    <th>name</th>
+                    <th>conditions</th>
+                    <th>effect</th>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png"
+                        /></td
+                    >
+                    <td>The View from the Lead Is Mine! </td>
+                    <td
+                        >If second half of race, uma ≥1 horse length behind, and
+                        1st place</td
+                    >
+                    <td>Increase target speed 35% for 5 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20061.png"
+                        /></td
+                    >
+                    <td>Focus</td>
+                    <td>If wit check passed</td>
+                    <td>Improve start reaction time by 90%</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20041.png"
+                        /></td
+                    >
+                    <td>Final Push</td>
+                    <td
+                        >If front runner, on final corner, wit check passed, and
+                        in 1st place</td
+                    >
+                    <td>Acceleration increase 20% for 3 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png"
+                        /></td
+                    >
+                    <td>Rosy Outlook</td>
+                    <td
+                        >If race medium distance, mid-race, wit check passed and
+                        front runner</td
+                    >
+                    <td>Stamina recovers 1.5%</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10011.png"
+                        /></td
+                    >
+                    <td>Left-Handed</td>
+                    <td>If track rotation in counterclockwise </td>
+                    <td>Speed stat up 40/60</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20062.png"
+                        /></td
+                    >
+                    <td>Concentration</td>
+                    <td>If wit check passed </td>
+                    <td>Improve start reaction time by 40%</td>
+                </tr>
+
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png"
+                        /></td
+                    >
+                    <td>Fast-Paced</td>
+                    <td
+                        >If front runner, mid-race, wit check passed, and in 1st
+                        half of the pack</td
+                    >
+                    <td>Increase target speed by 15% for 3 sec</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div slot="box-right">
+        <h3>URA Build</h3>
+        <ul>
+            <li>
+                <b>Goal stats:</b> - 1000 speed, 700 stam, 600 power, 300 guts, 400
+                wit
+            </li>
+            <li><b>SSR Recs:</b></li>
+            <div class="small">
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_30028.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_30025.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_30016.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_30018.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_30010.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_30005.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_20008.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_20007.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_20013.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_20003.png"
+                />
+                <img
+                    src="https://gametora.com/images/umamusume/supports/support_card_s_30010.png"
+                />
+            </div>
+            <li>
+                <b>legacy sparks:</b>9★ Stamina, 9★ Speed ,3★ Front, 3★ Medium,
+                3★ Mile
+            </li>
+            <li>
+                <b>Skills:</b><ul>
+                    <li>Gold recovery skills</li>
+                    <li>2-3 runner acc. skills</li>
+                    <li>Mid-race speed skills</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>other notes</h3>
+        <ul>
+            <li>Avoid going hard with 4-5 speed cards, her 20% boost will carry her and she needs the stamina to get through med races</li>
+            <li>If running her in PVP, pair her with a pace, closer, or debuffer who will target opposing frontrunners.</li>
+        </ul>
+    </div>
+
+    <div slot="the-whole">
+        <h3>URA Schedule</h3>
+        <h4>junior year</h4>
+        <ul>
+            <li><b>12:</b> Make Debut [Turf – 2000m – Medium]</li>
+        </ul>
+    </div>
+    <h4>classic year</h4>
+    <ul>
+        <li><b>27: get 5k fans</b></li>
+        <li><b>29:</b> Top 5 Yayoi Sho [G2 – Turf – 2000m – Medium]</li>
+        <li><b>42:</b> Top 3 Kobe Shimbun Hai [G2 – Turf – 2400m – Medium]</li>
+        <h4>senior year</h4>
+        <ul>
+            <li><b>53:</b> 1st in Kinko Sho [G2 – Turf – 2000m – Medium]</li>
+            <li>
+                <b>60:</b> Top 3 in Takarazuka [G1 – Turf – 2200m – Medium]
+            </li>
+            <li>
+                <b>67:</b> 1st in Mainichi Okan [G2 – Turf – 1800m – Mile]
+            </li>
+            <li>
+                <b>68:</b> 1st in Tenno Sho [G1 – Turf – 2000m – Medium]
+            </li>
+        </ul>
+    </ul>
+    <div slot="the-whole2">
+        <div id="music" class="flex flex-col w-full gap-4">
+            <div id="music" class="flex flex-col w-full gap-4">
+                <Music
+                    songname="Silent Star"
+                    songlink="https://file.garden/aOJjY5VloELMsNHX/Uma%20Musume%20STARTING%20GATE%2001_%20Silent%20Star.mp3"
+                    songcover="/umpd/ssfrontrunner.png"
+                />
+            </div>
+        </div>
+        <p>
+            My first introduction to Suzuka was during the Starting Gate albums
+            and I really disliked her voice. I thought she was going to be just
+            another boring shy girl to hype up my main love at the time Tokai
+            Teio. But through the anime and game, I realized she was a lot more
+            interesting than I gave her credit for. And ... I'll admit, her song
+            grew on me after a few months.
+        </p>
+        <div class="large">
+            <img src="/umpd/ssfrontrunner.png" />
+            <img src="/umpd/sslive.jpg" />
+        </div>
+    </div>
+</UmaLayout>

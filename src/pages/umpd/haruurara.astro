@@ -1,0 +1,275 @@
+---
+import UmaLayout from "../../layouts/UmaLayout.astro";
+import Music from "../../components/widget/Music.astro";
+
+const title = "Haru Urara";
+const cardname = "Bestest Prize ♪";
+const date = "06-26-2025";
+const rank = "★★";
+const racetype = "dirt, sprint";
+const strat = "late";
+const potential = "3";
+const cardimg =
+    "https://gametora.com/images/umamusume/characters/chara_stand_1052_105201.png";
+---
+
+<UmaLayout
+    title={title}
+    ,
+    cardname={cardname}
+    ,
+    date={date}
+    ,
+    rank={rank}
+    ,
+    racetype={racetype}
+    ,
+    strat={strat}
+    ,
+    potential={potential}
+    ,
+    cardimg={cardimg}
+>
+    <div slot="box-left">
+        <table>
+            <tr>
+                <th>trait</th>
+                <th>base</th>
+                <th>bonus</th>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>89</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Stam</td>
+                <td>61</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Power</td>
+                <td>95</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>Guts</td>
+                <td>92</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Wit</td>
+                <td>88</td>
+                <td></td>
+            </tr>
+        </table>
+        <button type="button" class="collapsible">skills</button>
+        <div class="colcontent">
+            <h3>skills</h3>
+            <table>
+                <tr>
+                    <th>skill</th>
+                    <th>name</th>
+                    <th>conditions</th>
+                    <th>effect</th>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20023.png"
+                        /></td
+                    >
+                    <td>Super-Duper Stoked</td>
+                    <td
+                        >If beyond final corner, at least one uma within 3m
+                        behind or ahead, and in top 50%</td
+                    >
+                    <td>Stamina recover 3.5%</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png"
+                        /></td
+                    >
+                    <td>Lay Low</td>
+                    <td
+                        >If early race, blocked by uma for at least 1 second,
+                        and race has been going for 5 seconds</td
+                    >
+                    <td>Stamina recover 1.5%</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20041.png"
+                        /></td
+                    >
+                    <td>Sprinting Gear</td>
+                    <td>If on random straight in a sprint</td>
+                    <td>Increase acceleration by 20% for 3 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png"
+                        /></td
+                    >
+                    <td>1,500,000 CC</td>
+                    <td>If late surger and running uphill</td>
+                    <td>Increase target speed by 15% for 1.8 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png"
+                        /></td
+                    >
+                    <td>Pace Strategy</td>
+                    <td>If early race and overtaken at least one time</td>
+                    <td>IStamina recover 1.5%</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20022.png"
+                        /></td
+                    >
+                    <td>Iron Will</td>
+                    <td
+                        >If early race, blocked by another uma for at least one
+                        second, and race has been going for 5 seconds</td
+                    >
+                    <td>Stamina recover 5.5%</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div slot="box-right">
+        <h3>URA Build</h3>
+        <ul>
+            <li>
+                <b>Goal stats:</b> - # speed, # stam, # power, # guts, # wit
+            </li>
+            <li><b>SSR Recs:</b></li>
+            <div class="small">
+                <!--images for support cards here -->
+            </div>
+            <h3>Strategy:</h3>
+            <ul>
+                <li>most compatible:</li>
+                <li>
+                    best sparks: Symboli Rudolph's green Skill, Mile Sparks,
+                    Speed sparks, Power Sparks, Nice to have Sprint or Late
+                    Surger
+                </li>
+                <li>
+                    Best skills: Anything to increase her speed, Slick surge,
+                    Turbo Sprint. Overtaking skills such as Ramp Up or Nimble
+                    Navigator. Late Surger Corners and Sprinting Gear are also
+                    good.
+                </li>
+            </ul>
+            <h4>deck build</h4>
+            <p>
+                For her short distance build I'm doing 4 speed, 1 power and 1
+                stamina which could be swapped out for wit depending on deck
+            </p>
+            <p>
+                <mark>Speed</mark> Eishin Flash SR, Kitasan Black SSR, Sakura Bakushin
+                O SSR, Nishino Flower SSR, King Halo SR, Sweep Tosho SR
+            </p>
+            <p><mark>Power</mark> Vodka SSR</p>
+            <p>
+                <mark>Stamina</mark> Super Creek SSR, Mayano Top Gun SR
+            </p>
+            <p>
+                <mark>Wit</mark> Marvelous Sunday SR
+            </p>
+            <li>
+                <b>legacy sparks:</b>9★
+            </li>
+            <li>
+                <b>Skills:</b><ul>
+                    <li></li>
+                </ul>
+            </li>
+        </ul>
+        <h3>other notes</h3>
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+
+    <div slot="the-whole">
+        <h3>URA Schedule</h3>
+        <h4>overall goals</h4>
+        <ul>
+            <li>
+                Her inate skills are really garbage - lots of stamina recovery
+                early in the race - so I understand the idea of people wanting
+                to "cheese" haru and run her as a front runner. Do this at your
+                own risk because she wont have the best apitude for this but it
+                is, in fact, possible. I recomend doing this for non-career
+                races.
+            </li>
+            <li>
+                Haru is great for running in lots of races for her career, so
+                try to do as many dirt sprints and miles as possible
+            </li>
+            <li>
+                One day I will be brave enough to create an arima kinen build,
+                but not today.
+            </li>
+        </ul>
+        <h4>junior year</h4>
+        <ul>
+            <li><b>12:</b> Make Debut [Dirt – 1300m – Short]</li>
+        </ul>
+        <h4>classic year</h4>
+        <ul>
+            <li>
+                At the start of the new year prioritize hitting stamina and
+                speed for senior year
+            </li>
+            <li><b>37:</b> Check 5000 Fans</li>
+            <li><b>45:</b> Check 9000 Fans</li>
+            <li><b>48:</b> Check 12000 Fans</li>
+        </ul>
+        <h4>senior year</h4>
+        <ul>
+            <li>
+                Final stats: 900 Speed, 600 Stam, 800 Power, 400 Guts, 400 Wit
+            </li>
+            <li>
+                <b>50:</b> 5th or better Negishi Stakes [G3 – Dirt – 1400m – Short]
+            </li>
+            <li>
+                <b>52:</b> 5th or better February Stakes [G1 – Dirt – 1600m – Mile]
+            </li>
+            <li>
+                <b>63:</b> 5th or better Elm Stakes [G3 – Dirt – 1700m – Mile]
+            </li>
+            <li><b>69:</b> 1st in JBC Sprint [G1 – Dirt – 1200m – Short]</li>
+            <li><b>72:</b> Run in Arima Kinen [G1 – Turf – 2500m – Long]</li>
+            <div slot="the-whole2"></div>
+        </ul>
+    </div>
+    <div slot="the-whole2">
+        <img src="https://i.postimg.cc/zBGfz2Hd/IMG_0837.gif" />
+        <div class="large">
+            <img src="/umpd/hu1.gif" />
+            <img src="/umpd/hu2.gif" />
+            <img src="/umpd/husadge.png" />
+            <img src="/umpd/huff.jpg" />
+            <img src="/umpd/hu3.jpg" />
+        </div>
+
+        <img src="https://i.postimg.cc/NFrBF3sx/IMG_0826.gif" />
+        <p>
+            dividers sourced from <a href="https://www.tumblr.com/pueriled"
+                >@pueriled
+            </a>
+        </p>
+    </div>
+</UmaLayout>

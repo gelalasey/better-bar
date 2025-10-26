@@ -1,0 +1,491 @@
+body {
+    background-image: url('/bg/hoshi_y_t.gif');
+    font-family: Ms Ui Gothic;
+    color: #5e5e5e;
+    font-size: 1em;
+    line-height: 1.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    text-transform: lowercase;
+}
+
+mark{
+    background-color: #a7e475;
+}
+
+a{
+  color: teal;
+}
+
+/* Main layout */
+#TEMPLATE-LAYOUT {
+    max-width: 1000px;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+/* Header and board */
+.BOARD {
+    flex: 1 1 200px;
+    min-height: 150px;
+    background-image: url('https://files.catbox.moe/7nspmi.gif');
+    border: 2px ridge pink;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+header {
+    flex: 3 1 300px;
+    min-height: 150px;
+    background: linear-gradient(84deg, rgba(255,189,200,1) 0%, rgba(246,255,175,1) 12%, rgba(205,255,167,1) 25%, rgba(195,241,255,1) 50%, rgba(241,202,245,1) 69%, rgba(252,206,242,1) 91%);
+    border: 2px ridge pink;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+header img {
+    max-height: 140px;
+    height: auto;
+}
+
+/* Marquee box */
+.footer-box {
+    max-width: 940px;
+    border: 2px ridge pink;
+    background: white;
+text-align: center;
+    
+}
+
+.footer-box img{
+    width: 100px;
+    
+}
+
+/* Marquee  */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+    width: 100%;
+    border: 2px ridge pink;
+    background: white;
+    display: flex;
+    align-items: center;
+    max-height: 24px;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%; 
+  animation: marquee 10s linear infinite;
+  align-items: flex-start;
+  object-fit: contain;
+}
+
+.marquee span:hover {
+  animation-play-state: paused; /* Pause on hover */
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Navigation */
+.navigation {
+    flex: 1 200px;
+    min-height: 100px;
+    border: 2px ridge pink;
+    background-image: url("/umpd/teatimecouple.webp");
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation .header {
+    background: linear-gradient(84deg, rgba(255,189,200,1) 0%, rgba(246,255,175,1) 12%, rgba(205,255,167,1) 25%, rgba(195,241,255,1) 50%, rgba(241,202,245,1) 69%, rgba(252,206,242,1) 91%);
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 3px ridge pink;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+}
+
+.navigation > .flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+/*buttons*/
+.button-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.button-wrapper button {
+    position: relative;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.button-wrapper img {
+    display: block;
+    width: 140%;
+}
+
+.button-wrapper .button-text {
+    position: absolute;
+    top: 65%;
+    right: -30%;           
+    transform: translateY(-50%); 
+    width: 90%;         
+    text-align: right;   
+    font-weight: bold;
+    font-size: 90%;
+    pointer-events: none;
+    white-space: nowrap; 
+}
+
+.icon {margin:auto;}
+.icon img {
+  border-radius:50%;
+  width:200px;
+	object-fit: fill;
+}
+
+
+/* L and R box Container */
+.the-section {
+    flex: 1 1 100%;
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+
+}
+
+.box-left,
+.box-right {
+    flex: 1 1 100%;
+    border: 2px ridge pink;
+    background: white;
+    box-sizing: border-box;
+    min-height: 200px;
+    padding: 10px;
+    max-width: 100%;
+    flex-wrap: wrap;
+    background-size: cover;
+}
+
+.box-left {
+    background-image: url('/bg/greyplaid.gif');
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.box-right {
+    background-image: url('/bg/greyplaid.gif');
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+/* larger section is the whole - content - container */
+
+.the-whole {
+    align-items: center;
+    padding: 5px;
+    display: flex;
+    flex: 1 1 100%;
+}
+
+.content{
+    flex: 1 1 100%;
+    border: 2px ridge pink;
+    box-sizing: border-box;
+    min-height: 200px;
+    margin: 10px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    background-size: cover;
+    background-image: url('/bg/greyplaid.gif');
+        background-repeat: repeat;
+        background-size: auto;
+}
+
+
+/* Containers inside boxes */
+.container {
+    background: white;
+    border: 2px ridge pink;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    text-align: center;
+    left: 50%;
+
+}
+/* image based flexboxes*/
+.mini{
+    flex-direction: row;
+    flex: 1 1 600px;
+}
+.mini img{
+    max-width:33px;
+}
+
+.small{
+    flex-direction: row;
+    flex: 1 1 600px;
+}
+.small img{
+    max-width:50px;
+}
+.med{
+    display: flex;
+        flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1 1 600px;
+    gap: 15px;
+}
+.med img{
+    max-width:100px;
+    
+}
+
+.large{
+    flex-direction: row;
+    flex: 1 1 600px;
+}
+.large img{
+    max-width:400px;
+}
+
+li{
+    list-style-image: url(/smalls/cloverL.gif);
+    text-align: left;
+}
+
+li:nth-child(odd){
+    list-style-image: url(/smalls/cloverR.gif);
+    text-align: left;
+}
+
+
+/* END OF SECTION */
+
+
+/*Uma Profile Code*/
+/*https://vuvuzela.dreamwidth.org/9428.html#cutid1*/
+
+.character-card {
+    width: 125px;
+    margin: 0 auto;
+}
+
+/* Left vertical name bar */
+.character-name {
+    width: 15px;
+    background-color: #333;
+    font-family: "Courier New", monospace;
+    text-transform: uppercase;
+    line-height: 10px;
+    border-radius: 20px 0 0 20px;
+    padding: 10px 2px;
+    float: left;
+}
+.character-name a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Progress bar container */
+.progress-bar {
+    width: 2px;
+    height: 115px;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 0 0 10px 10px;
+    float: left;
+}
+
+/* Progress bar fill (height is set inline in HTML) */
+.progress-fill {
+    width: 100%;
+    background-color: #abc97a;
+    border-radius: 0 0 20px 20px;
+}
+
+/* Main image */
+.character-image {
+    border-radius: 0 50px 20px 0;
+    display: block;
+    max-width: 100px;
+}
+
+/* Username bar under image */
+.bottom-bar{
+    padding-bottom: 20px;
+}
+
+.username-wrapper {
+    width: 110px;
+    text-align: justify;
+    margin-left: 12px;
+}
+.username-bar {
+    width: 100px;
+    height: 10px;
+    background-color: #abc97a;
+    color: #333;
+    font-family: "Courier New", monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 11px;
+    border-bottom: 2px solid #333;
+    border-radius: 0 20px 20px 0;
+    margin: -10px 0 3px 8px;
+    position: relative;
+    z-index: 100;
+    padding-left: 5px;
+    
+}
+.username-bar a {
+    color: #333;
+    text-decoration: none;
+    font-family: "Courier New", monospace;
+}
+
+.spacer{
+    height:10px
+}
+/* END OF SECTION */
+/* END OF SECTION */
+/* END OF SECTION */
+
+
+/* Text shadow style */
+.shadow {
+    text-shadow: 0px 0px 3px white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .the-section {
+        flex-direction: column;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    header img {
+        position: static;
+        max-height: 100px;
+    }
+}
+
+
+/*FLEX ROWS*/
+.flex-row {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 20px;         
+}
+
+/*uma character page specifics*/
+.card-icon img{
+    display: block;
+    max-height: 100px;
+    max-width: 100px;
+    border: 6px groove #13A46B;
+    border-radius: 90px;
+}
+
+Table{
+ width:430px;
+ background-image: url(/bg/greenbowbg.jpg);
+ background-size: 500px;
+    margin:10px;
+    
+
+}
+
+table,
+th,
+td {
+    border: 1px solid green;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;;
+}
+
+/* COLLAPSABLE BY w3 */
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-image: url("/bg/starsandgrids.webp");
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 2px;
+    border-color: #5e5e5e;
+    text-align: left;
+    outline: outset 1px #abc97a;
+    font-size: 25px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.colcontent {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.collapsible:after {
+    content: "\261F";
+    /* Unicode character for "plus" sign (+) */
+    /*This is where the button is pushed */
+    font-size: 25px;
+    color: rgb(38, 122, 52);
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\261d";
+    /* Unicode character for "minus" sign (-) */
+}

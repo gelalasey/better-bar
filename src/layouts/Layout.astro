@@ -1,0 +1,86 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Navr from "../components/Navr.astro";
+import Navl from "../components/Navl.astro";
+
+import "../styles/main.css";
+
+import "@fontsource/fontdiner-swanky";
+
+const { title, subtitle, tinyImage, bannerImage } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/x-icon" href="/merry.gif" />
+		<title>{title}</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<header
+				class="banner"
+				style={`background-image: url('${bannerImage ?? "/link-backs/gelseylandbanner.jpg"}')`}
+			>
+				<a href="/"><span>Gelsey Land</span></a>
+			</header>
+			<div class="header-break"></div>
+
+			<section class="small">
+				<Navl />
+				<slot name="after-navl" />
+			</section>
+			<section class="large">
+				<h1>
+					<img src={tinyImage ?? "/smalls/sm-balloons.gif"} />
+					{title}
+					<img src={tinyImage ?? "/smalls/sm-balloons.gif"} />
+				</h1>
+				<h2>{subtitle}</h2>
+
+				<slot name="main-text" />
+				<!-- your content is injected here -->
+			</section>
+
+			<section class="small">
+				<slot name="before-navr" />
+				<Navr />
+				<slot name="after-navr" />
+			</section>
+			<section class="full">
+				<slot name="full" />
+			</section>
+			<!-- add additional full and half sections as needed for the page -->
+			<section class="half">
+				<slot name="left-half" />
+			</section>
+			<section class="half"><slot name="right-half" /></section>
+		</div>
+		<div class="bottom"></div>
+		<footer></footer>
+		<Footer />
+		<script src="/scripts/clicksplosion.js" defer></script>
+	</body>
+	<style>
+		.banner {
+			background-size: cover;
+			background-position: center;
+			padding: 100px 20px;
+			color: white;
+			text-align: center;
+		}
+
+		.header-break {
+			background: url(/bg/80x80th_carousel1d.gif);
+			background-position-y: top;
+			background-repeat: round;
+			position: relative;
+			margin-top: -5px;
+			width: 100%;
+			height: 80px;
+		}
+	</style>
+</html>

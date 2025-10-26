@@ -1,0 +1,100 @@
+---
+import "../styles/umpd.css";
+
+
+import "@fontsource/fontdiner-swanky";
+import UmaHeader from "../components/UmaHeader.astro";
+import Marquee from "../components/Marquee.astro";
+import UmaFooter from "../components/UmaFooter.astro";
+
+const { title, cardname, date, rank, racetype, strat, potential, cardimg, } =
+    Astro.props;
+---
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{title}</title>
+        <link rel="icon" type="image/x-icon" href="/umafavicon.png" />
+    </head>
+
+    <body>
+        <div id="TEMPLATE-LAYOUT">
+            <UmaHeader />
+            <Marquee />
+            <div class="the-section">
+                <div class="box-left">
+                    <div class="container">
+                        <h2>{cardname}</h2>
+                        <div class="flex-row">
+                            <ul>
+                                <li>gotcha: {date}</li>
+                                <li>rank: {rank}</li>
+                                <li>race type: {racetype}</li>
+                                <li>strategy: {strat}</li>
+                                <li>potential level: {potential}</li>
+                            </ul>
+                            <div class="card-icon">
+                                <img src={cardimg} />
+                            </div>
+                        </div>
+                        <img
+                            src="/div/smallcloversdiv.png"
+                            style="max-width: 400px;"
+                        />
+                        <slot name="box-left" />
+                    </div>
+                </div>
+                <div class="box-right">
+                    <div class="container">
+                        <h2>builds</h2>
+                        <slot name="box-right" />
+                    </div>
+                </div>
+            </div>
+            <div class="the-whole">
+                <div class="content">
+                    <div class="container">
+                        <h2>Strategy</h2>
+                        <slot name="the-whole" />
+                    </div>
+                </div>
+            </div>
+            <div class="the-whole">
+                <div class="content">
+                    <div class="container">
+                        <h2>Memories</h2>
+                        <slot name="the-whole2" />
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- footer for the stamps -->
+            <slot name="extra" />
+            <UmaFooter />
+        </div>
+    </body>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const coll = document.querySelectorAll(".collapsible");
+
+            coll.forEach((btn) => {
+                btn.addEventListener("click", (event) => {
+                    const button = event.currentTarget as HTMLElement;
+                    button.classList.toggle("active");
+
+                    const content =
+                        button.nextElementSibling as HTMLElement | null;
+                    if (!content) return;
+
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            });
+        });
+    </script>
+</html>

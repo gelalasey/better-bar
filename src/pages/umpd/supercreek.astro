@@ -1,0 +1,268 @@
+---
+import UmaLayout from "../../layouts/UmaLayout.astro";
+import Music from "../../components/widget/Music.astro";
+
+const title = "Super Creek";
+const cardname = "Murmuring Stream";
+const date = "06-26-2025";
+const rank = "★★★";
+const racetype = "turf, med, long";
+const strat = "pace";
+const potential = "3";
+const cardimg =
+    "https://gametora.com/images/umamusume/characters/chara_stand_1045_104501.png";
+---
+
+<UmaLayout
+    title={title}
+    ,
+    cardname={cardname}
+    ,
+    date={date}
+    ,
+    rank={rank}
+    ,
+    racetype={racetype}
+    ,
+    strat={strat}
+    ,
+    potential={potential}
+    ,
+    cardimg={cardimg}
+>
+    <div slot="box-left">
+        <table>
+            <tr>
+                <th>trait</th>
+                <th>base</th>
+                <th>bonus</th>
+            </tr>
+            <tr>
+                <td>Speed</td>
+                <td>69</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Stam</td>
+                <td>106</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>Power</td>
+                <td>75</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Guts</td>
+                <td>106</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Wit</td>
+                <td>94</td>
+                <td>20%</td>
+            </tr>
+        </table>
+        <button type="button" class="collapsible">skills</button>
+        <div class="colcontent">
+            <h3>skills</h3>
+            <table>
+                <tr>
+                    <th>skill</th>
+                    <th>name</th>
+                    <th>conditions</th>
+                    <th>effect</th>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20023.png"
+                        /></td
+                    >
+                    <td>Pure Heart</td>
+                    <td
+                        >If mid race, in the top 40%, and in no higher than 2nd
+                        position</td
+                    >
+                    <td>Recover stamina by 3.5%</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png"
+                        /></td
+                    >
+                    <td>Corner Recovery ○</td>
+                    <td>If at any random corner and pass wit check</td>
+                    <td>Recover stamina by 1.5%</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png"
+                        /></td
+                    >
+                    <td>Deep Breaths</td>
+                    <td>If long distance, random straight and wit check </td>
+                    <td>Recover stamina by 1.5%</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png"
+                        /></td
+                    >
+                    <td>Ramp Up</td>
+                    <td>If overtaken another uma, in mid race, and wit check</td
+                    >
+                    <td>Increase target speed by 15% for 1.8 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_30072.png"
+                        /></td
+                    >
+                    <td>Dazzling Disorientation</td>
+                    <td
+                        >If pace chaser, late race, 1st half of the pack, and
+                        wit check</td
+                    >
+                    <td>Decrease field of view by -5 to all enemies behind</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div slot="box-right">
+        <h3>URA Build</h3>
+        <ul>
+            <li>
+                <b>Goal stats:</b> - 800-1100 speed, 800-1050 stam, 600-700 power,
+                400 guts, 400 wit
+            </li>
+            <li>
+                <b>Parents:</b> Symboli Rudolph, Mayano Top Gun, Gold Ship
+            </li>
+            <li><b>Support Recs:</b></li>
+            <div class="small">
+                <img
+                    src="https://img.game8.co/4216948/9e6f130e4e2f5be3b66861c4c92da8fa.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4217015/153838608e154b6d9fc4f2739cab45c7.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4218616/5381cc866a49ad65f83876f47662001e.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4216926/2bc1f9e84ecbf9679cdd487ffeaf9e26.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4216967/4f3a2e381dc8d111a93fe38c85ad99af.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4240325/bf5c49a492d10f49ce2b5eefb46f2618.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4216913/4d6bd93fa56fbfc5e0cd0030d2e2a9f6.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4216919/54fb7e8c2ee829ca0d4ec498ca151171.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4216952/f1b0919a543ae5bbbf7675dca6303063.png/show"
+                />
+            </div>
+            <li>
+                <b>legacy sparks:</b>9★ stamina, 9★ power, 3★ pace chaser, 3★
+                long, 3★ medium
+            </li>
+            <li>
+                <b>Skills:</b><ul>
+                    <li>
+                        Gold recovery skills such as swinging maestro, gourmand
+                        or cooldown
+                    </li>
+                    <li>
+                        Increasing acceleration late race with red shift,
+                        triumphant pulse, and homestretch haste
+                    </li>
+                    <li>Professor of curvature</li>
+                    <li>Straightaway adept</li>
+                    <li>slipstream</li>
+                    <li>Go with the flow</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>other notes</h3>
+        <ul>
+            <li>
+                I Don't use wit cards on her, she will generate enough with her
+                20% bonus
+            </li>
+            <li>
+                Max her potential to unlock swinging maestro without having to
+                use the stamina card in the future
+            </li>
+        </ul>
+    </div>
+    <div slot="the-whole">
+        <h3>URA Schedule</h3>
+        <h4>junior goals</h4>
+        <ul>
+            <li><b>12</b> Make Debut [Turf – 2000m – Medium]</li>
+            <li>
+                <b>28</b> 3rd or better in the Sumire Stakes [OP – Turf – 2200m –
+                Medium]
+            </li>
+            <li>Beware the 5% failure increase, focus on spamming stamina</li>
+        </ul>
+        <h4>classic year</h4>
+        <ul>
+            <li>Have a least 600 stamina by Kikuka Sho</li>
+            <li>
+                <b>44</b> 3rd or better in the Kikuka Sho [G1 – Turf – 3000m – Long]
+            </li>
+            <li>
+                <b>48</b> 3rd or better in the Arima Kinen [G1 – Turf – 2500m – Long]
+            </li>
+            <li>Start spamming speed</li>
+        </ul>
+        <h4>senior year</h4>
+        <ul>
+            <li>
+                <b>54</b> 3rd or better in the Osaka Hai [G1 – Turf – 2000m – Medium]
+            </li>
+            <li>
+                <b>56</b> 3rd or better in the Tenno Sho (Spring) [G1 – Turf – 3200m
+                – Long]
+            </li>
+            <li>
+                <b>68</b> 1st in the Tenno Sho (Autumn) [G1 – Turf – 2000m – Medium]
+            </li>
+            <li><b>72</b> 1st in the Arima Kinen [G1 – Turf – 2500m – Long]</li>
+        </ul>
+    </div>
+    <div slot="the-whole2">
+        <img
+            src="https://64.media.tumblr.com/285702b683d758daa7b3d5c19ca7ff38/834fb5ddb7a355df-d0/s2048x3072/ef2d8229e93704a05d38ac9094a01c5eb55ea214.pnj"
+        />
+        <div id="music" class="flex flex-col w-full gap-4"></div>
+        <div id="music" class="flex flex-col w-full gap-4">
+            <Music
+                songname="ふんわりSlowly (Gently Slowly) "
+                songlink="https://file.garden/aOJjY5VloELMsNHX/funawarislowly-2021-remastered-version-youtubemp3free.org.mp3"
+                songcover="https://media.tenor.com/MbR3F4dqELIAAAA1/super-creek-umamusume.webp"
+            />
+        </div>
+
+        <p>
+            Dividers sourced from <a href="https://www.tumblr.com/cafekitsune"
+                >@cafekitsune</a
+            >
+        </p>
+        <img
+            src="https://64.media.tumblr.com/285702b683d758daa7b3d5c19ca7ff38/834fb5ddb7a355df-d0/s2048x3072/ef2d8229e93704a05d38ac9094a01c5eb55ea214.pnj"
+        />
+    </div>
+</UmaLayout>

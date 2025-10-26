@@ -1,0 +1,25 @@
+---
+import "../styles/umpd.css";
+
+import fs from "fs";
+import path from "path";
+
+// Folder with images
+const imagesPath = path.join(process.cwd(), "/public/umpd/stamps");
+
+// Read all files in the folder
+const files = fs.readdirSync(imagesPath);
+
+// Map each filename to a usable public URL
+let allUmaFoot = files.map((file) => `/umpd/stamps/${file}`);
+
+// Shuffle the array
+allUmaFoot = allUmaFoot.sort(() => Math.random() - 0.5);
+
+// Pick the first 18 after shuffling
+const selectedImages = allUmaFoot.slice(0, 18);
+---
+
+<div class="footer-box">
+    {selectedImages.map((src) => <img src={src} alt="umafooter" />)}
+</div>

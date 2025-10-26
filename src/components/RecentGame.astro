@@ -1,0 +1,54 @@
+---
+import "../styles/card.css";
+import { getCollection } from "astro:content";
+
+const { tag = "games" } = Astro.props;
+const posts = await getCollection("blog");
+
+// normalize tags so case/spacing doesn't break matches
+const normalizedTag = tag.toLowerCase().trim();
+
+const filteredPosts = posts
+    .filter((post) =>
+        (post.data.tags || []).some(
+            (t) => t.toLowerCase().trim() === normalizedTag,
+        ),
+    )
+    .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+const latestPost = filteredPosts[0];
+---
+
+{
+    latestPost ? (
+        <div class="latest-post">
+            <div class="grid">
+                <article class="card">
+                    <a href={`/posts/${latestPost.slug}`}>
+                        <img
+                            src={
+                                typeof latestPost.data.image === "string"
+                                    ? latestPost.data.image
+                                    : latestPost.data.image.src
+                            }
+                            alt={
+                                typeof latestPost.data.image === "string"
+                                    ? latestPost.data.title
+                                    : latestPost.data.image.alt
+                            }
+                        />
+                        <div class="card-content">
+                            <h2>{latestPost.data.title}</h2>
+                            <p>{latestPost.data.description}</p>
+                            <p class="date">
+                                {latestPost.data.pubDate.toDateString()}
+                            </p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    ) : (
+        <p>No posts found for {tag}.</p>
+    )
+}

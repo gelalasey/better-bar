@@ -1,0 +1,26 @@
+---
+import { getCollection, render } from "astro:content";
+import MarkdownPostLayout from "../../layouts/MarkdownPostLayout.astro";
+
+// Pre-render all blog posts
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+  }));
+}
+
+// Get the post by slug
+const post = await getCollection("blog").then((posts) =>
+  posts.find((p) => p.slug === Astro.params.slug),
+);
+
+// TypeScript guard
+if (!post) throw new Error(`Post not found: ${Astro.params.slug}`);
+
+const { Content } = await render(post);
+---
+
+<MarkdownPostLayout frontmatter={post.data}>
+  <Content />
+</MarkdownPostLayout>

@@ -1,0 +1,15 @@
+---
+import fs from "fs";
+import path from "path";
+
+// Folder with images
+const imagesPath = path.join(process.cwd(), "public/stamps/");
+
+// Read all files in the folder
+const files = fs.readdirSync(imagesPath);
+
+// Pick a random image (only runs once per page load)
+const randomImage = `/stamps/${files[Math.floor(Math.random() * files.length)]}`;
+---
+
+<img src={randomImage} alt="Random Image" class="random-img" />
