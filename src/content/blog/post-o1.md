@@ -11,7 +11,7 @@ intro: "Love and Deepspace - the Otome set to take the market by storm. It was a
 ---
 
 <style>
-ul {
+li {
   list-style-image: url("/smalls/sm-clover.png");
 }
 </style>

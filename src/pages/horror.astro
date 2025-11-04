@@ -1,12 +1,10 @@
 ---
-import RecentArt from "../components/RecentArt.astro";
 import RecentHorror from "../components/RecentHorror.astro";
 import Layout from "../layouts/Layout.astro";
 
 const title = "haunted house";
 const subtitle = "horror";
-const bannerImage =
-    "https://64.media.tumblr.com/dfde4bf8726a258275072ae1cb011dd3/80f2cdcb43cd1375-76/s540x810/33165b2e94a7a4980fd65e72bf637984929a710d.gifv";
+const bannerImage = "/images/placeholder.gif";
 const tinyImage = "/smalls/sm-gf.gif";
 ---
 
@@ -37,17 +35,16 @@ const tinyImage = "/smalls/sm-gf.gif";
         </p>
         <div class="center"><img src="/images/spongebw.gif" /></div>
         <p>
-            I hope i gave enough ample warning for the pastle cuties that this
-            area is going to be a little spookier...if you didn't get the
-            warning yet i really can't blame myself. just reiterating <b
-                >warning: horror content. clowns. stabbing. unaliving. dark
-                things. jump scares. all that stuff.</b
-            >
+            I hope i gave enough warning for the pastle cuties that this area is
+            going to be a little spookier...if you didnt get the warning yet i
+            really cant blame myself. just reiterating <b
+                >warning: horror content. spooky clowns. stabbing. unaliving.
+                dark things. jump scares. all that stuff.</b>
         </p>
         <div class="center">
             <br />
             <a href="/home.html" class="button"
-                >oh... whoops i didn't know take me back</a
+                >oh whoops i didn't know take me back</a
             >
         </div>
     </div>
@@ -74,61 +71,61 @@ const tinyImage = "/smalls/sm-gf.gif";
                 <ul class="spooky">
                     <li>mad father</li>
                     <li>
-                        <a
-                            href="/posts/post-h1">five nights at freddy's</a>
+                        <a href="/posts/post-h1">five nights at freddy's</a>
+                    </li>
                     <li>diabolik lovers</li>
                     <li>needy streamer overload</li>
                     <li>doki doki literature club</li>
                 </ul>
+                </div>
+                <div class="center" style="width:250px">
+                    <img src="/smalls/sm-bfish.gif" />
+                    <h3>misc</h3>
+                    <ul class="spooky">
+                        <li>
+                            <a href="/tags/haunted-houses">haunted houses</a>
+                        </li>
+                        <li>args</li>
+                    </ul>
+                </div>
             </div>
-            <div class="center" style="width:250px">
-                <img src="/smalls/sm-bfish.gif" />
-                <h3>misc</h3>
-                <ul class="spooky">
-                    <li>haunted houses</li>
-                    <li>args</li>
-                </ul>
-              </div>
+        </div>
+    <div slot="left-half">
+        <h2>Thalassophobia</h2>
+        <p>
+            <i>for all my other homies who hate the ocean</i>
+        </p>
+
+        <div class="center" style="background-color: #0D1126;">
+            <br />
+            <img src="/div/ocdiv.jpg" />
+            <img src="/mine/thas01.jpg" />
+            <iframe
+                width="280"
+                height="157"
+                src="https://www.youtube.com/embed/SpoqgjauXSg?si=PSXud1U-3CDzXj_B"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            <iframe
+                width="280"
+                height="157"
+                src="https://www.youtube.com/embed/jCWop491Q9Y?si=Pd2SFWLeSsSlihfI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+            <img src="/div/ocdiv.jpg" />
+        </div>
+    </div>
+    <div slot="right-half">
+        <div class="posts-grid">
+            <div class="center">
+                <RecentHorror />
             </div>
         </div>
     </div>
-    <div slot="left-half">
-        <h2>Thalassophobia</h2>
-        <p><i>for all my other homies who hate the ocean</i></p>
-
-                    <div class="center" style="background-color: #0D1126;">
-                        <br />
-                        <img src="/div/ocdiv.jpg" />
-                        <img src="/mine/thas01.jpg" />
-                        <iframe
-                            width="280"
-                            height="157"
-                            src="https://www.youtube.com/embed/SpoqgjauXSg?si=PSXud1U-3CDzXj_B"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen></iframe>
-                        <iframe
-                            width="280"
-                            height="157"
-                            src="https://www.youtube.com/embed/jCWop491Q9Y?si=Pd2SFWLeSsSlihfI"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen></iframe>
-                        <img src="/div/ocdiv.jpg" />
-                    </div>
-                </div>
-                <div slot="right-half">
-                    <div class="posts-grid">
-                        <div class="center">
-                            <RecentHorror />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div></Layout
->
+</Layout>

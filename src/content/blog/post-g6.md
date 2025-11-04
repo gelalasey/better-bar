@@ -11,7 +11,7 @@ intro: "Hey Gamers! This is my first time creating my own umpd strat guide - I h
 ---
 
 <style>
-ul {
+li {
   list-style-image: url("/smalls/sm-clover.png");
 }
 </style>

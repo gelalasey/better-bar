@@ -10,7 +10,7 @@ tags: ["games", "cozy", "acnh"]
 ---
 
 <style>
-ul {
+li {
   list-style: url("/smalls/greenbullet.png");
 }
 
