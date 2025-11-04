@@ -181,18 +181,16 @@ section {
 .shrine {
 padding: 10px;
 overflow: hidden;
-width: 160px;
-height: 90px;
 }
 
-.shrine > div{
-text-align: center;	
+.shrine > div {
+	text-align: center;
 }
 
 .shrine img{
 border-radius: 25px;	
-width: 100%;
-height: 100%;
+width: 160px;
+	height: 90px;
 object-fit: cover;
 }
 
