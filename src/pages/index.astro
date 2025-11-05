@@ -14,7 +14,7 @@ const tinyImage = "/smalls/sm-balloons.gif";
 		http-equiv="Content-Security-Policy"
 		content="connect-src 'self' data: blob: https://status.cafe;"
 	/>
-	<script src="https://iframe.chat/scripts/main.min.js"></script>
+
 </head>
 
 <Layout
@@ -83,10 +83,11 @@ const tinyImage = "/smalls/sm-balloons.gif";
 	<div slot="right-half">
 		<section class="half">
 			<iframe
+				id="guestbook"
 				src="https://gelseyland.atabook.org/"
 				height="350px"
 				width="380px"
-				scrolling="no"
+				scrolling="yes"
 				loading="lazy"></iframe>
 		</section>
 	</div>
@@ -110,3 +111,4 @@ const tinyImage = "/smalls/sm-balloons.gif";
 		font-size: 1rem !important ;
 	}
 </style>
+

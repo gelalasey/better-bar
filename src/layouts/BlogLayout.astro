@@ -46,11 +46,11 @@ const { title, subtitle } = Astro.props;
             </section>
             <section class="full">
                 <slot name="full" />
-                <!-- add additional full and half sections as needed for the page -->
+                <!-- this is where the meat of the content lives -->
             </section>
 
             <section class="full">
-                <slot name="tags"></slot>
+                <slot name="comments"></slot>
                 <!--I WANT TO PUT A COMMENT BOX HERE EVENTUALLY -->
             </section>
         </div>
