@@ -7,5 +7,7 @@ image:
     src: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnAxdm4xaDNueGF0bWF6emV6bGZnb2w5ZDBlbjJvbGZqc3NpdjF1ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H9RL1IKvsBi6c/giphy.gif"
     alt: 'media of roy mustang sourced from giphy'
 tags: ["anime", "shonen", "adventure", "supernatural" ]
-intro:
+intro: "i will have contentmp"
 ---
+
+i will have contentmp

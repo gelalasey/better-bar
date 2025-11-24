@@ -6,31 +6,70 @@ const subtitle = "uma musume";
 ---
 
 <UmpdLayout title={title}>
-    <div slot="box-left"></div>
+    <div slot="box-left">
+        <h2>uma to dos nov</h2>
+        <img src="/umpd/srfandance.gif" style="float:right; max-width:80px;" />
+        <div>
+            <div class="flex-row" style="margin-bottom: -25px">
+                <img src="/smalls/checkyes.gif" /><p>
+                    Pull 1 copy of Agnes Digital
+                </p>
+            </div>
+            <div class="flex-row" style="margin-bottom: -25px">
+                <img src="/smalls/checkyes.gif" /><p>
+                    Save 30k total for Kitasan next month
+                </p>
+            </div>
+            <div class="flex-row">
+                <img src="/smalls/checkno.gif" /><p>
+                    Deep dive into new meta update
+                </p>
+            </div>
+        </div>
+    </div>
     <div slot="box-right">
         <p>
             <mark>please note:</mark> this game uses a lot of RNG, there is no 100%
-            gauranteed way to get the exact result you're looking for. Strategies
+            guaranteed way to get the exact result you're looking for. Strategies
             will vary from trainer to trainer and there's no wrong way to run an
             uma if it works! These are my strategies based on my own research, I
             hope they work for you but they may not. Enjoy making your own track
             to victory!
         </p>
-        <b>This is a strategy guide, not a comprehensive review, see
+        <b
+            >This is a strategy guide, not a comprehensive review, see
             recommended resources on the home page!</b
         >
     </div>
     <div slot="the-whole">
         <h2>How to Win at Uma</h2>
-        <p> First things first: you need to know your objective. Are you trying to earn carats by unlocking the perfect ending? Are you training a future parent? Do you need a new member for team trials? While TP is limited, it's a renewable resource that regenerates everyday. You don't want to get caught up in trying to do everything at once, solve one problem at a time.
+        <p>
+            First things first: you need to know your objective. Are you trying
+            to earn carats by unlocking the perfect ending? Are you training a
+            future parent? Do you need a new member for team trials? While TP is
+            limited, it's a renewable resource that regenerates everyday. You
+            don't want to get caught up in trying to do everything at once,
+            solve one problem at a time.
         </p>
 
         <h3>Winning the Race</h3>
-        <p>For an easy win you'll want to stick to story cannon as much as possible. That means if your girl is a natural front runner for the mile with a 20% boost in speed and 10% in wit, that pretty much gives you direction on how you'd build that deck. I find the story of the URA tends to conicide pretty well with delivering extra status boosters to the area they intend for that uma.</p>
-        <p>URA stats can be lower than stats needed for winning team trials I didnt understand this at first, but essentially the threshhold is for stamina is lowered by 400 points. So apply this to the stamina chart when determining minimum stamina.</p>
-
+        <p>
+            For an easy win you'll want to stick to story cannon as much as
+            possible. That means if your girl is a natural front runner for the
+            mile with a 20% boost in speed and 10% in wit, that pretty much
+            gives you direction on how you'd build that deck. I find the story
+            of the URA tends to coincide pretty well with delivering extra
+            status boosters to the area they intend for that uma.
+        </p>
+        <p>
+            URA stats can be lower than stats needed for winning team trials I
+            didn't understand this at first, but essentially the threshold is
+            for stamina is lowered by 400 points. So apply this to the stamina
+            chart when determining minimum stamina.
+        </p>
         <h3>Winning PVP</h3>
-        <p>This is where I find you can get more creative. For team trials you
+        <p>
+            This is where I find you can get more creative. For team trials you
             want to make sure each Uma on your team has a different running
             style (they get point bonuses for this). Thinking outside the box
             can allow you to utilize their strengths in a new way. I've got
@@ -54,7 +93,7 @@ const subtitle = "uma musume";
         <p>
             Dirt requires an extra amount of power to push through the track
             (about 50-100 points). It's usually not classified as it's own race
-            becuase the distances will vary - typically in URA and team trials
+            because the distances will vary - typically in URA and team trials
             dirt is a mile distance.
         </p>
 
@@ -137,20 +176,40 @@ const subtitle = "uma musume";
                 it determines how quickly an uma can reach their top speed
                 (accelerate)
             </li>
-            <li>it affects what position your horse takes during the race.</li>
-            <li>there is a maximum amount</li>
+            <li>
+                it affects what position your horse takes during the race. this
+                can trigger certain skills or statuses that could be useful.
+            </li>
+            <li>
+                if you fill it too fast before you've hit your stamina targets
+                you could put yourself at risk of decelerating faster if you get
+                hit by someone else's debuffs.
+            </li>
         </ul>
+        <p>
+            Acceleration is determined by the base acceleration multiplied by a
+            few different factors mostly by power. To totally optimize your
+            build you'll want to consider factoring in the strategy phase
+            coefficient, the ground type proficiency modifier, and the distance
+            proficiency modifier. So all those little green skill things. race.
+            When you're running your base speed is BaseAccel=0.0006[m/s2]. But
+            when you're running uphill, BaseAccel=0.0004[m/s2] instead. In the
+            way my mind understands it, power is basically the ability to change
+            gears to hit your best speed. And that's why it's a 3rd priority
+            criteria in builds.
+        </p>
         <h4>Speed and Power MINIMUMS estimates for average races</h4>
         <p>
             I've collected this range by averaging a couple of different sources
-            claiming min and max speeds, I probably should have written down all
-            the sources when I had done it so now as I'm retyping this I can
-            check my work... but all i have now is the answers I got which is
-            better than nothing. One day I'll get into the weeds to really
-            confirm this number... one day I'll look more into wit and skill
-            triggering probabilities. With all that ado - here are the stats I
-            aim for. Remember as a beginner, if you can't hit these numbers try
-            to hit the ratios instead. (1000, 600, 600 is 5:3:3)
+            claiming different min and max speeds, I probably should have
+            written down all the sources when I had done it so now as I'm
+            retyping this I can check my work... but all i have now is the
+            answers I got which is better than nothing. One day I'll get into
+            the weeds to really confirm this number... one day I'll look more
+            into wit and skill triggering probabilities. With all that ado -
+            here are the stats I aim for. Remember as a beginner, if you can't
+            hit these numbers try to hit the ratios instead. (1000, 600, 600 is
+            5:3:3)
         </p>
         <table>
             <tr>
@@ -202,12 +261,14 @@ const subtitle = "uma musume";
             At 600 you will have a 85% chance of activating...but for 300 more
             points you'll only have a 90% chance of activating. It's not worth
             going beyond 600 really for this reason. Even a perfect 1200 will
-            only net you a 92.5% occurance rate.
+            only net you a 92.5% occurrence rate. For this reason reaching my
+            wit goal is my absolute last priority. If I'm ever hitting as high
+            as a 600 it's because I'm using the witt maxing strategy to manage
+            my energy levels.
         </p>
     </div>
 
-    <div slot="
-                the-whole2">
+    <div slot="the-whole2">
         <h2>Deck Builds 101</h2>
         <mark
             >Remember - prioritize building for distance, race strategy should
@@ -218,7 +279,7 @@ const subtitle = "uma musume";
             (intended optimal build). I do this not because I'm a crazed whale
             but because I am insanely invested in the story and I want to raise
             the uma to be their best intended style. I care them. So the first
-            thing I'm looking at is their intial stats. Where do they have
+            thing I'm looking at is their initial stats. Where do they have
             natural bonuses? What is their ult skill? Who do they naturally vibe
             with?
         </p>
@@ -244,7 +305,7 @@ const subtitle = "uma musume";
         </ol>
         <h4>What "could" be a strong card if used effectively</h4>
         <p>
-            These are not as necesssary but could impact how you decide to play
+            These are not as necessary but could impact how you decide to play
             the game. For example if your card has a lot of bonuses from running
             races, you know an uma who needs to hit a high fan count could
             benefit.
@@ -290,7 +351,8 @@ const subtitle = "uma musume";
         </ul>
         <p>
             <b
-                >dont forget to look at the unique perks at the top of the card!</b
+                >do not forget to look at the unique perks at the top of the
+                card!</b
             >
         </p>
         <h3>general deck build</h3>
@@ -311,7 +373,7 @@ const subtitle = "uma musume";
             major super umas but if you're just farming it's good enough for
             government work! this could be good for your "fuck it, i just need
             to earn some event rewards" deck build. but if you want to build for
-            something more indepth - here are some points to consider
+            something more in-depth - here are some points to consider
         </p>
         <ul>
             <li>
@@ -341,7 +403,16 @@ const subtitle = "uma musume";
                     <h3>Inheritance Types</h3>
                     <ul>
                         <li>Blue Factor: Stats Highest Priority</li>
-                        <li>Pink Factor: Strategy/ distance preference</li>
+                        <li>
+                            Pink Factor: Strategy/ distance preference. These
+                            are useful for increasing your race score. One star
+                            triggers about 5 and 3 stars 21.If you want to build
+                            a character who has a lower rating in a skill youll
+                            need more stars. The basic math according to <a
+                                href="https://game8.co/games/Umamusume-Pretty-Derby/archives/537119"
+                                >games8</a
+                            > is about one grade for every 3 stars total. 
+                        </li>
                         <li>Green Factor: Fixed Skill</li>
                         <li>White Factor: Race/ Skill</li>
                     </ul>
@@ -460,6 +531,22 @@ const subtitle = "uma musume";
                     <h4>
                         Orange skills: Navigation and maneuvering based skills
                     </h4>
+                    <p>
+                        So there's a variety of orange skills. We've got
+                        velocity which increases target speed this looks like
+                        the uma in a circle. Acceleration or the one with the
+                        uma sprinkling fairy dust behind it is what gets us to
+                        switch up our target speed as strategically needed.
+                        Navigation which impact your lane movement speed.There
+                        are two slow start recovery skills in this current game
+                        (half anniv. global) and only necessary if getting to
+                        the front at the first part of the race is important to
+                        your strategy. We also have observation skills which
+                        increase the field of view or impacting the ability to
+                        change lanes. I would really only update it if there was
+                        nothing else to spend stats on more likely as an end or
+                        late strategy.
+                    </p>
                     <h4>Red Skills: Debuff Skills</h4>
 
                     <p>
