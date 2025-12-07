@@ -1,0 +1,49 @@
+---
+import { markdownify } from "../../lib/utils/textConverter.ts";
+import "../../styles/trainee.css";
+
+import type { CollectionEntry } from "astro:content";
+type TraineeEntry = CollectionEntry<"traineeSection">;
+
+const { trainee } = Astro.props as { trainee: TraineeEntry };
+---
+
+{
+    trainee.data.enable && (
+        <section class="trainee-section">
+            <div class="trainee-grid">
+                {trainee.data.trainees.map((item) => (
+                    <article class="trainee-card">
+                        <header class="trainee-header">
+                            <p
+                                class="trainee-stars"
+                                set:html={markdownify(item.star)}
+                            />
+                        </header>
+
+                        <div class="progress-bar">
+                            <div
+                                class="progress-fill"
+                                style={`height: ${item.star}%;`}
+                            />
+                        </div>
+
+                        <img
+                            src={item.image}
+                            alt={item.name}
+                            class="trainee-image"
+                        />
+
+                        <footer class="trainee-footer">
+                            <a
+                                href={item.link}
+                                class="trainee-name"
+                                set:html={markdownify(item.name)}
+                            />
+                        </footer>
+                    </article>
+                ))}
+            </div>
+        </section>
+    )
+}

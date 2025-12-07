@@ -58,49 +58,16 @@ header img {
     max-height: 140px;
     height: auto;
 }
-
-/* Marquee box */
+/* footer box */
 .footer-box {
     max-width: 940px;
     border: 2px ridge pink;
-    background: white;
-text-align: center;
-    
+    background-image: url("/bg/starsandgrids.webp");
+    text-align: center;
 }
 
-.footer-box img{
+.footer-box img {
     width: 100px;
-    
-}
-
-/* Marquee  */
-.marquee {
-  overflow: hidden;
-  white-space: nowrap;
-  box-sizing: border-box;
-    width: 100%;
-    border: 2px ridge pink;
-    background: white;
-    display: flex;
-    align-items: center;
-    max-height: 24px;
-}
-
-.marquee span {
-  display: inline-block;
-  padding-left: 100%; 
-  animation: marquee 10s linear infinite;
-  align-items: flex-start;
-  object-fit: contain;
-}
-
-.marquee span:hover {
-  animation-play-state: paused; /* Pause on hover */
-}
-
-@keyframes marquee {
-  0%   { transform: translateX(0%); }
-  100% { transform: translateX(-100%); }
 }
 
 /* Navigation */

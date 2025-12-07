@@ -1,0 +1,16 @@
+{
+    "site": {
+        "title": "gelseyland",
+        "base_url": "https://gelseyland.neocities.org",
+        "base_path": "/",
+        "trailing_slash": false,
+        "favicon": "/merry.gif"
+
+    },
+
+    "metadata": {
+        "meta_author": "gellery",
+        "meta_image": "/avatar/clowncreator.png",
+        "meta_description": "come to a world of pure imagination"
+    }
+}

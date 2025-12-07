@@ -1,0 +1,81 @@
+---
+import "@fontsource/fontdiner-swanky";
+import UmaHeader from "../layouts/partials/UmaHeader.astro";
+import Marquee from "../components/Marquee.astro";
+import UmaFooter from "../layouts/partials/UmaFooter.astro";
+import config from "@/config/config.json";
+import theme from "@/config/umatheme.json";
+import { plainify } from "../lib/utils/textConverter";
+
+import "@/styles/umpd.css";
+
+// types for frontmatters
+export interface Props {
+    title?: string;
+    meta_title?: string;
+    description?: string;
+    image?: string;
+    noindex?: boolean;
+    canonical?: string;
+}
+
+// destructure frontmatter
+const { title, meta_title, description, image, noindex, canonical } =
+    Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="/umafavicon.png" />
+
+        <!-- title -->
+        <title>
+            {
+                plainify(
+                    meta_title ? meta_title : title ? title : config.site.title,
+                )
+            }
+        </title>
+    </head>
+
+    <body>
+        <div id="TEMPLATE-LAYOUT">
+            <UmaHeader />
+            <Marquee />
+            <div class="the-section">
+                <div class="box-left">
+                    <div class="container">
+                        <slot name="box-left" />
+                    </div>
+                </div>
+                <div class="box-right">
+                    <div class="container">
+                        <slot name="box-right" />
+                    </div>
+                </div>
+            </div>
+            <div class="the-whole">
+                <div class="content">
+                    <div class="container">
+                        <slot name="the-whole" />
+                    </div>
+                </div>
+            </div>
+            <div class="the-whole2">
+                <div class="content">
+                    <div class="container">
+                        <slot name="the-whole2" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer for the stamps -->
+            <slot name="extra" />
+
+            <UmaFooter />
+        </div>
+    </body>
+</html>

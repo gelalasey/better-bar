@@ -4,13 +4,13 @@ import Music from "../../components/widget/Music.astro";
 
 const title = "Agnes Tachyon";
 const cardname = "Tach-nology";
-const date = "07-28-2025";
-const rank = "★★★";
+const date = "06-26-2025";
+const rank = "★★";
 const racetype = "turf, med, long";
-const strat = "pace";
-const potential = "3";
+const strat = "pace, late";
+const potential = "5";
 const cardimg =
-    "https://gametora.com/images/umamusume/characters/chara_stand_1023_102301.png";
+    "https://gametora.com/images/umamusume/characters/chara_stand_1032_103201.png";
 ---
 
 <img src="/div/underconstruction.webp" />
@@ -40,28 +40,28 @@ const cardimg =
             </tr>
             <tr>
                 <td>Speed</td>
-                <td>85</td>
-                <td></td>
+                <td>87</td>
+                <td>20%</td>
             </tr>
             <tr>
                 <td>Stam</td>
-                <td>93</td>
+                <td>81</td>
                 <td></td>
             </tr>
             <tr>
                 <td>Power</td>
-                <td>82</td>
+                <td>81</td>
                 <td></td>
             </tr>
             <tr>
                 <td>Guts</td>
-                <td>93</td>
+                <td>83</td>
                 <td>10%</td>
             </tr>
             <tr>
                 <td>Wit</td>
-                <td>97</td>
-                <td>20%</td>
+                <td>93</td>
+                <td></td>
             </tr>
         </table>
         <button type="button" class="collapsible">skills</button>
@@ -77,15 +77,54 @@ const cardimg =
                 <tr>
                     <td
                         ><img
-                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20013.png"
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20023.png"
                         /></td
                     >
-                    <td>∴win Q.E.D.</td>
+                    <td>U=ma2</td>
                     <td
-                        >If on the final corner in late race or laste spurt, no
-                        rush, and order is ≤ 4</td
+                        >If race in the second half or later, and you're between
+                        3rd and 5th, and on any corner
+                    </td>
+                    <td
+                        >Increase target speed 25% for 4 sec and recovery
+                        stamina by 5.5%</td
                     >
-                    <td>Increase target speed 35% for 5 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_10021.png"
+                        /></td
+                    >
+                    <td>Standard Distance ○</td>
+                    <td>If distance divisible by 400</td>
+                    <td>Stamina up 40-60</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_30011.png"
+                        /></td
+                    >
+                    <td>Tether</td>
+                    <td
+                        >If wit check passed, medium distance, and in the first
+                        half of the pack</td
+                    >
+                    <td>All enemy umas will decrease speed by 15%</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20021.png"
+                        /></td
+                    >
+                    <td>Preferred Position</td>
+                    <td
+                        >If wit checked passed, pace chaser, and in first half
+                        of the pack midrace</td
+                    >
+                    <td>Recovery stamina by 1.5%//5.5%</td>
                 </tr>
                 <tr>
                     <td
@@ -100,6 +139,46 @@ const cardimg =
                     >
                     <td>Target speed increases 15% for 3 sec</td>
                 </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_30012.png"
+                        /></td
+                    >
+                    <td>Dominator (Upgrade of Tether)</td>
+                    <td
+                        >If medium distance, late race and in second half of the
+                        pack</td
+                    >
+                    <td
+                        >Decrease speed of all enemies ahead by 25% for 3
+                        seconds</td
+                    >
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20011.png"
+                        /></td
+                    >
+                    <td>Medium Corners ○</td>
+                    <td
+                        >If medium distance, wit check passed, and on a corner</td
+                    >
+                    <td>increase target speed by 15%/25% for 3 sec</td>
+                </tr>
+                <tr>
+                    <td
+                        ><img
+                            src="https://gametora.com/images/umamusume/skill_icons/utx_ico_skill_20022.png"
+                        /></td
+                    >
+                    <td>Medium Corners ○</td>
+                    <td
+                        >If medium distance, wit check passed, and on a corner</td
+                    >
+                    <td>increase target speed by 15%/25% for 3 sec</td>
+                </tr>
             </table>
         </div>
     </div>
@@ -107,45 +186,127 @@ const cardimg =
         <h3>URA Build</h3>
         <ul>
             <li>
-                <b>Goal stats:</b> - # speed, # stam, # power, # guts, # wit
+                <b>Goal stats:</b> - 900-1200 speed, #700-900 stam (with two golds),
+                600 power, 400 guts, 400 wit
             </li>
             <li><b>Support Recs:</b></li>
             <div class="small">
-                <!--images for support cards here -->
+                <img
+                    src="https://img.game8.co/4216909/51948a362a139d9db95f858673d39164.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4218616/5381cc866a49ad65f83876f47662001e.png/show"
+                />
+                <img
+                    src="https://j-img.game8.co/5999066/86be0ae4e735c6322c615dcdcb854e58.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4216949/dd886bfcb235062c2e41b877c42aaa4b.png/show"
+                />
+                <img
+                    src="https://img.game8.co/4216919/54fb7e8c2ee829ca0d4ec498ca151171.png/show"
+                />
+                <img src="" />
             </div>
             <li>
-                <b>Parents:</b>
+                <b>Parents:</b> Supercreek and Narita taishin both have useful recovery skills.
             </li>
             <li>
-                <b>legacy sparks:</b>9★
+                <b>legacy sparks:</b>9★ speed, 18★ stamina, 3★ pace or late, 3★
+                med
             </li>
             <li>
                 <b>Skills:</b><ul>
-                    <li></li>
+                    <li>
+                        high priority: Tether/Dominator, homestretch haste,
+                        swinging maestro, gourmand, Race planner
+                    </li>
+                    <li>
+                        mid priority: corner adept, medium corners, medium
+                        straightaways,ramp up/it's on, tail held high, rosy outlook/trackblazer
+                    </li>
+                    <li>low priority: tactical tweak, highlander</li>
                 </ul>
             </li>
         </ul>
         <h3>other notes</h3>
         <ul>
-            <li></li>
+            <li>
+                Due to her meh unique skill I'm more keen to run her as a pace
+                chaser if I'm trying to win. But overall her biggest use to me
+                is as a debuff so we're usually farming her for those skills.
+            </li>
         </ul>
     </div>
     <div slot="the-whole">
         <h3>URA Schedule</h3>
-        <h4>junior goals</h4>
-        <ul></ul>
+        <h4>junior year</h4>
+        <ul>
+            <li>
+                <b></b>Participate in the Junior Make Debut [Turf – 2000m –
+                Medium]
+            </li>
+        </ul>
         <h4>classic year</h4>
         <ul>
-            <li></li>
+            <li>
+                <b>29</b>Place 5th or better in the Yayoi Sho [G2 – Turf – 2000m
+                – Medium]
+            </li>
+            <li>
+                <b>31</b>Place 5th or better in the Satsuki Sho [G1 – Turf –
+                2000m – Medium]
+            </li>
+            <li>
+                <b>33</b> Be sure mood is at least good to avoid getting derby race
+                changed to NHK Mile
+            </li>
+            <li>
+                <b>34</b> Place 5th or better in the Tokyo Yushun (Japanese Derby)
+                [G1 – Turf – 2400m – Medium]
+            </li>
+            <li>
+                <b>44</b>Place 3rd or better in the Kikuka Sho [G1 – Turf –
+                3000m – Long]
+            </li>
         </ul>
         <h4>senior year</h4>
         <ul>
-            <li></li>
+            <li>
+                <b>54</b>Place 3rd or better in the Osaka Hai [G1 – Turf – 2000m
+                – Medium]
+            </li>
+            <li>
+                <b>60</b>Place 3rd or better in the Takarazuka Kinen [G1 – Turf
+                – 2200m – Medium]
+            </li>
+            <li>
+                <b>68</b> Place 1st in the Tenno Sho (Autumn) [G1 – Turf – 2000m
+                – Medium]
+            </li>
+            <li>
+                <b>72</b> Place 1st in the Arima Kinen [G1 – Turf – 2500m – Long]
+            </li>
         </ul>
     </div>
     <div slot="the-whole2">
-        <img src="https://i.postimg.cc/k5jPnXCb/IMG_8814.gif" />
-        <img src="https://i.postimg.cc/QdnX0tTM/IMG_9281.webp" />
+        <img
+            src="https://i.postimg.cc/k5jPnXCb/IMG_8814.gif"
+            style="width:100%;"
+        />
+        <p>
+            I am not an Agnes hater, but I'm deffo not a simp for her. I hate
+            science to begin with and now an uma wants me to be doing it on the
+            regular for the sake of theory. Chaotic gremlins don't work for me,
+            I need more control in my life. However, I will say she does
+            entertain me when she's messing with the other umas. So I'll say
+            that as a compromise I'll like her from a safe, plexiglass shielded
+            distance.
+        </p>
+        <img
+            src="https://i.postimg.cc/QdnX0tTM/IMG_9281.webp"
+            style="width:100%;"
+        />
         <p>
             dividers sourced from <a href="https://www.tumblr.com/pueriled"
                 >@pueriled

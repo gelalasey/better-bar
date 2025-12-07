@@ -1,7 +1,7 @@
 {
   "name": "better-bar",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -9,10 +9,20 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/svelte": "^7.2.0",
+    "@astrojs/react": "^4.4.2",
+    "@astrojs/svelte": "^7.2.2",
     "@fontsource/fontdiner-swanky": "^5.2.7",
+    "@tailwindcss/vite": "^4.1.17",
     "astro": "^5.15.1",
+    "astro-auto-import": "^0.4.5",
+    "marked": "^17.0.1",
+    "remark-collapse": "^0.1.2",
+    "remark-toc": "^9.0.0",
+    "sharp": "^0.34.5",
     "svelte": "^5.42.2",
     "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/marked": "^5.0.2"
   }
 }

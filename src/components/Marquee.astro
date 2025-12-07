@@ -1,9 +1,10 @@
 ---
-import "../styles/umpd.css";
+import "@/styles/umpd.css";
 ---
 
+<!-- For the UMPD page -->
 <div class="marquee">
-    <span>
+    <div class="marqueeinner">
         <img src="/umpd/maycopy.webp" />
         <img src="/umpd/nicenaturebanner.webp" />
         <img src="/umpd/urarabanner.jpg" />
@@ -13,5 +14,60 @@ import "../styles/umpd.css";
         <img src="/blinkies/bnw.webp" />
         <img src="/blinkies/sr.webp" />
         <img src="/blinkies/tmo.webp" />
-    </span>
+    </div>
+
+    <!-- Duplication to allow for looping -->
+
+    <div class="marqueeinner">
+        <img src="/umpd/maycopy.webp" />
+        <img src="/umpd/nicenaturebanner.webp" />
+        <img src="/umpd/urarabanner.jpg" />
+        <img src="/umpd/waracho.webp" />
+        <img src="/umpd/ihearttt.jpg" style="max-height: 22px;" />
+        <img src="/blinkies/horseyuri.webp" />
+        <img src="/blinkies/bnw.webp" />
+        <img src="/blinkies/sr.webp" />
+        <img src="/blinkies/tmo.webp" />
+    </div>
 </div>
+
+<style>
+    /* Marquee  Container*/
+    .marquee {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        border: 2px ridge pink;
+        background-image: url("/bg/starsandgrids.webp");
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    /* Marquee  inside*/
+    .marqueeinner {
+        display: flex;
+        gap: 12px;
+        flex-shrink: 0;
+        animation: marquee 10s linear infinite;
+    }
+
+    /* Marquee  Images*/
+    .marquee img {
+        height: 20px;
+        object-fit: contain;
+    }
+
+    .marquee:hover .marqueeinner {
+        animation-play-state: paused;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+</style>
