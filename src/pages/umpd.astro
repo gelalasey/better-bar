@@ -1,10 +1,10 @@
 ---
-import UmpdBase from "../layouts/UmpdBase.astro";
-import ImageMod from "../layouts/components/ImageMod.astro";
-import { getListPage } from "../lib/contentParser.astro";
-import { markdownify } from "../lib/utils/textConverter.ts";
+import UmpdBase from "@/layouts/UmpdLayout.astro";
+import ImageMod from "@/layouts/components/ImageMod.astro";
+import { getListPage } from "@/lib/contentParser.astro";
+import { markdownify } from "@/lib/utils/textConverter.ts";
 import { render } from "astro:content";
-import Trainee from "../layouts/partials/Trainee.astro"; // adjust path
+import Trainee from "@/layouts/partials/Trainee.astro"; // adjust path
 import { getEntry } from "astro:content";
 
 const trainee = await getEntry("traineeSection", "trainee");

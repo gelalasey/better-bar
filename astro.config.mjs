@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import path from 'node:path';
 import react from "@astrojs/react";
 import tailwindcss from "@tailwindcss/vite";
 import AutoImport from "astro-auto-import";
@@ -7,6 +8,7 @@ import remarkCollapse from "remark-collapse";
 import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
 import svelte from '@astrojs/svelte';
+
 
 
 // https://astro.build/config 
@@ -18,7 +20,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
     resolve: {
       alias: {
-        "@": "/src",
+        '@': path.resolve('.', 'src')
       },
     },
   },
@@ -42,3 +44,4 @@ export default defineConfig({
     remarkPlugins: [remarkToc, [remarkCollapse, { test: "Table of contents" }]],
   },
 });
+
