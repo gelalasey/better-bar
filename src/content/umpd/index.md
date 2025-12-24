@@ -3,7 +3,7 @@
 leftbox:
   title: "welcome to uma world"
   content: " Congrats Uma Musume - on being the first series worthy of it's own
-            shrine! I hope you enjoy my content here. If you're a fellow uma
+            shrine! This section is seriously under construction but I come back to it when I'm deeper into the game. As of Dec 2025 - I am taking a bit of a break to focus on my other hyperfixations. I hope you enjoy my existing content here. If you're a fellow uma
             lover, please say hey!"
   image: ""
   button:
