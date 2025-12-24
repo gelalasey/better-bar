@@ -4,7 +4,7 @@ pubDate: 2025-12-24
 description: "Will this finally be the legacy I complete??"
 author: 'gelsey'
 image:
-    src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.herinteractive.com%2Fwp-content%2Fuploads%2F01_SCKR_Screenshot61.jpg&f=1&nofb=1&ipt=0d5d2f634a1fc6e69e4b116b33803240b663224afafa23f940b2ee93b2c2cac6'
+    src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.destructoid.com%2Fwp-content%2Fuploads%2F2025%2F01%2Fsims-3-logo-and-snapshots.jpg%3Fw%3D768&f=1&nofb=1&ipt=440d9f8fa6e4e0243f8f6ec0441d797dbcff862efb1103c2ff73cf200f978d55'
     alt: 'renaissance man, short order cook, student council president and professional escort to pretty new students'
 tags: ["games", "sims", "ts3", "store world legacy"]
 intro: "With a massive amount of time off around the holidays - I'm finally available to participate in my favorite longform time waster. The Sims has held a special place in my heart since the launch of TS1 - yup I'm that old. I've grown up with this game throughout decades of my life. One taught me love (ts2) One taught me patience (ts3) and one taught me pain (do you even need to guess which one). But in my years of playing this game there's one thing I haven't been able to conquer - and that's a legacy challenge. I think the most I've ever made it through was about 4 or 5 generations when I did the decades challenge. But then I got my 1950's heir hooked on diet pills and the save file got too unhinged at that point."
