@@ -186,12 +186,14 @@ button.learn-more:active::before {
     align-content: baseline;
     white-space: wrap;
     margin: auto;
+    text-align: center;
 }
 
 .flexbox>.flexitem {
     flex-shrink: 1;
     padding: 10px; 
     width: 50%;
+    flex-direction: column;
 }
 
 .flexbox img {
