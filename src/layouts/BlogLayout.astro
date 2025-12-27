@@ -8,7 +8,7 @@ import "../styles/main.css";
 import "../styles/blog.css";
 import "@fontsource/fontdiner-swanky";
 
-const { title, subtitle } = Astro.props;
+const { title, subtitle, image } = Astro.props;
 ---
 
 <html lang="en">
@@ -17,6 +17,7 @@ const { title, subtitle } = Astro.props;
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{title}</title>
         <link rel="icon" type="image/x-icon" href="/favicon.png" />
+
     </head>
 
     <body>
@@ -50,7 +51,7 @@ const { title, subtitle } = Astro.props;
             </section>
 
             <section class="full">
-                <slot name="comments"></slot>
+                <slot name="comments" />
                 <!--I WANT TO PUT A COMMENT BOX HERE EVENTUALLY -->
             </section>
         </div>
