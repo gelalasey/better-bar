@@ -129,7 +129,7 @@ div.small > img {
 	border-radius: 5px;
 }
 /*this is for lists*/
-li {
+ul li {
   list-style: url(/smalls/littleice.gif);
 }
 
@@ -137,6 +137,9 @@ ul{
 	list-style-position: inside;
 	display: inline-block;
 }
+ ol{
+	list-style-type: decimal;
+ }
 
 
 section {
