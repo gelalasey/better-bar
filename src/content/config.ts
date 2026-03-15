@@ -20,9 +20,9 @@ const blog = defineCollection({
     }),
 });
 
-// Homepage collection schema
+// UMA Homepage collection schema
 const umpd = defineCollection({
-    loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/umpd" }),
+    loader: glob({ pattern: "index.{md,mdx}", base: "src/content/umpd" }),
     schema: z.object({
         leftbox: z.object({
             title: z.string(),
@@ -47,7 +47,7 @@ const umpd = defineCollection({
 const traineeCollection = defineCollection({
     loader: glob({
         pattern: "trainee.md",
-        base: "src/content/partials",
+        base: "src/content/umpd",
     }),
     schema: z.object({
         enable: z.boolean(),

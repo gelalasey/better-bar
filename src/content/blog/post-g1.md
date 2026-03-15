@@ -31,11 +31,11 @@ You play as a spirit scout whose on a mission to earn badges and make this islan
 
 ### current review est: 22k
 
-if you like child raising sims, this is your game. if you like learning about other cultures, this is your game. if you like match 3 games and satisfying popping animations, _this is your game_. Culturally i can't common on how realistically the game portrays chinese childhood...seeing as I'm not Chinese. But the developers are chinese and the game was originally written in chinese. What's even cooler is that in game you can answer surveys about whether or not you experienced a similar scenario in your childhood.
+if you like child raising sims, this is your game. if you like learning about other cultures, this is your game. if you like match 3 games and satisfying popping animations, _this is your game_. Culturally i can't comment on how realistically the game portrays chinese childhood...seeing as I'm not Chinese. But the developers are chinese and the game was originally written in chinese. What's even cooler is that in game you can answer surveys about whether or not you experienced a similar scenario in your childhood.
 
 ![](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/736190/ss_b3db328f04b25481dc8203ff4dcbc1ba904b583a.600x338.jpg?t=1754625690)
 
-You start the game as a literal infant and have to gain the skills you need to become a model child and high scorer on the culturally infamous gaokao exam. You earn skills in different areas to unlock differnt outcomes for your future including careers, spouses, and parenting styles for when you raise the next generation. I spent hours trying to find all the possible combinations and was not disappointed.
+You start the game as a literal infant and have to gain the skills you need to become a model child and high scorer on the culturally infamous gaokao exam. You earn skills in different areas to unlock different outcomes for your future including careers, spouses, and parenting styles for when you raise the next generation. I spent hours trying to find all the possible combinations and was not disappointed.
 
 ## idol manager
 

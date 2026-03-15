@@ -1,6 +1,5 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import Header from "../layouts/partials/Header.astro";
 import Navr from "../components/Navr.astro";
 import Navl from "../components/Navl.astro";
 
@@ -17,7 +16,6 @@ const { title, subtitle, image } = Astro.props;
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{title}</title>
         <link rel="icon" type="image/x-icon" href="/favicon.png" />
-
     </head>
 
     <body>
@@ -57,6 +55,5 @@ const { title, subtitle, image } = Astro.props;
         </div>
         <div class="bottom"></div>
         <footer></footer>
-        <Footer />
     </body>
 </html>

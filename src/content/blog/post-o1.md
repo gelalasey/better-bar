@@ -40,9 +40,9 @@ This game doesnt force you to pick one guy and finish the route - how could you 
 
 ## Snoozefest Xavier
 
-Try as I might I could not give this dude the light of day (pun intended). First of "sleepy" is not a personality trait, I've never understood that as an anime trope. Why they're so sleepy is much more interesting to me. He is so vanilla plane jane boring that it would almost be interesting to meet someone like that in real life. I don't even have conversations screen shots from him bc the texts would literally be like "Wow I saw a cloud today and it was pretty fluffy". His whole thing just seemed to be ...being hot. Which when you're a 2d man I'm sorry you'll have to do better. I *expect* you to be hot as the bare minimum. Give me more. 
+Try as I might I could not give this dude the light of day (pun intended). First off "sleepy" is not a personality trait, I've never understood that as an anime trope. Why they're so sleepy is much more interesting to me. He is so vanilla plane jane boring that it would almost be interesting to meet someone like that in real life. I don't even have conversations screen shots from him bc the texts would literally be like "Wow I saw a cloud today and it was pretty fluffy". His whole thing just seemed to be ...being hot. Which when you're a 2d man I'm sorry you'll have to do better. I *expect* you to be hot as the bare minimum. Give me more. 
 
-I also dislike how in events they would try to give him a """dominant""" air. Really it was embarassing. I love a good dom energy daddy baddie but like...how am I supposed to fear this man. What's he going to do? Fall asleep on me? Talk about stars for 3 hours? There's nothing interesting about him and I could gone the entire story without him. And YES I did read his backstore in the myths section. Did it *slightly* provide more depth for this character, yes. But how come we didn't see any of that integrated into his actual character. Where was this responsibility avoiding slacker boy that could properly contrast MC's hardworking ethos? You can tell me it's a translation issue till the cows come home, translation doesn't solve boring honey. There's a reason his nickname in my phone was "white bread". 
+I also dislike how in events they would try to give him a """dominant""" air. Really it was embarassing. I love a good dom energy daddy baddie but like...how am I supposed to fear this man. What's he going to do? Fall asleep on me? Talk about stars for 3 hours? There's nothing interesting about him and I could gone the entire story without him. And YES I did read his backstory in the myths section. Did it *slightly* provide more depth for this character, yes. But how come we didn't see any of that integrated into his actual character. Where was this responsibility avoiding slacker boy that could properly contrast MC's hardworking ethos? You can tell me it's a translation issue till the cows come home, translation doesn't solve boring honey. There's a reason his nickname in my phone was "white bread". 
 <div class=flexbox>
 <div><img src="/blog/otome/x1.png" style="width: 200px"></div>
 <div><img src="/blog/otome/x2.png" style="width: 200px"></div>
@@ -52,7 +52,7 @@ I also dislike how in events they would try to give him a """dominant""" air. Re
 
 ## Whiny Rafayel
 
-As you can see I'm going in order or hate to love. And Raf is a significant jump up from Xavier. Despite me not being romantically interested in his character, I still *enjoyed* his character. When I go into an otome I don't expect to fall in love with each guy equally, that would mean they haven't created compelling characters. And Raf is a great example of how I can enjoy a character without them being my type. His [Pauly Shore](https://www.youtube.com/watch?v=Z4ArXSwALDU) vocal tone and aggressive helplessness is not what I'm into. But man was he fun to talk to. 
+As you can see I'm going in order of hate to love. And Raf is a significant jump up from Xavier. Despite me not being romantically interested in his character, I still *enjoyed* his character. When I go into an otome I don't expect to fall in love with each guy equally, that would mean they haven't created compelling characters. And Raf is a great example of how I can enjoy a character without them being my type. His [Pauly Shore](https://www.youtube.com/watch?v=Z4ArXSwALDU) vocal tone and aggressive helplessness is not what I'm into. But man was he fun to talk to. 
 
 <div class=flexbox>
 <div><img src="/blog/otome/r1.jpg" style="width: 200px"></div>
@@ -72,7 +72,7 @@ Please I can fix him. Or he can fix me? Or we can both do a joint therapy sessio
 <div><img src="/blog/otome/z2.png" style="width: 200px"></div>
 </div>
 
-"I don't want to be incapable capable of doing anything again when I become a threat to her" - Zayne WU 1.3
+"I don't want to be incapable capable of doing anything again when I become a threat to her" - Zayne, WU 1.3
 
 The one aspect of his character I never bought was the attempt to make him feel dangerous. That's already covered by the man who literally holds weapons up to my head - and there's **two** of them that do that. What's the worst Doc McStuffins is going to do? Withhold my daily vitamin. Fat chance, he would break first. I get he's supposed to be daddy and tells me to go to bed - but like I'm honestly listening to his advice in the same way I listen to my alarm going off after the 4th snooze - yeah yeah I get it already **fine**. Not every man needs to be assigned an ABO role...although I'd put him squarely as a beta.
 
@@ -110,6 +110,6 @@ So ultimately why then - if there are so many kings in this otome castle - did I
 
 I don't think gatcha models are sustainable or successful. They may "work" in the sense that customers are paying for them, but it fatigues people. Eventually it won't be worth even investing in good story and models because in order for gatcha to work people have to be constantly enthralled with novelty and high energy. And even that wears people down. And I'm sure I'm not the only one out there who picks up an otome gatcha, plays it religiously for a few months, and then abandons it. Game companies are going to pour in less and less resources knowing that a long term investment isn't worth the returns. And shitty companies like infold with their [horrid anti-consumer practices](https://otome.com/2025/08/20/love-and-deepspace-false-advertisement/) will be paving the way, mark my words. I feel like infold at it's heart has a good vision - but greedy decisions made at whatever level keep people from being able to truly enjoy a well made story. 
 
-Call me when someone's been able to take all the assets and turn this into a f2p game. Maybe then I'll give it another shot. But if a story never has an ending - I'm frankly to tired to try to keep up with it. 
+Call me when someone's been able to take all the assets and turn this into a f2p game. Maybe then I'll give it another shot. But if a story never has an ending - I'm frankly too tired to try to keep up with it. 
 
 Goddamn it maybe Xavier was right after all. 
