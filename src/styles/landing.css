@@ -1,0 +1,319 @@
+/* start light mode styling */
+:root {
+    --text: #4e3d42;
+    --border: #FFECB6;
+    --accent: teal;
+    --background: url(/bg/star1a_purple.gif);
+    --bg: #dce3e1;
+    --gradientTop: white;
+    --gradientBottom: rgb(240, 248, 255, .8);
+
+    a:link {
+        color: teal;
+    }
+}
+
+header {
+    background: url(/bg/bmbg041.gif);
+}
+
+body {
+    background: url(/bg/star1a_purple.gif);
+}
+
+/* end light mode styling */
+
+
+/* start dark mode styling */
+@media (prefers-color-scheme: light) {}
+
+/* end dark mode styling */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+    font-family: 'popppins-regular';
+    color: var(--text);
+    text-transform: lowercase;
+
+    /* page background pattern */
+    background-color: var(--gradientTop);
+    background: var(--);
+    background-size: 20px 35px;
+    background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+}
+
+
+.container {
+    max-width: 55rem;
+    margin: 5vw auto 12px auto;
+    border: 6px ridge var(--border);
+    outline: 3px solid var(--gradientTop);
+    outline-offset: 4px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 5px;
+
+
+
+    /* container background pattern */
+    background-color: var(--gradientBottom);
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, var(--gradientBottom) 9px), repeating-linear-gradient(var(--bg), var(--bg));
+}
+
+/* these control the column widths */
+
+.full {
+    flex: 1 1 100%;
+    max-width: 55rem;
+}
+
+.half {
+    
+    flex: 1 1 49%;
+    max-width: 27.5rem;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+
+header {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 120px;
+    /* change banner height here*/
+    border: 2px ridge var(--border);
+    border-radius: 5px;
+    position: relative;
+    font-family: "Fontdiner Swanky", serif;
+
+}
+
+header span {
+    font-size: 4em;
+    font-family: "Fontdiner Swanky", serif;
+    -webkit-text-fill-color: #FFECB6;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    margin: 10px;
+    text-shadow: 1px 1px var(--text),
+        -1px 1px var(--text),
+        1px -1px var(--accent),
+        -1px -1px var(--accent);
+    color: var(--gradientTop);
+}
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+}
+
+.header-break {
+    background: url(/bg/80x80th_carousel1d.gif);
+    background-position-y: top;
+    background-repeat: round;
+    position: relative;
+    margin-top: -5px;
+    width: 100%;
+    height: 80px;
+}
+
+
+/*style lists*/
+ul li {
+    list-style: url(/smalls/littleice.gif);
+}
+
+ul {
+    list-style-position: inside;
+    display: inline-block;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+
+section {
+    border: 2px ridge var(--border);
+    border-radius: 5px;
+    background: linear-gradient(var(--gradientTop), var(--gradientBottom));
+    padding: 5px;
+
+}
+
+
+
+.bottom {
+    background: url(/bg/80x80th_cloud1a.gif);
+    background-position: top;
+    background-repeat: repeat-x;
+    height: 100px;
+    max-width: 55rem;
+    margin: -1vw auto 12px auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+footer {
+
+    text-align: center;
+    bottom: 0;
+    margin-top: -1vw;
+    font-size: 0.8rem;
+
+}
+
+footer a {
+    text-decoration: none;
+
+}
+
+a img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+a:hover img {
+    transform: scale(1.1);
+    /* Slight zoom */
+    opacity: 0.8;
+    /* Slight fade */
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    
+    margin: 10px;
+    line-height: 1.2;
+    color: #4E3D42;
+}
+
+h1 {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 2px ridge var(--border);
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+h4 {
+    font-size: 1rem;
+    color: var(--accent);
+    padding-left: 12px;
+}
+
+
+/* prevents overflow on smaller screens */
+img {
+    max-width: 100%;
+    
+}
+
+pre {
+    overflow-x: auto;
+}
+
+
+a:hover,
+a:focus {
+    font-style: italic;
+}
+
+a:visited {
+    color: var(--accent);
+}
+
+table {
+    margin: 0 auto;
+    padding: 5px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    border-top: dotted;
+    border-top-color: #DECCE5;
+}
+
+mark {
+    background: #DECCE5 !important;
+}
+
+.center {
+    text-align: center;
+
+}
+
+
+.flexbox {
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: baseline;
+    white-space: wrap;
+    margin: auto;
+}
+
+
+.flexbox img {
+    max-width: 200px;
+
+}
+
+.textbox {
+    border: 2px ridge var(--border);
+    border-radius: 5px;
+    width: 60%;
+    margin: auto;
+}
+
+embed {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+
+/* fonts */
+.fontdiner-swanky-regular {
+    font-family: "Fontdiner Swanky", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}

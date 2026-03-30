@@ -1,108 +1,54 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import "@fontsource/fontdiner-swanky";
+import Layout from "@layouts/LandingLayout.astro";
+import TicketEntry from "@components/TicketEntry.astro";
 
-import Glupdates from "../components/Glupdates.astro";
-
-const title = "Gelsey Land";
-const subtitle = "welcome to park services";
-const bannerImage = "/bg/sayworldbg.webp";
-const tinyImage = "/smalls/sm-balloons.gif";
+import "../styles/landing.css";
+const title = "the park is open";
+const subtitle = "welcome websurfer";
+const bannerImage = "/link-backs/gelseylandbanner.jpg";
 ---
 
-<head>
-	<meta
-		http-equiv="Content-Security-Policy"
-		content="connect-src 'self' data: blob: https://status.cafe;"
-	/>
-</head>
+<Layout title={title} subtitle={subtitle} bannerImage={bannerImage}
+    ><div slot="full">
+        <p>
+            Here is a land where magic delights and smiles grow. All are welcome
+            to share in fun times and happy spaces. With familiar toys, cozy
+            games, and even a spooky sight or two - there's something for
+            everyone. Please show your <mark>ticket</mark> to the booth and have a
+            magical time!
+        </p>
+    </div>
+    <div slot="left-half">
+        <img src="/public/images/underconstructionnya.webp" />
+        <h3>Webrings</h3>
 
-<Layout
-	title={title}
-	subtitle={subtitle}
-	bannerImage={bannerImage}
-	tinyImage={tinyImage}
-	>
-<div slot="after-navl"></div>
-<div slot="main-text">
-		<div class="flexbox">
-			<p>
-				thank you for visiting the internets first themepark ran by a
-				little clown man! enjoy the rides, download our pixels
-				(ethically sourced of course), and fly to places inside my
-				imagination. Here you'll find collections dedicated to the
-				fantasies born of music, movies, games, and more. We have more
-				media recommendations than you can possibly spend your dwindling
-				free time with. So buckle up, hold on to your cotton candy, and
-				prepare for a whimsical journey through the colorful world of
-				Gelsey Land! &#127913;
-			</p>
-			<div><img src="images/littleman.webp" /></div>
-		</div>
-		<div class="divider-balloon"></div>
-		<h3>Mar 2026 to do</h3>
-		<ul>
-			<li>Post Nancy Drew recipes</li>
-			<li>create a landing page</li>
-			<li>separate my style css and my build css</li>
-			<li>with my new obsidian knowledge update my code with better best practices</li>
-		</ul>
-	</div>
-	<div slot="after-navr"></div>
+        <div id="nancydrew-webring-widget">
+            <div id="nancydrew-webring-title">
+                <a href="webrings/nancydrew_webring_list.html"
+                    >Nancy Drew Webring</a
+                >
+            </div>
+            <div id="nancydrew-webring-controls">
+                <a
+                    href="https://foxislands.neocities.org/Webrings/redirect?mode=prev&site=Gelsey_Land"
+                    >Previous</a
+                >
+                <a
+                    href="https://foxislands.neocities.org/Webrings/redirect?mode=rand&site=Gelsey_Land"
+                    >Random</a
+                >
 
-	<div slot="full">
-		<h1>mission statement</h1>
-		<p>
-			This site is more than just a cutesy theme for a personal site ...
-			okay tbf that is a large part of it but that's not the only reason.
-			Everyday I experience like 2 million various stimuli: the song on my
-			alarm, the first article I read on my feed, the video I play in the
-			background as I grind on my mobage while simultaneously working on a
-			project. I live and walk through noise and clutter. My theme park is
-			where I make sense of everything. I freeze the moments and take in
-			the little details. Its funny to think of a big crazy loud theme
-			park as a place for quiet contemplation, but I never have liked
-			traditional meditating or Thoreau style writers retreats. My brain
-			is loud and exciting. I dont want to clear my head i just want to be
-			able to sit in the passengers seat and experience my own thoughts as
-			a guest. I hope you enjoy the ride. &#127906;
-		</p>
-		<img src="/div/bluepinkdiv.png" />
-	</div>
+                <a
+                    href="https://foxislands.neocities.org/Webrings/redirect?mode=next&site=Gelsey_Land"
+                    >Next</a
+                >
+            </div>
+        </div>
+    </div>
 
-	<div slot="left-half">
-		<section class="half">
-			<Glupdates />
-		</section>
-	</div>
-	<div slot="right-half">
-		<section class="half">
-			<iframe
-				id="guestbook"
-				src="https://gelseyland.atabook.org/"
-				height="350px"
-				width="380px"
-				scrolling="yes"
-				loading="lazy"></iframe>
-		</section>
-	</div>
+    <div slot="right-half">
+        <TicketEntry />
+    </div>
 </Layout>
-<style>
-	.hero {
-		background:
-			url("/tables/buntingframe.png"), url("/umpd/groupphoto.png");
-		background-size: cover, cover;
-		background-position: center, center;
-		background-repeat: no-repeat, no-repeat;
-		height: 10rem;
-		position: relative;
-	}
-	.hero a {
-		margin: 0;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		-ms-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
-		font-size: 1rem !important ;
-	}
-</style>
+

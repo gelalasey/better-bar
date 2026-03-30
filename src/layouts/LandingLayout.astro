@@ -1,0 +1,54 @@
+---
+import "../styles/main.css";
+
+import "@fontsource/fontdiner-swanky";
+
+const { title, subtitle, bannerImage } = Astro.props;
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="/merry.gif" />
+        <title>{title}</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <header
+                class="banner"
+                style={`background-image: url(${bannerImage ?? "/link-backs/gelseylandbanner.jpg"});`}
+            >
+            </header>
+
+            <div class="header-break"></div>
+
+            <section class="full">
+                <h1>
+                    <img src={"/smalls/minirbwl.gif"} />
+                    {title}
+                    <img src={"/smalls/minirbwr.gif"} />
+                </h1>
+
+                <h2>{subtitle}</h2>
+
+                <slot name="full" />
+            </section>
+
+            <section class="half">
+                <slot name="left-half" />
+            </section>
+
+            <section class="half">
+                <slot name="right-half" />
+            </section>
+
+            <div class="bottom"></div>
+
+            <footer></footer>
+
+            <script src="/scripts/clicksplosion.js" defer></script>
+        </div>
+    </body>
+</html>

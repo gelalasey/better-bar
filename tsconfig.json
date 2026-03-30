@@ -12,9 +12,12 @@
     "esModuleInterop": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@styles/*": [
+        "./src/styles/*"
+      ],
+      "@components/*": [ "./src/components/*"],
     }
   }
 }
