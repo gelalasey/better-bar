@@ -427,9 +427,11 @@ mark{
 }
 
 
-.flexbox img{
+.flexbox img {
 	max-width: 200px;
-	
+	height: auto;
+	flex-wrap: wrap;
+
 }
 
 .textbox{
