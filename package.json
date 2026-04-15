@@ -6,10 +6,11 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.7",
+    "@astrojs/check": "^0.9.2",
     "@astrojs/react": "^4.4.2",
     "@astrojs/svelte": "^7.2.2",
     "@fontsource/fontdiner-swanky": "^5.2.7",
@@ -24,6 +25,13 @@
     "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "@types/marked": "^5.0.2"
+    "@types/marked": "^5.0.2",
+    "auto-changelog": "^2.5.0"
+  }, 
+  "auto-changelog": {
+    "output": "HISTORY.md",
+    "template": "keepachangelog",
+    "unreleased": true,
+    "commitLimit": false
   }
 }
