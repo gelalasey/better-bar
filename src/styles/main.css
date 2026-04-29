@@ -198,21 +198,7 @@ section {
 	object-fit: contain;
 }
 
-.shrine {
-padding: 10px;
-overflow: hidden;
-}
 
-.shrine > div {
-	text-align: center;
-}
-
-.shrine img{
-border-radius: 25px;	
-width: 160px;
-	height: 90px;
-object-fit: cover;
-}
 
 /* too lazy to recode so let's just reuse this format */
 .medart {

@@ -1,5 +1,5 @@
 ---
-import RandomBlinkies from "../components/RandomBlinkies.astro";
+import RandomStamp from "../components/RandomStamp.astro";
 ---
 
 <!-- src/components/navl.astro -->
@@ -10,12 +10,8 @@ import RandomBlinkies from "../components/RandomBlinkies.astro";
 	<nav>
 		<div>park map/you</div>
 		<a href="/web.html">web</a>
-		<a href="/music.html">music</a>
-		<a href="/game.html">games</a>
-		<a href="/anime.html">anime</a>
+		<a href="/favorites.html">favorites<img src="/smalls/new16.gif" /></a>
 		<a href="/art.html">creations</a>
-		<a href="/horror.html">horror</a>
-		<a href="/otome.html">otomes</a>
 		<a href="/self.html">lifestyle</a>
 	</nav>
 	<!-- FC2 Counter  Starts here -->
@@ -28,6 +24,42 @@ import RandomBlinkies from "../components/RandomBlinkies.astro";
 			src="//counter1.fc2.com/counter_img.php?id=40528799&main=1"
 		/></noscript
 	>
-	<RandomBlinkies />
-	
+	<table>
+		<tr>
+			<td
+				style="background-image: url(/tables/1-blue//1.gif); width: 18px; height: 32px;"
+			></td>
+			<td
+				style="background-image: url(/tables/1-blue//2.gif); width: 100px; height: 32px;"
+			></td>
+			<td
+				style="background-image: url(/tables/1-blue//3.gif); width: 17px; height: 32px;"
+			></td>
+		</tr>
+		<tr>
+			<td
+				style="background-image: url(/tables/1-blue//4.gif); width: 18px; height: 20px;"
+			></td>
+			<td
+				style="text-align: center; width: 100px; height: 20px; background-color: aliceblue"
+			>
+				<RandomStamp />
+				<td
+					style="background-image: url(/tables/1-blue//5.gif); width: 17px; height: 20px;"
+				></td>
+			</td>
+			<tr>
+				<td
+					style="background-image: url(/tables/1-blue//6.gif); width: 18px; height: 23px;"
+				></td>
+				<td
+					style="background-image: url(/tables/1-blue//7.gif); width: 100px; height: 23px;"
+				></td>
+				<td
+					style="background-image: url(/tables/1-blue//8.gif); width: 17px; height: 23px;"
+				></td>
+			</tr>
+		</tr>
+		<!-- optional spot for styled button outside the navigation box -->
+	</table>
 </div>

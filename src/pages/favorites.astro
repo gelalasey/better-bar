@@ -1,0 +1,136 @@
+---
+import RecentAnime from "../components/RecentAnime.astro";
+import Layout from "../layouts/Layout.astro";
+
+const title = "midway";
+const subtitle = "media recs";
+const bannerImage =
+    "https://64.media.tumblr.com/3f45f0a29e81d327ffdcfb66538013d6/73f2176b49545e06-3f/s400x600/f0d49bcca1f5e900c9168f17213edde4b40ce80a.gifv";
+const tinyImage = "/smalls/sm-rtv.png";
+---
+
+<Layout
+    title={title}
+    subtitle={subtitle}
+    bannerImage={bannerImage}
+    tinyImage={tinyImage}
+>
+    <div slot="main-text">
+        <div class="center">
+            <p>
+                gelsey ahhh! where did all the individual pages go on your site?
+                well kid - sometimes people change. somtimes adults wake up and
+                realize they're in a place they don't want to be and have no
+                idea how to get back. and sometimes when I'm full of anxiety and
+                aderall I feel the need to reduce redundancy in my life. this
+                where all my media recs will be living going forward - with
+                inidivual blog posts included if for any reason I feel the need
+                to write something bigger. I hope this can serve more as a log
+                of what I do like and recommend rather than feeling I *have* to
+                make content. Too much pressure. Also my divorce has sucked all
+                the soul out of me.
+            </p>
+        </div>
+    </div>
+
+    <div slot="full">
+        <h2>my shelf</h2>
+        <h3>anime:</h3>
+        <p>
+            yuru camping, <a href="/posts/post-a2/"> fma brotherhood</a>, kono
+            suba, food wars, demon slayer, <a href="/posts/post-a1/"
+                >zombie land saga</a
+            >, uma musume, solo leveling, apothecary diaries, one piece, kaguya
+            sama, kakeguri, sabage-gu!, dumbbell nan kilo moteru?
+        </p>
+        <h3>games:</h3>
+        <p>
+            <a href="/umpd">uma musume</a>, <a
+                href="/tags/infinity
+            nikki/"
+            >
+                infinity nikki</a
+            >, stardew valley, the sims, fields of mystria, nancy drew, <a
+                href="/tags/gakumas/"
+            >
+                gakuen idolmaster</a
+            >, <a href="/tags/acnh/"> acnh</a>, mobile dress-ups, tycoons,
+            yakuza
+        </p>
+
+        <h3>music:</h3>
+        <h4>jpop:</h4>
+        <p>
+            SUPER☆GiRLS,可憐なアイボリー (karen na ivory), 高嶺のなでしこ
+            (takane no nadeshiko), 超ときめき♡宣伝部 (cho tokimeki sendenbu),
+            Wake Up, girls! (WUG), さくら学院 (sakura gakuen), <a
+                href="/posts/post-m4/">µ muse</a
+            >, EMPiRE, keyakizaka46, akb48, dempagumi inc., f5ve, chuning candy, <a
+                href="/posts/post-m1">#らぶしっく (lovesick)</a
+            >
+        </p>
+        <h4>kpop</h4>
+        <p>
+            xlov, new jeans, twice, ive, mamamoo, lesserafim, i-dle, jeon somi,
+            triples
+        </p>
+        <h4>global</h4>
+        <p>
+            xg, ghost, b52s, babymetal, marina, ladygaga, pussycat dolls, 80s
+            new wave era, 100 gecs, Charli xcx, lil Nas X, Styx
+        </p>
+        <h3>movies</h3>
+        <p>
+            but i'm a cheerleader, suckerpunch, black swan, innocence, picnic at
+            hanging rock
+        </p>
+        <h3>horror:</h3>
+        <h4>movies</h4>
+        <p>
+            1br, midsommar, hell house llc, silence of the lambs, get out,
+            se7en, suicide club, undertone,
+        </p>
+        <h4>games</h4>
+        <p>
+            mad father, diabolik lovers*, needy streamer overload, DDLC, <a
+                href="tags/fnaf/">fnaf</a
+            >
+        </p>
+        <h4>misc</h4>
+        <p>
+            <a href="posts/post-h2/">haunted houses</a>, args, behind the scenes
+            of horror
+        </p>
+        <h3>romance:</h3>
+        <p>
+            <a href="posts/post-01">love and deepspace</a>, kissed by the
+            baddest bidder, rose in the embers, mystic messenger, obey me, nu
+            carnival, code realize
+        </p>
+        <p>
+            <i
+                >*this game falls weirdly inbetween horror and otome due to
+                extremely dark elements, sensitive viewers beware</i
+            >
+        </p>
+    </div>
+    <div slot="left-half">
+        <h2>current media list</h2>
+        <ul>
+            <li>game: infinity nikki</li>
+
+            <li>read: one piece</li>
+            <li>tv: Dan Da Dan</li>
+            <li>movie: undertone</li>
+            <li>
+                listen: Shaboozey "Good News", Joey Valence & Brae "The Baddest"
+            </li>
+        </ul>
+    </div>
+
+    <div slot="right-half">
+        <div class="center">
+            <RecentAnime />
+        </div>
+    </div>
+</Layout>

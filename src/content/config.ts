@@ -61,8 +61,10 @@ const traineeCollection = defineCollection({
         )
     }),
 });
+
+
 export const collections = { 
     blog,
     umpd, 
-    traineeSection: traineeCollection,
+    traineeSection: traineeCollection
 };

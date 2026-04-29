@@ -17,6 +17,9 @@
       "@styles/*": [
         "./src/styles/*"
       ],
+      "@content/*": [
+        "./src/content/*"
+      ],
       "@components/*": [ "./src/components/*"],
     }
   }

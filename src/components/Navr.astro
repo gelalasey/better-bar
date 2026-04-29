@@ -1,6 +1,7 @@
 ---
-import RandomStamp from "../components/RandomStamp.astro";
+
 import StatusCafe from "../components/StatusCafe.astro";
+import RandomBlinkies from "../components/RandomBlinkies.astro";
 ---
 
 <!-- src/components/navr.astro -->
@@ -16,49 +17,13 @@ import StatusCafe from "../components/StatusCafe.astro";
 		<div>staff only/me</div>
 		<a href="../../about.html">about<img src="/smalls/new16.gif" /></a>
 		<a href="../../linksout.html"
-			>links out<img src="/smalls/new16.gif" /></a
+			>links out</a
 		>
-		<a href="../../toybox.html">toybox<img src="/smalls/new16.gif" /></a>
+		<a href="../../toybox.html">toybox</a>
 		<a href="../../credits.html">credits</a>
 		<a href="https://gelseyland.atabook.org/">messages</a>
-		<a href="../../blog.html">blog<img src="/smalls/new16.gif" /></a>
+		<a href="../../blog.html">blog</a>
 	</nav>
-	<table>
-		<tr>
-			<td
-				style="background-image: url(/tables/1-blue//1.gif); width: 18px; height: 32px;"
-			></td>
-			<td
-				style="background-image: url(/tables/1-blue//2.gif); width: 100px; height: 32px;"
-			></td>
-			<td
-				style="background-image: url(/tables/1-blue//3.gif); width: 17px; height: 32px;"
-			></td>
-		</tr>
-		<tr>
-			<td
-				style="background-image: url(/tables/1-blue//4.gif); width: 18px; height: 20px;"
-			></td>
-			<td
-				style="text-align: center; width: 100px; height: 20px; background-color: aliceblue"
-			>
-				<RandomStamp />
-				<td
-					style="background-image: url(/tables/1-blue//5.gif); width: 17px; height: 20px;"
-				></td>
-			</td>
-			<tr>
-				<td
-					style="background-image: url(/tables/1-blue//6.gif); width: 18px; height: 23px;"
-				></td>
-				<td
-					style="background-image: url(/tables/1-blue//7.gif); width: 100px; height: 23px;"
-				></td>
-				<td
-					style="background-image: url(/tables/1-blue//8.gif); width: 17px; height: 23px;"
-				></td>
-			</tr>
-		</tr>
-		<!-- optional spot for styled button outside the navigation box -->
-	</table>
+
+	<RandomBlinkies />
 </div>
