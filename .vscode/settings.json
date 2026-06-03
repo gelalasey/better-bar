@@ -45,5 +45,6 @@
         "umpd",
         "wght",
         "yeehaw"
-    ]
+    ],
+    "chat.disableAIFeatures": false
 }
