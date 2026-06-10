@@ -10,9 +10,8 @@
   "compilerOptions": {
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
+      "@/*": ["./src/*"],
       "@layouts/*": ["./src/layouts/*"],
       "@styles/*": [
         "./src/styles/*"

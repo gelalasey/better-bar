@@ -46,5 +46,6 @@
         "wght",
         "yeehaw"
     ],
-    "chat.disableAIFeatures": false
+    "chat.disableAIFeatures": false,
+    "editor.suggest.showWords": false
 }
