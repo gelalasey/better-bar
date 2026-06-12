@@ -1,8 +1,8 @@
+
 // @ts-check
 import { defineConfig } from 'astro/config';
 import path from 'node:path';
 import react from "@astrojs/react";
-import tailwindcss from "@tailwindcss/vite";
 import AutoImport from "astro-auto-import";
 import remarkCollapse from "remark-collapse";
 import remarkToc from "remark-toc";
@@ -17,7 +17,6 @@ export default defineConfig({
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "ignore" : "ignore",
   vite: {
-    plugins: [tailwindcss()],
     resolve: {
       alias: {
         '@': path.resolve('.', 'src')
@@ -26,6 +25,7 @@ export default defineConfig({
   },
   
   integrations: [
+
     svelte(),
     react(),
     AutoImport({

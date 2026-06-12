@@ -12,14 +12,20 @@
     "esModuleInterop": true,
     "paths": {
       "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@config/*": ["./src/config/*"],
+      "@content/*": ["./src/content/*"],
       "@layouts/*": ["./src/layouts/*"],
-      "@styles/*": [
-        "./src/styles/*"
+      "@pages/*": ["./src/pages/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@public/*": ["./public/*"]
+
+
+    },
+    "plugins": [
+      {
+        "name": "@astrojs/ts-plugin"
+       },
       ],
-      "@content/*": [
-        "./src/content/*"
-      ],
-      "@components/*": [ "./src/components/*"],
-    }
   }
 }
