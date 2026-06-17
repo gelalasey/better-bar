@@ -4,6 +4,7 @@ import BlogPost from "../components/BlogPost.astro";
 import MyTags from "../components/MyTags.astro";
 import { getCollection } from "astro:content";
 
+
 const allPosts = await getCollection("blog");
 allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 
