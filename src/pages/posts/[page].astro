@@ -1,34 +1,28 @@
 ---
-import BlogLayout from "../../layouts/BlogLayout.astro";
-import BlogPost from "../../components/BlogPost.astro";
-import MyTags from "../../components/MyTags.astro";
 import { getCollection } from "astro:content";
+import { paginateCollection } from "../../lib/paginate";
+import BlogLayout from "@layouts/BlogLayout.astro";
+import MyTags from "@components/MyTags.astro";
+import BlogPost from "@components/BlogPost.astro";
 
-// Generate static paths
-export async function getStaticPaths() {
-    const posts = await getCollection("blog");
-    posts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+// Let Astro infer the correct type (IMPORTANT)
+const posts = await getCollection("blog");
 
-    const pageSize = 10;
-    const numPages = Math.ceil(posts.length / pageSize);
+const page = Number(Astro.params.page ?? 1);
 
-    return Array.from({ length: numPages }, (_, i) => ({
-        params: { page: String(i + 1) },
-    }));
-}
-
-// Current page
-const pageNumber = Number(Astro.params.page || 1);
-
-// All posts sorted newest first
-const allPosts = await getCollection("blog");
-allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
-
-// ✅ Make sure paginatedPosts is declared **inside the frontmatter**
-const pageSize = 10;
-const startIndex = (pageNumber - 1) * pageSize;
-const endIndex = startIndex + pageSize;
-const paginatedPosts = allPosts.slice(startIndex, endIndex);
+// Pagination (type-safe because we don't widen types manually)
+const {
+    items: paginatedPosts,
+    hasNext,
+    hasPrev,
+    page: currentPage,
+    totalPages,
+} = paginateCollection(
+    posts,
+    page,
+    10,
+    (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
+);
 ---
 
 <BlogLayout title="All Posts" subtitle="Archive">
@@ -38,22 +32,22 @@ const paginatedPosts = allPosts.slice(startIndex, endIndex);
             {
                 paginatedPosts.map((post) => (
                     <BlogPost
-                        url={`/posts/${post.slug}/`}
+                        url={`/posts/${post.id}/`}
                         title={post.data.title}
                         image={post.data.image}
-                        date={post.data.pubDate}
                     />
                 ))
             }
         </div>
 
         <div class="pagination">
-            {pageNumber > 1 && <a href={`/posts/${pageNumber - 1}`}>← Newer</a>}
-            {
-                endIndex < allPosts.length && (
-                    <a href={`/posts/${pageNumber + 1}`}>Older →</a>
-                )
-            }
+            {hasPrev && <a href={`/posts/${currentPage - 1}`}>← Newer</a>}
+
+            <span>
+                Page {currentPage} / {totalPages}
+            </span>
+
+            {hasNext && <a href={`/posts/${currentPage + 1}`}>Older →</a>}
         </div>
     </div>
 

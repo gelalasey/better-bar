@@ -1,4 +1,12 @@
 ---
+
+//this generates the slug i need to run the hyperlink
+interface Props {
+    url: string;
+    title: string;
+    image?: string | { src: string; alt?: string };
+}
+
 const { url, title, image } = Astro.props;
 
 // Normalize image into a single shape

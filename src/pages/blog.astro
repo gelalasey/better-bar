@@ -3,12 +3,11 @@ import BlogLayout from "../layouts/BlogLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
 import MyTags from "../components/MyTags.astro";
 import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
 
-
-const allPosts = await getCollection("blog");
-allPosts.sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
-
-const latestPosts = allPosts.slice(0, 5);
+const posts: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 
 const title = "Park Newsletter";
 const subtitle = "Blog posts";
@@ -16,8 +15,6 @@ const subtitle = "Blog posts";
 
 <BlogLayout title={title} subtitle={subtitle}>
     <div slot="main-text">
-        <img src="/images/underconstructionnya.webp" />
-        <p><mark>due to recent astro updates (rip glob) the blog is under construction! in the meantime try touching grass!</mark></p>
         <p>
             ignore the subtitle, this is not a blog. this is the <b
                 >park newsletter</b
@@ -70,7 +67,7 @@ const subtitle = "Blog posts";
         <h1>Latest Posts</h1>
         <div class="posts-grid">
             {
-                latestPosts.map((post) => (
+                posts.map((post) => (
                     <BlogPost
                         url={`/posts/${post.id}/`}
                         title={post.data.title}
@@ -79,7 +76,6 @@ const subtitle = "Blog posts";
                 ))
             }
         </div>
-
         <p class="more-link">
             <a href="/posts/1">View all posts →</a>
         </p>

@@ -7,7 +7,7 @@ image:
   src: '/mine/thas01.jpg'
   alt: 'fuck the whole ass ocean'
 tags: ["personal", "horror"]
-intro: 'I know what you might be thinking - "Gelsey you are a monster. How can you hate the ocean"? Easily. It's not so much that I have beef with this haunted watery waiting room for the grim reaper, moreso it hates me. Everytime I learn a new factoid about the 7 seas I am reminded that there are just too many ways to die than there are on land. I'm here today to spread the anti-ocean agenda and turn more souls to the cause.'
+intro: "I know what you might be thinking - Gelsey you are a monster. How can you hate the ocean? Easily. Its not so much that I have beef with this haunted watery waiting room for the grim reaper, moreso it hates me. Everytime I learn a new factoid about the 7 seas I am reminded that there are just too many ways to die than there are on land. Im here today to spread the anti-ocean agenda and turn more souls to the cause."
 ---
 
 ## To Clarify my anti-ocean stance
