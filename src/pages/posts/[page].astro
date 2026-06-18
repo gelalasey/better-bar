@@ -5,15 +5,20 @@ import BlogLayout from "@layouts/BlogLayout.astro";
 import MyTags from "@components/MyTags.astro";
 import BlogPost from "@components/BlogPost.astro";
 
+export async function getStaticPaths() {
+    const posts = await getCollection("blog");
+    const totalPages = Math.ceil(posts.length / 10);
 
-export const prerender = false;
+    return Array.from({ length: totalPages }, (_, i) => ({
+        params: {
+            page: String(i + 1),
+        },
+    }));
+}
 
-// Let Astro infer the correct type (IMPORTANT)
 const posts = await getCollection("blog");
+const page = Number(Astro.params.page);
 
-const page = Number(Astro.params.page ?? 1);
-
-// Pagination (type-safe because we don't widen types manually)
 const {
     items: paginatedPosts,
     hasNext,
