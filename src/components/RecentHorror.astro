@@ -23,7 +23,7 @@ const latestPost = filteredPosts[0];
     latestPost ? (
         <div class="latest-post">
             <article class="card">
-                <a href={`/posts/${latestPost.slug}`}>
+                <a href={`/posts/${latestPost.id}`}>
                     <img
                         src={
                             typeof latestPost.data.image === "string"
