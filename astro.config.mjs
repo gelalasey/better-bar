@@ -4,11 +4,10 @@ import { defineConfig } from 'astro/config';
 import path from 'node:path';
 import react from "@astrojs/react";
 import AutoImport from "astro-auto-import";
-import remarkCollapse from "remark-collapse";
 import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
 import svelte from '@astrojs/svelte';
-
+import { unified } from '@astrojs/markdown-remark';
 
 
 // https://astro.build/config 
@@ -41,7 +40,9 @@ export default defineConfig({
     }),
   ],
   markdown: {
-    remarkPlugins: [remarkToc, [remarkCollapse, { test: "Table of contents" }]],
+    processor: unified({
+      remarkPlugins: [remarkToc],
+    }),
   },
 });
 
