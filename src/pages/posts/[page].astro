@@ -5,6 +5,9 @@ import BlogLayout from "@layouts/BlogLayout.astro";
 import MyTags from "@components/MyTags.astro";
 import BlogPost from "@components/BlogPost.astro";
 
+
+export const prerender = false;
+
 // Let Astro infer the correct type (IMPORTANT)
 const posts = await getCollection("blog");
 
