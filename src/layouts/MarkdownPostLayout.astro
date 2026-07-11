@@ -21,6 +21,7 @@ if (typeof frontmatter.image === "string") {
 <BlogLayout title={frontmatter.title}>
     <!-- main text (description + image) -->
     <div slot="main-text">
+        <br />
         {
             frontmatter.description && (
                 <p>
@@ -31,7 +32,7 @@ if (typeof frontmatter.image === "string") {
         <br />
         {
             displayImage && (
-                <div class="flexbox">
+                <div class="post-image">
                     <img src={displayImage} alt={frontmatter.title} />
                 </div>
             )

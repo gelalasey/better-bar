@@ -1,7 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
-
 import Glupdates from "@components/Glupdates.astro";
+import Ad from "@components/Ad.astro";
 
 const title = "Gelsey Land";
 const subtitle = "welcome to park services";
@@ -38,15 +38,19 @@ const tinyImage = "/smalls/sm-balloons.gif";
 			<div><img src="/images/littleman.webp" /></div>
 		</div>
 		<div class="divider-balloon"></div>
-		<h3>June 2026 to do</h3>
+		<h3>July 2026 to do</h3>
 		<ul>
-			<li>lots and lots of back end clean up for new astro updates</li>
+			<li>
+				<s>lots and lots of back end clean up for new astro updates</s>
+			</li>
 			<li>
 				<s
 					>fix the blog to be able to load posts and make half this site
-					functionable again</s>
+					functionable again</s
+				>
 			</li>
 			<li>set up our email news letter!</li>
+			<li>clean up my blog posts for spelling errors</li>
 		</ul>
 	</div>
 	<div slot="after-navr"></div>
@@ -77,6 +81,7 @@ const tinyImage = "/smalls/sm-balloons.gif";
 	</div>
 	<div slot="right-half">
 		<section class="half">
+			<Ad />
 			<h2>coming soon!</h2>
 			<p>a section beyond your wildest imagination!!</p>
 			<img src="/images/underconstructionnya.webp" />
