@@ -7,9 +7,6 @@ import AutoImport from "astro-auto-import";
 import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
 import svelte from '@astrojs/svelte';
-import { unified } from '@astrojs/markdown-remark';
-
-
 // https://astro.build/config 
 export default defineConfig({
   site: config.site.base_url ? config.site.base_url : "http://gelseyland.neocities.org",
@@ -40,9 +37,7 @@ export default defineConfig({
     }),
   ],
   markdown: {
-    processor: unified({
-      remarkPlugins: [remarkToc],
-    }),
+    remarkPlugins: [remarkToc],
   },
 });
 
