@@ -2,6 +2,7 @@
 import Layout from "@layouts/Layout.astro";
 import Glupdates from "@components/Glupdates.astro";
 import Ad from "@components/Ad.astro";
+import Bubble from "@components/Bubble.astro";
 
 const title = "Gelsey Land";
 const subtitle = "welcome to park services";
@@ -15,7 +16,6 @@ const tinyImage = "/smalls/sm-balloons.gif";
 		content="connect-src 'self' data: blob: https://status.cafe;"
 	/>
 </head>
-
 <Layout
 	title={title}
 	subtitle={subtitle}
@@ -26,16 +26,23 @@ const tinyImage = "/smalls/sm-balloons.gif";
 	<div slot="main-text">
 		<div class="flexbox">
 			<p>
-				thank you for visiting the internets first themepark ran by a little
-				clown man! enjoy the rides, download our pixels (ethically sourced of
-				course), and fly to places inside my imagination. Here you'll find more
-				media recommendations than you can possibly spend your dwindling free
-				time with. See the park owners latest creations, read about incredible
-				discoveries and take the shuttle to your next web surfing location. So
-				buckle up, hold on to your cotton candy, and prepare for a whimsical
-				journey through the colorful world of Gelsey Land! &#127913;
+				thank you for visiting the internets first themepark ran by{" "}
+				<a href="/about">a little clown man!</a> enjoy the rides, download our pixels
+				(ethically sourced of course), and fly to places inside my imagination. Here
+				you'll find more{" "}
+				<a href="/favorites">media recommendations</a>
+				than you can possibly spend your dwindling free time with. See the park owners
+				latest <a href="/art">creations</a>, read about incredible <a
+					href="/blog">discoveries</a
+				>
+				and take <a href="linksout">the shuttle</a> to your next web surfing location.
+				So buckle up, hold on to your cotton candy, and prepare for a whimsical journey
+				through the colorful world of
+				<Bubble text=" Gelsey Land" /> &#127913;
 			</p>
-			<div><img src="/images/littleman.webp" /></div>
+			<div>
+				<img src="/images/littleman.webp" />
+			</div>
 		</div>
 		<div class="divider-balloon"></div>
 		<h3>July 2026 to do</h3>
@@ -44,15 +51,17 @@ const tinyImage = "/smalls/sm-balloons.gif";
 				<s>lots and lots of back end clean up for new astro updates</s>
 			</li>
 			<li>
-				<s
-					>fix the blog to be able to load posts and make half this site
-					functionable again</s
-				>
+				<s>
+					fix the blog to be able to load posts and make half this site
+					functionable again
+				</s>
 			</li>
 			<li>
 				<s>set up our email news letter!</s>
 			</li>
-			<li><s>clean up my blog posts for spelling errors</s></li>
+			<li>
+				<s>clean up my blog posts for spelling errors</s>
+			</li>
 		</ul>
 	</div>
 	<div slot="after-navr"></div>
@@ -60,8 +69,8 @@ const tinyImage = "/smalls/sm-balloons.gif";
 	<div slot="full">
 		<h1>mission statement</h1>
 		<p>
-			This site is more than just a cutesy theme for a personal site ... okay
-			tbf that is a large part of it but that's not the only reason. Everyday I
+			This prk is more than just a cutesy theme for a personal site ... okay tbf
+			that is a large part of it but that's not the only reason. Everyday I
 			experience like 2 million various stimuli: the song on my alarm, the first
 			article I read on my feed, the video I play in the background as I grind
 			on my mobage while simultaneously working on a deadline. I live and walk
@@ -77,16 +86,13 @@ const tinyImage = "/smalls/sm-balloons.gif";
 	</div>
 
 	<div slot="left-half">
-		<section class="half">
-			<Glupdates />
-		</section>
+		<Glupdates />
 	</div>
 	<div slot="right-half">
-		<section class="half">
-			<Ad />
+
 			<h2>coming soon!</h2>
 			<p>a section beyond your wildest imagination!!</p>
 			<img src="/images/underconstructionnya.webp" />
-		</section>
+		
 	</div>
 </Layout>

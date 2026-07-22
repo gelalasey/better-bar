@@ -1,15 +1,42 @@
-.shrine {
+
+@media (max-width: 32rem) {
+    .shrine {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+@media (min-width: 32.1rem) {
+    .shrine {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+}
+}
+.shrineitem {
+    text-align: center;
     padding: 10px;
     overflow: hidden;
 }
 
-.shrine>div {
-    text-align: center;
-}
-
-.shrine img {
+.shrinehero{
     border-radius: 25px;
-    width: 160px;
+    width: 150px;
     height: 90px;
     object-fit: cover;
 }
+
+/*I need to work this  in at one point
+.shrinecover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    border: 2px solid white;
+    opacity: 0.7;
+}
+
+*/

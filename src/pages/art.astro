@@ -1,6 +1,8 @@
 ---
 import RecentArt from "../components/RecentArt.astro";
 import Layout from "../layouts/Layout.astro";
+import "@styles/shrine.css";
+import "@styles/artgalley.css"
 
 const title = "carousel";
 const subtitle = "my creations";
@@ -19,15 +21,14 @@ const tinyImage = "/smalls/sm-mcrown.gif";
         <div class="flexbox">
             <p>
                 i am a jack of all trades and master of none - truly. adhd is a
-                disease. here are some of thefun things I've created that span
+                disease. here are some of the fun things I've created that span
                 all types of works. i hope you enjoy.
             </p>
             <p>
                 i'm an artist and a perfectionist - meaning i hate showing off
                 my work. but maybe you won't see all the tiny mistakes i hate.
-                hell you might even enjoy it.
+                hell, you might even enjoy it.
             </p>
-            <h1> Recent Creation</h1>
         </div>
         <div class="center">
             <RecentArt />
@@ -35,16 +36,15 @@ const tinyImage = "/smalls/sm-mcrown.gif";
     </div>
 
     <div slot="full">
-        <h1>gallery</h1>
-    
-        <h2>miniatures</h2>
-        <div class="flexbox">
-            <div class="shrine">
-                <img src="/blog/art/garden7.jpg" />
+        <h2>gallery</h2>
+        <h3>miniatures</h3>
+        <div class="shrine">
+            <div class="shrineitem">
+                <img class="shrinehero" src="/blog/art/garden7.jpg" />
                 <a href="/posts/post-c1/"><h4>mini garden</h4></a>
             </div>
-            <div class="shrine">
-                <img src="/blog/art/w9.jpg" />
+            <div class="shrineitem">
+                <img class="shrinehero" src="/blog/art/w9.jpg" />
                 <a href="/posts/post-c2/"><h4>witches house</h4></a>
             </div>
         </div>
@@ -76,7 +76,7 @@ const tinyImage = "/smalls/sm-mcrown.gif";
     </div>
     <div slot="right-half">
         <h2>piccrews</h2>
-        <div class="flexbox" style="flex-direction: row;">
+        <div class="shrine">
             <a href="https://picrew.me/en/image_maker/58420" target="_blank"
                 ><img src="/avatar/gamergel.png" /></a
             >

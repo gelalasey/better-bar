@@ -60,12 +60,23 @@ body {
 	background-color: var(--gradientBottom);
 	background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--gradientBottom) 9px ), repeating-linear-gradient( var(--bg), var(--bg));
 }
-/* these control the column widths */
+/* flex and max width control the column widths */
 .small { flex: 1 1 9%; max-width: 15rem;}
-.large { flex: 1 1 82%; max-width: 32.1rem;}
+.large { flex: 1 1 82%; max-width: 32.1rem;
+justify-content: center;
+}
 .full { flex: 1 1 100%; max-width: 55rem;}
-.half { flex: 1 1 49%;  max-width: 27.5rem;}
 
+.half { flex: 1 1 49%;  
+	max-width: 27.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+/* styling within each box, these are children */
+.halfinner {
+justify-self: center;
+}
 
 header {
 	background-size: cover;
@@ -117,8 +128,10 @@ nav {
 	border-radius: 5px;
 	padding: 5px;
 	background: linear-gradient(var(--gradientTop),var(--gradientBottom));
+
 	
 }
+
 nav div {
 	text-align: center;
 	font-size: 1.25rem;
@@ -145,6 +158,8 @@ div.small > img {
 	border:2px ridge var(--border);
 	border-radius: 5px;
 }
+
+
 /*lists*/
 ul li {
   list-style: url(/smalls/littleice.gif);
@@ -164,9 +179,14 @@ section {
 	border-radius: 5px;
 	background: linear-gradient(var(--gradientTop),var(--gradientBottom));
 	padding: 5px;
-	
-}
 
+}
+/* for splitting a wide section into two baby divs */
+
+.splitscreen{
+	display: grid;
+grid-template-columns: 1fr 1fr;
+}
 
 /*For specific Image and Pic Formats*/
 .dividerimg {
@@ -197,30 +217,6 @@ section {
 	background-image: url('/div/ticketdiv.png');
 	object-fit: contain;
 }
-
-
-
-/* too lazy to recode so let's just reuse this format */
-.medart {
-	padding: 10px;
-	overflow: hidden;
-	width: 150px;
-	height: 150px;
-}
-
-.medart>div {
-	text-align: center;
-}
-
-.medart img {
-	border-radius: 15px;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-
-
 
 .bottom{
 	background: url(/bg/80x80th_cloud1a.gif);
@@ -285,8 +281,12 @@ h4 {
 }
 
 
-/* prevents overflow on smaller screens */
-img { max-width: 100%; }
+
+img { max-width: 100%; 
+margin: auto
+}
+
+/* img maxprevents overflow on smaller screens */
 pre { overflow-x: auto; }
 
 
@@ -315,48 +315,6 @@ mark{
 .center{
 	text-align: center;
 	
-}
-/* art arrays */
-.artmini{
-    flex-direction: row;
-    flex: 1 1 600px;
-}
-.artmini img{
-    max-width:33px;
-}
-
-.artsmall{
-    flex-direction: row;
-    flex: 1 1 600px;
-}
-.artsmall img{
-    max-width:50px;
-}
-
-.artlarge{
-    flex-direction: row;
-    flex: 1 1 600px;
-}
-.artlarge img{
-    max-width:100px;
-}
-
-.flexbox{
-	display: flex;
-	flex: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-content: baseline;
-	white-space: wrap;
-	margin: auto;
-}
-
-
-.flexbox img {
-	max-width: 200px;
-	height: auto;
-	flex-wrap: wrap;
-
 }
 
 .textbox{
@@ -392,7 +350,7 @@ embed{
 }
 
 .codebox{
-	display: block;
+	display: flex;
  	width: 150px;
 	overflow: auto;
 	background-image: url(/bg/hoshi_y_t.gif);
@@ -400,18 +358,7 @@ embed{
 	padding: 5px;
 	
 }
-/*Status Cafe CSS*/
-#statuscafe {
-    padding: .5em;
-    background-color: #FFECB6;
-    border: 1px solid teal;
-}
-#statuscafe-username {
-    margin-bottom: .5em;
-}
-#statuscafe-content {
-    margin: 0 1em 0.5em 1em;
-}
+
 
 
 

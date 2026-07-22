@@ -2,15 +2,13 @@
 import StatusCafe from "../components/StatusCafe.astro";
 import RandomBlinkies from "../components/RandomBlinkies.astro";
 ---
-
-<!-- src/components/navr.astro -->
 <head>
 	<meta
 		http-equiv="Content-Security-Policy"
 		content="connect-src 'self' data: blob: https://status.cafe;"
 	/>
 </head>
-<div class="navr">
+
 	<StatusCafe />
 	<nav>
 		<div>staff only/me</div>
@@ -22,4 +20,4 @@ import RandomBlinkies from "../components/RandomBlinkies.astro";
 	</nav>
 
 	<RandomBlinkies />
-</div>
+

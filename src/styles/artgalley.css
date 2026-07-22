@@ -1,0 +1,46 @@
+/* art arrays */
+.artmini {
+  flex-direction: row;
+  flex: 1 1 600px;
+}
+
+.artmini img {
+  max-width: 33px;
+}
+
+.artsmall {
+  flex-direction: row;
+  flex: 1 1 600px;
+}
+
+.artsmall img {
+  max-width: 50px;
+}
+
+.artlarge {
+  flex-direction: row;
+  flex: 1 1 600px;
+}
+
+.artlarge img {
+  max-width: 100px;
+}
+
+/* too lazy to recode so let's just reuse this format */
+.medart {
+  padding: 10px;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+}
+
+.medart>div {
+  text-align: center;
+}
+
+.medart img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

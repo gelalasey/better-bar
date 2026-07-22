@@ -1,5 +1,6 @@
 ---
-import "../styles/card.css";
+import "@styles/recentblog.css";
+import "@fontsource/fontdiner-swanky";
 import { getCollection } from "astro:content";
 
 const { tag = "art" } = Astro.props;
@@ -23,7 +24,9 @@ const latestPost = filteredPosts[0];
     latestPost ? (
         <div class="latest-post">
             <div class="grid">
+                <p class="cardtitle">Recent in Creations</p>
                 <article class="card">
+                    <div class="cardcover"></div>
                     <a href={`/posts/${latestPost.id}`}>
                         <img
                             src={
