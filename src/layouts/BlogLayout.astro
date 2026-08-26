@@ -51,6 +51,10 @@ const { title, subtitle, bannerImage } = Astro.props;
                 <slot name="full" />
                 <!-- this is where the meat of the content lives -->
             </section>
+            <section class="full">
+                <slot name="tags" />
+            <br>
+            </section>
             <!--I WANT TO PUT A COMMENT BOX HERE EVENTUALLY -->
             <div class="bottom"></div>
 

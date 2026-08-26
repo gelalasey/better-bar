@@ -20,16 +20,9 @@ if (typeof frontmatter.image === "string") {
 
 <BlogLayout title={frontmatter.title}>
     <!-- main text (description + image) -->
-    <div slot="main-text">
-        <br />
-        {
-            frontmatter.description && (
-                <p>
-                    <em>{frontmatter.description}</em>
-                </p>
-            )
-        }
-        <br />
+    <div slot="main-text" class="intro">
+        <p class="blog-date"><i>{frontmatter.pubDate}</i></p>
+        <br>
         {
             displayImage && (
                 <div class="post-image">
@@ -37,6 +30,14 @@ if (typeof frontmatter.image === "string") {
                 </div>
             )
         }
+        {
+            frontmatter.description && (
+                <p class="description">
+                    <em>{frontmatter.description}</em>
+                </p>
+            )
+        }
+
         <br />
         {frontmatter.intro && <p>{frontmatter.intro}</p>}
     </div>
