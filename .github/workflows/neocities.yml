@@ -1,6 +1,5 @@
 name: Deploy to neocities
 
-# only run on changes to main
 on:
   push:
     branches:
@@ -11,22 +10,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Use Node.js current
-        uses: actions/setup-node@v3
+      - name: Use Node.js LTS
+        uses: actions/setup-node@v4
         with:
-          node-version: current
+          node-version: 22
 
       - name: Install dependencies
-        run: |
-          npm ci
+        run: npm ci
 
       - name: build
-        run: |
-          npm run build
-          
-      # When the dist_dir is ready, deploy it to neocities
+        run: npm run build
+
       - name: Deploy to neocities
         uses: bcomnes/deploy-to-neocities@v1
         with:
