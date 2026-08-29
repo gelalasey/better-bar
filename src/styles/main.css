@@ -67,6 +67,10 @@ body {
 		grid-row-gap: 100px;
 		justify-content: center;
 	}
+
+	.half{
+		flex: 1 1 100%;
+	}
 }
 
 /* flex and max width control the column widths */
@@ -132,6 +136,9 @@ header span {
 	height: 80px;
 }
 
+.random-img{
+	width: 2000px;
+}
 
 nav {
 	border: 2px ridge var(--border);
@@ -159,6 +166,10 @@ nav a {
 
 nav a:hover, nav a:focus {
 	background: linear-gradient(to right,var(--bg), var(--gradientBottom), var(--gradientTop));
+}
+
+.navrdiv{
+	width: 100%;
 }
 
 /* optional button styling like in the preview */
