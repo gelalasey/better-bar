@@ -1,7 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import Glupdates from "@components/Glupdates.astro";
-import Ad from "@components/Ad.astro";
+import Updates from "@components/Updates.astro";
+import "@styles/ad.css";
 import Bubble from "@components/Bubble.astro";
 
 const title = "Gelsey Land";
@@ -33,8 +33,9 @@ const tinyImage = "/smalls/sm-balloons.gif";
 				<a href="/favorites"> media recommendations </a>
 				than you can possibly spend your dwindling free time with. See the park owners
 				latest <a href="/art">creations</a>, read about incredible <a
-					href="/blog">discoveries </a
-				>
+					href="/blog"
+					>discoveries
+				</a>
 				and take <a href="/linksout">the shuttle</a> to your next web surfing location.
 				So buckle up, hold on to your cotton candy, and prepare for a whimsical journey
 				through the colorful world of
@@ -47,12 +48,8 @@ const tinyImage = "/smalls/sm-balloons.gif";
 		<div class="divider-balloon"></div>
 		<h3>Aug 2026 to do</h3>
 		<ul>
-			<li>
-				continue improving flexible layout for mobile users
-			</li>
-			<li>
-				finish building webrings widgets
-			</li>
+			<li>continue improving flexible layout for mobile users</li>
+			<li>finish building webrings widgets</li>
 		</ul>
 	</div>
 	<div slot="after-navr"></div>
@@ -77,13 +74,14 @@ const tinyImage = "/smalls/sm-balloons.gif";
 	</div>
 
 	<div slot="left-half">
-		<Glupdates />
+		<Updates />
 	</div>
 	<div slot="right-half">
-
-			<h2>coming soon!</h2>
-			<p>a section beyond your wildest imagination!!</p>
-			<img src="/images/underconstructionnya.webp" />
-		
+		<br />
+		<div>
+			<h2>psst! we got rss</h2>
+			<a href="/rss.xml"><img src="/images/rsspink.png"></a
+			>
+		</div>
 	</div>
 </Layout>

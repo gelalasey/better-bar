@@ -1,6 +1,6 @@
-.hero {
+.adhero {
   background:
-    url("/tables/buntingframe.png"), url("/umpd/groupphoto.png");
+    url("/tables/paintframe.png"), url("/bg/sprankles.webp");
   background-size: cover, cover;
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
@@ -8,7 +8,7 @@
   position: relative;
 }
 
-.hero a {
+.adhero a {
   margin: 0;
   position: absolute;
   top: 50%;
