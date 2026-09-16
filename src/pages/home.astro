@@ -11,76 +11,77 @@ const tinyImage = "/smalls/sm-balloons.gif";
 ---
 
 <head>
-	<meta
-		http-equiv="Content-Security-Policy"
-		content="connect-src 'self' data: blob: https://status.cafe;"
-	/>
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="connect-src 'self' data: blob: https://status.cafe;"
+  />
 </head>
 <Layout
-	title={title}
-	subtitle={subtitle}
-	bannerImage={bannerImage}
-	tinyImage={tinyImage}
+  title={title}
+  subtitle={subtitle}
+  bannerImage={bannerImage}
+  tinyImage={tinyImage}
 >
-	<div slot="after-navl"></div>
-	<div slot="main-text">
-		<div class="flexbox">
-			<p> thank you for visiting the internets first themepark ran by{" "}
-				<a href="/about"> a little clown man!</a> enjoy the rides, download our pixels
-				(ethically sourced of course), and fly to places inside my imagination. Here
-				you'll find more{" "}
-				<a href="/favorites"> media recommendations </a>
-				than you can possibly spend your dwindling free time with. See the park owners
-				latest <a href="/art">creations</a>, read about incredible <a
-					href="/blog"
-					>discoveries 
-				</a>
-				and take <a href="/linksout">the shuttle</a> to your next web surfing location.
-				So buckle up, hold on to your cotton candy, and prepare for a whimsical journey
-				through the colorful world of <Bubble text=" Gelsey Land" /> &#127913;
-			</p>
-			<div>
-				<img src="/images/littleman.webp" />
-			</div>
-		</div>
-		<div class="divider-balloon"></div>
-		<h3>Sept 2026 to do</h3>
-		<ul>
-			<li>create or find a cool webrings widget</li>
-			<li>learn more about astro components for my ad widget</li>
-			<li>clean up unused images and update toybox</li>
-		</ul>
-	</div>
-	<div slot="after-navr"></div>
+  <div slot="after-navl"></div>
+  <div slot="main-text">
+    <div class="flexbox">
+      <p>
+        thank you for visiting the internets first themepark ran by{" "}
+        <a href="/about"> a little clown man!</a> enjoy the rides, download our pixels
+        (ethically sourced of course), and fly to places inside my imagination. Here
+        you'll find more{" "}
+        <a href="/favorites"> media recommendations </a>
+        than you can possibly spend your dwindling free time with. See the park owners
+        latest <a href="/art">creations</a>, read about incredible <a
+          href="/blog"
+          >discoveries
+        </a>
+        and take <a href="/linksout">the shuttle</a> to your next web surfing location.
+        So buckle up, hold on to your cotton candy, and prepare for a whimsical journey
+        through the colorful world of <Bubble text=" Gelsey Land" /> &#127913;
+      </p>
+      <div>
+        <img src="/images/littleman.webp" />
+      </div>
+    </div>
+    <div class="divider-balloon"></div>
+    <h3>Sept/Oct 2026 to do</h3>
+    <ul>
+      <li>Work on my app for SASS</li>
+      <li>create or find a cool webrings widget</li>
+      <li>learn more about astro components for my ad widget</li>
+      <li>clean up unused images and update toybox</li>
+    </ul>
+  </div>
+  <div slot="after-navr"></div>
 
-	<div slot="full">
-		<h1>mission statement</h1>
-		<p>
-			This prk is more than just a cutesy theme for a personal site ... okay tbf
-			that is a large part of it but that's not the only reason. Everyday I
-			experience like 2 million various stimuli: the song on my alarm, the first
-			article I read on my feed, the video I play in the background as I grind
-			on my mobage while simultaneously working on a deadline. I live and walk
-			through noise and clutter. My theme park is where I make sense of
-			everything. I freeze the moments and take in the little details. Its funny
-			to think of a big crazy loud theme park as a place for quiet
-			contemplation, but ig that's just clownlife man. My brain is loud and
-			exciting. I dont want to clear my head i just want to be able to sit in
-			the passengers seat and experience my own thoughts as a guest. I hope you
-			enjoy the ride. &#127906;
-		</p>
-		<img src="/div/bluepinkdiv.png" />
-	</div>
+  <div slot="full">
+    <h1>mission statement</h1>
+    <p>
+      This prk is more than just a cutesy theme for a personal site ... okay tbf
+      that is a large part of it but that's not the only reason. Everyday I
+      experience like 2 million various stimuli: the song on my alarm, the first
+      article I read on my feed, the video I play in the background as I grind
+      on my mobage while simultaneously working on a deadline. I live and walk
+      through noise and clutter. My theme park is where I make sense of
+      everything. I freeze the moments and take in the little details. Its funny
+      to think of a big crazy loud theme park as a place for quiet
+      contemplation, but ig that's just clownlife man. My brain is loud and
+      exciting. I dont want to clear my head i just want to be able to sit in
+      the passengers seat and experience my own thoughts as a guest. I hope you
+      enjoy the ride. &#127906;
+    </p>
+    <img src="/div/bluepinkdiv.png" />
+  </div>
 
-	<div slot="left-half">
-		<Updates />
-	</div>
-	<div slot="right-half">
-		<br />
-		<div>
-			<h2>psst! we got rss</h2>
-			<a href="/rss.xml"><img src="/images/rsspink.png"></a
-			>
-		</div>
-	</div>
+  <div slot="left-half">
+    <Updates />
+  </div>
+  <div slot="right-half">
+    <br />
+    <div>
+      <h2>psst! we got rss</h2>
+      <a href="/rss.xml"><img src="/images/rsspink.png" /></a>
+    </div>
+  </div>
 </Layout>
