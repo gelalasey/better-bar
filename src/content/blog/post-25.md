@@ -99,3 +99,6 @@ And do you know what combination hyperative-innatentive bitches like me love to 
 3. Create to refuel yourself: Following directions on a detail oriented tutorial was not how I wanted to spend my freetime. I wanted to make stories, make art, doodle little things in the margins. That's not only what motivates me, but it's what gives me energy to do the shitty stuff I have to do on a daily basis. If I want to be able to create anything through web dev I need to think like an artist first because that's what I am. Despite wishing I could be a cool bald headed hacker of justice like Lizbet Salander, I am in fact just a neurodivergent clown with an addiction to novelty and lexapro. And that's okay. ...Well not the lexapro thing, but like the accepting myself as who I am thing. Bad bitches really can do anything, but they also have to realize sometimes that their path to success and their dreams isn't like every other bad bitch. 
 
 4. SOMEONE ELSE ALREADY BUILT VERSIONS OF MY TTRPG: It's actually a really common theme in the self care world. But if I end up following through on this project I at least know there's an audience for it. I'm coming for your bag Habbitica just watch me. 
+
+![](/images/sass26.png)
+*my official certificate of completion thanks [xixxii](https://xixxii.neocities.org/)*
