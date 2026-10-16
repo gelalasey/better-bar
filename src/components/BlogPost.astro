@@ -1,35 +1,34 @@
 ---
-
 //this generates the slug i need to run the hyperlink
 interface Props {
-    url: string;
-    title: string;
-    image?: string | { src: string; alt?: string };
+  url: string;
+  title: string;
+  image?: string | { src: string; alt?: string };
+  description?: string;
 }
 
-const { url, title, image } = Astro.props;
+const { url, title, image, description } = Astro.props;
 
 // Normalize image into a single shape
 let displayImage: { src: string; alt: string };
 
 if (typeof image === "string") {
-    displayImage = { src: image, alt: title };
+  displayImage = { src: image, alt: title };
 } else if (image && typeof image === "object" && "src" in image) {
-    displayImage = { src: image.src, alt: image.alt ?? title };
+  displayImage = { src: image.src, alt: image.alt ?? title };
 } else {
-    // fallback
-    displayImage = {
-        src: "/images/jesterlord.webp",
-        alt: "Placeholder image",
-    };
+  // fallback
+  displayImage = {
+    src: "/images/jesterlord.webp",
+    alt: "Placeholder image",
+  };
 }
 
 import "../styles/blog.css";
 ---
 
 <a href={url} class="post-card">
-    <img src={displayImage.src} alt={displayImage.alt} class="postcard-image" />
-    <h2 class="postcard-title">{title}</h2>
+  <img src={displayImage.src} alt={displayImage.alt} class="postcard-image" />
+  <h2 class="postcard-title">{title}</h2>
+  <p class="post-description">{description}</p>
 </a>
-
-

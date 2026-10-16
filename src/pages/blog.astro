@@ -5,84 +5,84 @@ import MyTags from "../components/MyTags.astro";
 import { getCollection } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 
-const posts: CollectionEntry<"blog">[] = (await getCollection("blog")).sort(
-    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-).slice(0, 10);
+const posts: CollectionEntry<"blog">[] = (await getCollection("blog"))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 10);
 
 const title = "Park Newsletter";
 const subtitle = "Blog posts";
 ---
 
 <BlogLayout title={title} subtitle={subtitle}>
-    <div slot="main-text">
-        <p>
-            ignore the subtitle, this is not a blog. this is the <b
-                >park newsletter</b
-            > and my main goal here is to create a micro collection of all my writings,
-            reviews, recaps, and recommendations. each area of the park represents
-            a different interest of mine. If you get lost, don't worry. Your friendly
-            neighborhood theme park owner has you covered
-        </p>
-        <ul>
-            <li>
-                <a href="/tags/anime">Theatre</a>: recaps and reviews on anime
-                i'm watching
-            </li>
-            <li>
-                <a href="/tags/music">concert stage</a>: music and idol groups
-                of various genres
-            </li>
-            <li>
-                <a href="/tags/games">midway</a> video game logs and reviews, horror
-                and otome censored
-            </li>
-            <li>
-                <a href="tags/art">carousel</a>: art projects, i mostly like to
-                build miniatures and write gay song lyrics but who knows what
-                else adhd will lead me into
-            </li>
-            <li>
-                <a href="/tags/horror">haunted house</a> any form of media or experience
-                that has to do with horror
-            </li>
-            <li>
-                <a href="/tags/otome">tunnel of love</a> games that are otome, visual
-                novel, or dating sim related as the primary focus of the game play.
-            </li>
-            <li>
-                <a href="/tags/personal">fun house</a> personal reflections in a wobbly,
-                distorted fun house mirror
-            </li>
-        </ul>
-        <p>
-            <mark
-                >hit me up in <a href="https://gelseyland.atabook.org/"
-                    >the souvenir shop!</a
-                ></mark
-            >
-        </p>
-    </div>
+  <div slot="main-text">
+    <p>
+      ignore the subtitle, this is not a blog. this is the <b>park newsletter</b
+      > and my main goal here is to create a micro collection of all my writings,
+      reviews, recaps, and recommendations. each area of the park represents a different
+      interest of mine. If you get lost, don't worry. Your friendly neighborhood theme
+      park owner has you covered
+    </p>
+    <ul>
+      <li>
+        <a href="/tags/anime">Theatre</a>: recaps and reviews on anime i'm
+        watching
+      </li>
+      <li>
+        <a href="/tags/music">concert stage</a>: music and idol groups of
+        various genres
+      </li>
+      <li>
+        <a href="/tags/games">midway</a> video game logs and reviews, horror and otome
+        censored
+      </li>
+      <li>
+        <a href="tags/art">carousel</a>: art projects, i mostly like to build
+        miniatures and write gay song lyrics but who knows what else adhd will
+        lead me into
+      </li>
+      <li>
+        <a href="/tags/horror">haunted house</a> any form of media or experience that
+        has to do with horror
+      </li>
+      <li>
+        <a href="/tags/otome">tunnel of love</a> games that are otome, visual novel,
+        or dating sim related as the primary focus of the game play.
+      </li>
+      <li>
+        <a href="/tags/personal">fun house</a> personal reflections in a wobbly, distorted
+        fun house mirror
+      </li>
+    </ul>
+    <p>
+      <mark
+        >hit me up in <a href="https://gelseyland.atabook.org/"
+          >the souvenir shop!</a
+        ></mark
+      >
+    </p>
+  </div>
 
-    <div slot="full">
-        <h1>Latest Posts</h1>
-        <div class="posts-grid">
-            {
-                posts.map((post) => (
-                    <BlogPost
-                        url={`/posts/${post.id}/`}
-                        title={post.data.title}
-                        image={post.data.image}
-                    />
-                ))
-            }
-        </div>
-        <p class="more-link">
-            <a href="/posts/1">View all posts →</a>
-        </p>
+  <div slot="full">
+    <h1>Latest Posts</h1>
+    <div class="posts-grid">
+      {
+        posts.map((post) => (
+          <BlogPost
+            url={`/posts/${post.id}/`}
+            title={post.data.title}
+            image={post.data.image}
+            description={post.data.description}
+          />
+        ))
+      }
     </div>
+    <p class="more-link">
+      <a href="/posts/1">View all posts →</a>
+    </p>
+  </div>
 
-    <div slot="tags">
-        <h1>All Post Tags</h1>
-        <MyTags />
-    </div>
+  <div slot="tags">
+    <h1>All Post Tags</h1>
+    <MyTags />
+  </div>
 </BlogLayout>
