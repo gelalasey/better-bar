@@ -8,67 +8,64 @@ const { frontmatter } = Astro.props;
 // normalize image for external URLs or object-style frontmatter
 let displayImage: string | null = null;
 if (typeof frontmatter.image === "string") {
-    displayImage = frontmatter.image;
+  displayImage = frontmatter.image;
 } else if (
-    frontmatter.image &&
-    typeof frontmatter.image === "object" &&
-    "src" in frontmatter.image
+  frontmatter.image &&
+  typeof frontmatter.image === "object" &&
+  "src" in frontmatter.image
 ) {
-    displayImage = frontmatter.image.src;
+  displayImage = frontmatter.image.src;
 }
 ---
 
 <BlogLayout title={frontmatter.title}>
-    <!-- main text (description + image) -->
-    <div slot="main-text" class="intro">
-        <p class="blog-date"><i>{frontmatter.pubDate}</i></p>
-        <br>
-        {
-            displayImage && (
-                <div class="post-image">
-                    <img src={displayImage} alt={frontmatter.title} />
-                </div>
-            )
-        }
-        {
-            frontmatter.description && (
-                <p class="description">
-                    <em>{frontmatter.description}</em>
-                </p>
-            )
-        }
-
-        <br />
-        {frontmatter.intro && <p>{frontmatter.intro}</p>}
-    </div>
-
-    <!-- full content (markdown body + tags) -->
-    <div slot="full">
-        <div class="markdown">
-            <slot />
-
-            <hr />
-
-            {
-                frontmatter.tags && (
-                    <div class="tags">
-                        {frontmatter.tags.map((tag: string) => (
-                            <button class="learn-more">
-                                <a href={`/tags/${tag}`}>{tag}</a>
-                            </button>
-                        ))}
-                    </div>
-                )
-            }
+  <!-- main text (description + image) -->
+  <div slot="main-text" class="intro">
+    <p class="blog-date"><i>{frontmatter.pubDate}</i></p>
+    <br />
+    {
+      displayImage && (
+        <div class="post-image">
+          <img src={displayImage} alt={frontmatter.title} />
         </div>
+      )
+    }
+    {
+      frontmatter.description && (
+        <p class="description">
+          <em>{frontmatter.description}</em>
+        </p>
+      )
+    }
+
+    <hr />
+<h2>Read More Like This</h2>
+    {
+      frontmatter.tags && (
+        <div class="tags">
+          {frontmatter.tags.map((tag: string) => (
+            <button class="learn-more">
+              <a href={`/tags/${tag}`}>{tag}</a>
+            </button>
+          ))}
+        </div>
+      )
+    }
+  </div>
+
+  <!-- full content (markdown body + tags) -->
+  <div slot="full">
+    <div class="markdown">
+      <slot />
     </div>
-    <div slot="comments">
-        <iframe
-            id="guestbook"
-            src="https://gelseyland.atabook.org/"
-            height="350px"
-            width="100%"
-            scrolling="yes"
-            loading="lazy"></iframe>
-    </div>
+  </div>
+  <div slot="comments">
+    <iframe
+      id="guestbook"
+      src="https://gelseyland.atabook.org/"
+      height="350px"
+      width="100%"
+      scrolling="yes"
+      loading="lazy"></iframe>
+  </div>
 </BlogLayout>

@@ -5,8 +5,10 @@ description: 'a vulnerable and demure fairytale song with great visuals, but mis
 image: 
     src: "https://assets.st-note.com/production/uploads/images/184111956/rectangle_large_type_2_5ecbb8626616c441afb281801fc15be4.png?fit=bounds&quality=85&width=1280"
 tags: ["jpop", "girl", "noimii", "music", "onstage"]
-intro: "welcome to the first onstage post. Our theme park stage is occassionally lit up by the shining talents of performers around the globe. When a particularly striking piece comes along - it has to be recorded. These pieces can be both exceptionally impressive... or particularly disappointing. Either way they're worth writing about."
 ---
+
+welcome to the first onstage post. Our theme park stage is occassionally lit up by the shining talents of performers around the globe. When a particularly striking piece comes along - it has to be recorded. These pieces can be both exceptionally impressive... or particularly disappointing. Either way they're worth writing about.
+
  <iframe width="560" height="315" src="https://www.youtube.com/embed/rifFL1BbZJQ?si=-84VeVuXRUy-moGn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## quick facts

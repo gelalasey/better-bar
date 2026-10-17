@@ -7,8 +7,8 @@ image:
     src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblogger.googleusercontent.com%2Fimg%2Fb%2FR29vZ2xl%2FAVvXsEjODI3RP3Inqe2XL6g2OgP0ppegtzCmvc-FH8JqNZ5GdPc1CIHAztiqarIZeOfFKiPVS9oQHQPW11U3vrfdf2avm2Rh9XlF-e8y6uMk6HTWmUUIYD4m2EWCKuQaHBUWM68OCcrCdfyjXPsWAw7p8P3OV_XZmkAwLbmkMfP4ayXiOsvx1MCeKPMuFfE-eg%2Fw713-h393%2FtC22.png&f=1&nofb=1&ipt=d8637804754913ff2765712b5f757d06426158861cbd687baf13a34715861d74'
     alt: 'kyansa cup'
 tags: ["games", "umpd", "strategy"]
-intro: "Hey Gamers! This is my first time creating my own umpd strat guide - I hope at this point I have a bit of knowledge about what I’m talking about 😅 My goal is to create one buffed af Maruzensky for the Cancer Cup coming up on global. I honestly watched so many different youtube videos getting other people’s inputs that I didn’t write down all my sources. Next time I’ll try to be more diligent about credit. Anyway here’s my plan for total victory!"
 ---
+Hey Gamers! This is my first time creating my own umpd strat guide - I hope at this point I have a bit of knowledge about what I’m talking about 😅 My goal is to create one buffed af Maruzensky for the Cancer Cup coming up on global. I honestly watched so many different youtube videos getting other people’s inputs that I didn’t write down all my sources. Next time I’ll try to be more diligent about credit. Anyway here’s my plan for total victory!
 
 <style>
 li {

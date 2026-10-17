@@ -7,8 +7,8 @@ image:
     src: '/blog/otome/bythesea.png'
     alt: 'mermaid boy'
 tags: ["otome", "LaDS"]
-intro: "Love and Deepspace - the Otome set to take the market by storm. It was a game from infold - the company supposedly making games for women by women. And it had me deep in its clutches, especially when Sylus came around. But just like Nikki and other modern games, I find these games to lack a meaningful story and sense of completion that other media in the past has had. The interactivity was great, but even at my lonelinest moments it was hard to feel like I could connect with the players. Here's a walk down memory lane - it's hard to really give a complete story line but I will say I primarily played this game in 2024. So unless you've never played the game I shouldn't be spoiling too much."
 ---
+Love and Deepspace - the Otome set to take the market by storm. It was a game from infold - the company supposedly making games for women by women. And it had me deep in its clutches, especially when Sylus came around. But just like Nikki and other modern games, I find these games to lack a meaningful story and sense of completion that other media in the past has had. The interactivity was great, but even at my lonelinest moments it was hard to feel like I could connect with the players. Here's a walk down memory lane - it's hard to really give a complete story line but I will say I primarily played this game in 2024. So unless you've never played the game I shouldn't be spoiling too much.
 
 <style>
 li {

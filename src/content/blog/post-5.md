@@ -7,8 +7,8 @@ image:
     src: 'https://play-lh.googleusercontent.com/5FkEULS9qpwWoKPMNusvYLJ6sF0I-8D3-RDk69DVtcQFFFJBEfSmPHqlodEGea4G5_0=w526-h296-rw'
     alt: 'hajime'
 tags: ["games", "tycoons", "mobage", "idols", "gakumas", "idolmaster"]
-intro: " my dream school is this: wake up everyday in a lovely japanese campus surrounded by students who are all aspiring idols. go to class, hang with friends, and spend free time scouting potential talent to produce in order to fulfill my goal of becoming an idol producer. instead ugh i had to go to catholic school."
 ---
+my dream school is this: wake up everyday in a lovely japanese campus surrounded by students who are all aspiring idols. go to class, hang with friends, and spend free time scouting potential talent to produce in order to fulfill my goal of becoming an idol producer. instead ugh i had to go to catholic school.
 
 ## in a nutshell:
 

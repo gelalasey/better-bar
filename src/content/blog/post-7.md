@@ -7,15 +7,11 @@ image:
     src: '/blog/game/g4-1.jpg'
     alt: 'ACBVoCC'
 tags: ["games", "cozy", "acnh"]
-Intro: Awhile back I learned about @NintenTalk's RPG Animal Crossing challenge. I wanted to try it out so bad but sadly I had just recently restarted my island and wasn't about to restart AGAIN. While making my academia themed island while watching simultaneous livestreams, I decided I wanted to create my own cosmetically different version of the same challenge. 
 ---
 
-
-# Big Villager on Campus
 ## The Inspiration
 
-
-Like I said, this challenge was inspired directly from [NintenTalk](https://www.youtube.com/watch?v=c4FmDJUskxY) on YouTube. You can watch a little explainer and learn all the rules. I'm also not the first person to create other spin-off challenges like this. Other ones I've enjoyed watching include:
+This challenge was inspired directly from [NintenTalk](https://www.youtube.com/watch?v=c4FmDJUskxY) on YouTube. You can watch a little explainer and learn all the rules. I'm also not the first person to create other spin-off challenges like this. Other ones I've enjoyed watching include:
 
 
 * [The original Hard Mode](https://www.instagram.com/p/DEgNzpRyUMQ/)
@@ -23,7 +19,7 @@ Like I said, this challenge was inspired directly from [NintenTalk](https://www.
 * [Rags to Riches](https://www.youtube.com/watch?v=QphwCPiFvYk)
 
 
-And with that... let's learn about mine!
+I wanted to try it out so bad but sadly I had just recently restarted my island and wasn't about to restart AGAIN. While making my academia themed island while watching simultaneous livestreams, I decided I wanted to create my own cosmetically different version of the same challenge. And with that... let's learn about mine!
 
 
 <img src="/div/silverivy.gif">

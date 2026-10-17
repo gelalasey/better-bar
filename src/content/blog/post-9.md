@@ -2,15 +2,16 @@
 title: 'Zombie land saga'
 pubDate: 2025-08-22
 date: 2025-08-22
-description: "  I will fight someone to the pain who claims that subs are always better than dubs. I get that was a real consistent thing back in like *checks watch* 2009... but now that capitalism realizes they can make money off of anime fans and increase their audience size I think dubs have grown to become more entertaining. Case in point - Zombie land saga"
+description: " If you like idol anime you'll love this. If you don't like idol anime you'll love this."
 author: 'gelsey'
 image:
     src: "/blog/1/a.gif"
     alt: 'are you stupid kotaro'
 tags: ["anime", "idols", "comedy", "supernatural" ]
 ---
-## quick stats
+I will fight someone to the pain who claims that subs are always better than dubs. I get that was a real consistent thing back in like *checks watch* 2009... but now that capitalism realizes they can make money off of anime fans and increase their audience size I think dubs have grown to become more entertaining. Case in point - Zombie land saga
 
+## quick stats
 
 *   year watched: 2025
 *   episodes: 24/24

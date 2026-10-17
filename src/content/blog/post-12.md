@@ -8,6 +8,7 @@ tags: ["kpop", "girl", "aespa", "music", "onstage"]
 ---
 
 *I did some reading on [Married to the Music Review's Aespa Deep Dive](https://marriedtothemusicreviews.com/2024/05/27/aespa-k-pop-discography-deep-dive/) which helped me sort through my aespa thoughts and contextualize their eras. Be sure to check it out next if you liked this post!*
+
 ![](https://pbs.twimg.com/profile_banners/1277453652924366848/1754233205/1500x500)
 
 Despite Adderall's best attempts - I spent the better part of today dissecting the new Aespa song. Part of me loves their group's concept and the other part can't stand it. I hate sci fi, space, technology, but somehow because you've involved pretty kpop idols I'm super into it. Part of their story always implies that there's a villain working against them and it gives their performances more meaning. I really feel like the performance art is committed to and it feels uniquely idol. But the execution sometimes can be such a swing and miss that it doesn't land enough for me to really rank them as a bias group. I normally like any space or future based idols to feel more magical and ethereal - a la sailor moon. I typically am not into the more future and technology focus themes. I've got anxiety, if I think about the future anymore I'll get committed. Space is just a less pretty ocean. Equally terrifying ...Anyways so kpop. 

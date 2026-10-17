@@ -7,8 +7,8 @@ image:
   src: 'https://64.media.tumblr.com/e16cb875c31e0a501f5594c54f1e0e44/d7b13fd76547122a-01/s540x810/a1a01b0b0d52770089f82825c15cb75ed2461da1.jpg'
   alt: 'BOOK'
 tags: ["personal", "SASS", "web"]
-intro: "SASS, aka Suck at Something September, is an invitation to web creators all around to create something they are not even remotely qualified for in an attempt to break through perfection complexes and just get started on something. Turns out if you're a burnt out gifted child like me this is more deep seated than you realized and we're about to unpack all of it. My attempt at making a recipe app became a larger existential crisis on the modern tech's impacts on our ability to learn. Let's dig into it."
 ---
+SASS, aka Suck at Something September, is an invitation to web creators all around to create something they are not even remotely qualified for in an attempt to break through perfection complexes and just get started on something. Turns out if you're a burnt out gifted child like me this is more deep seated than you realized and we're about to unpack all of it. My attempt at making a recipe app became a larger existential crisis on the modern tech's impacts on our ability to learn. Let's dig into it.
 
 ## The Set Up 
 

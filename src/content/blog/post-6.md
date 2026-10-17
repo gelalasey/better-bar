@@ -7,9 +7,9 @@ image:
   src: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/43600/ss_4bad214d13354a2bcd5563429ab6a8d1fb8b89c7.600x338.jpg?t=1734469468'
   alt: 'this jpg is unlocked'
 tags: ['games', 'tycoons', 'life sims', 'otome']
-intro: "what makes a game underrated? if everyone you know is playing it then isn't anyone who matters playing it? if it's got a large enough player base that prevents the game from getting shut down servers is it successful? let's not worry about the specifics."
+
 ---
- For this list I'm going through my favorite games in my steam library that have under 50k positive reviews. For reference games like Stardew Valley are currently sitting at over 700k positive reviews. These can also count as games that are well known but still have shit reviews. Just because it was terrible for you doesn't mean it's trash for me.
+ what makes a game underrated? if everyone you know is playing it then isn't anyone who matters playing it? if it's got a large enough player base that prevents the game from getting shut down servers is it successful? let's not worry about the specifics. For this list I'm going through my favorite games in my steam library that have under 50k positive reviews. For reference games like Stardew Valley are currently sitting at over 700k positive reviews. These can also count as games that are well known but still have shit reviews. Just because it was terrible for you doesn't mean it's trash for me.
 
 
 ## Heads up

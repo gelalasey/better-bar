@@ -7,8 +7,9 @@ image:
     src: '/blog/personal/1000003286.jpg'
     alt: 'this jpg is unlocked'
 tags: ["personal", "travel", "dolls", "minis"] 
-intro: "a while ago i went to the national museum of toys and miniatures in kansas city, mo. this was during my arduous 24+ bus ride from hell (more on that never) and i was surprised this gem existed. it's got a great combination of both nostalgia and history. let's just get straight to the goods!"
 ---
+a while ago i went to the national museum of toys and miniatures in kansas city, mo. this was during my arduous 24+ bus ride from hell (more on that never) and i was surprised this gem existed. it's got a great combination of both nostalgia and history. let's just get straight to the goods!
+
 ## Playsets i drool over
 
 there's two main sections in this museum - toys and miniatures. I'm going to start with the colorful cute playsets that fit best with this blog, as we go on it's going to get more muted in color pallet if that offends your clownish sensibilities. usually it does for me but this park owner knows art when he sees it.

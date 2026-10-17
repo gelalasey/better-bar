@@ -7,11 +7,8 @@ image:
     src: '/blog/game/hsd3.jpg'
     alt: 'hsd light purple party'
 tags: ["games", "gatcha", "mobage", "hsd", "sanrio"]
-intro: "gatcha is a scam. we used to just pay a base amount of a game and got to play with all the pieces either immediately or guaranteed through play time. why pay money for something that doesn't even exist. just make your own art. look....i know...and yet...i fall for it. Every. time."
 ---
-
-
-i spent.... ~~redacted dollars~~ i didn't have for pixels in a hello kitty furniture and fashion idle game. i had no business getting invested in this game as much as i did. there was like...zero game play, just collecting pixels.
+gatcha is a scam. we used to just pay a base amount of a game and got to play with all the pieces either immediately or guaranteed through play time. why pay money for something that doesn't even exist. just make your own art. look....i know...and yet...i fall for it. Every. time. i spent.... ~~redacted dollars~~ i didn't have for pixels in a hello kitty furniture and fashion idle game. i had no business getting invested in this game as much as i did. there was like...zero game play, just collecting pixels.
 
 
 it may not have been my best moment...but i did get all these cute pics out of it

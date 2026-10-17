@@ -1,14 +1,16 @@
 ---
 title: "I'm Too Poor for Universal so I Rank HHN Virtually"
 pubDate: 2025-10-29
-description: "Getting to Orlando, taking time off work, staying in a hotel, meals, entrance, not to mention *merch*.... in this economy??"
+description: ".... in this economy??"
 author: 'gelsey'
 image:
     src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftheparkprodigy.com%2Fwp-content%2Fuploads%2F2021%2F03%2FHHN_Hero_O4A9443.jpg&f=1&nofb=1&ipt=705b6e44112380cb52a6b7f790925a36b64b62f99e2e914b878f1b20d9a90bc9'
     alt: 'hello hi'
 tags: ["horror", "haunted houses", "hhn"]
-intro: "Getting to Orlando, taking time off work, staying in a hotel, meals, entrance, not to mention *merch*.... in this economy?? I mean it's a very valid thing to spend your money on - enjoy it if you get to go. But with my slim salary I need to pick and choose recreational activities this year, and even though two of my favorite concepts are going to be in Orlando this year, it's just not an option. So if you too are unable to pack up and head to Halloween Horror Nights 2025, come enjoy a virtual walkthrough with me!"
+intro: ""
 ---
+Getting to Orlando, taking time off work, staying in a hotel, meals, entrance, not to mention *merch*.... in this economy?? I mean it's a very valid thing to spend your money on - enjoy it if you get to go. But with my slim salary I need to pick and choose recreational activities this year, and even though two of my favorite concepts are going to be in Orlando this year, it's just not an option. So if you too are unable to pack up and head to Halloween Horror Nights 2025, come enjoy a virtual walkthrough with me!
+
 <style>
 li {
   list-style-image: url("https://64.media.tumblr.com/74440f71160be783d8ce8d4047abddd9/948fc50e29955c8a-58/s75x75_c1/9aa4f1681529ba603480a59461313d56a8dad11c.pnj");

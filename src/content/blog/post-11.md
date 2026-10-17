@@ -7,8 +7,9 @@ image:
     src: '/blog/game/g5-8.jpg'
     alt: 'welcome to cardamom'
 tags: ["games", "cozy", "acnh"]
-intro: "ACNH is not for the adhd - waiting, consistency, follow through. There's a reason I've never 'completed' an island before. I would say besides my first build when the game came out in 2020 this was the most progress i ever made in the game. welcome to cardamom island"
 ---
+
+ACNH is not for the adhd - waiting, consistency, follow through. There's a reason I've never 'completed' an island before. I would say besides my first build when the game came out in 2020 this was the most progress i ever made in the game. welcome to cardamom island
 
 <style>
 li {

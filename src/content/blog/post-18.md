@@ -7,8 +7,9 @@ image:
     src: "/blog/art/w9.jpg"
     alt: 'enter the witchy house'
 tags: ["art", "minis", "kit build"]
-intro: "I don't usually get shaky hands or issues with smaller builds but this one was really testing my tweezer abilitities. It took months to finish not because it was so involved, but because I would just get tired and frustrated. ADHD is a disease and she comes for us all. But the important thing here is that i did finish and that I was able to accomplish my nemesis from my first kit build: electricity and wiring. Enjoy my journey!"
 ---
+I don't usually get shaky hands or issues with smaller builds but this one was really testing my tweezer abilitities. It took months to finish not because it was so involved, but because I would just get tired and frustrated. ADHD is a disease and she comes for us all. But the important thing here is that i did finish and that I was able to accomplish my nemesis from my first kit build: electricity and wiring. Enjoy my journey!
+
 # the kit
 
 ![](/blog/art/w0.png)

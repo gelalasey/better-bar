@@ -7,8 +7,9 @@ image:
     src: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimag.malavida.com%2Fmvimgbig%2Fdownload-fs%2Ffive-nights-at-freddys-plus-38132-1.jpg&f=1&nofb=1&ipt=48bb2e36bfde6b578326d4ee435b0f857ba5279fb26b88fbfd884d34f6304fb2'
     alt: 'hello hi'
 tags: ["horror", "games", "fnaf"]
-intro: "My love. My dearest. My most recommended topic on YouTube. Five Nights at Freddy's has been living rent free in my head since Markiplier first booted up the game in a letsplay. It is nostalgic. It is terrifying. It is camp. It is held together with gum and shoelaces. And it is my home where I can sit next to my furry friends and enjoy an undercooked slice of health grade questionable pizza. I live for these creatures. I know an embarrassing amount of lore for someone over the age of 30. And if you haven't ever heard of this series I'd like to welcome you back to planet earth and introduce you to a very important cast of animatronics."
 ---
+My love. My dearest. My most recommended topic on YouTube. Five Nights at Freddy's has been living rent free in my head since Markiplier first booted up the game in a letsplay. It is nostalgic. It is terrifying. It is camp. It is held together with gum and shoelaces. And it is my home where I can sit next to my furry friends and enjoy an undercooked slice of health grade questionable pizza. I live for these creatures. I know an embarrassing amount of lore for someone over the age of 30. And if you haven't ever heard of this series I'd like to welcome you back to planet earth and introduce you to a very important cast of animatronics.
+
 <style>
 li {
   list-style-image: url("/smalls/cupcake.webp");
