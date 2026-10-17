@@ -7,105 +7,112 @@ import "@styles/artgalley.css";
 const title = "carousel";
 const subtitle = "my creations";
 const bannerImage =
-    "https://64.media.tumblr.com/b3ff5236ec87e082a72055affce3eced/73f2176b49545e06-bc/s400x600/ff97eb4257ae0a3c06a4077692290353bfebe960.gifv";
+  "https://64.media.tumblr.com/b3ff5236ec87e082a72055affce3eced/73f2176b49545e06-bc/s400x600/ff97eb4257ae0a3c06a4077692290353bfebe960.gifv";
 const tinyImage = "/smalls/sm-mcrown.gif";
 ---
 
 <Layout
-    title={title}
-    subtitle={subtitle}
-    bannerImage={bannerImage}
-    tinyImage={tinyImage}
+  title={title}
+  subtitle={subtitle}
+  bannerImage={bannerImage}
+  tinyImage={tinyImage}
 >
-    <div slot="main-text">
-        <div class="flexbox">
-            <p>
-                i am a jack of all trades and master of none - truly. adhd is a
-                disease. here are some of the fun things I've created that span
-                all types of works. i hope you enjoy.
-            </p>
-            <p>
-                i'm an artist and a perfectionist - meaning i hate showing off
-                my work. but maybe you won't see all the tiny mistakes i hate.
-                hell, you might even enjoy it.
-            </p>
-        </div>
-        <div class="center">
-            <RecentArt />
-        </div>
+  <div slot="main-text">
+    <div class="flexbox">
+      <p>
+        i am a jack of all trades and master of none - truly. adhd is a disease.
+        here are some of the fun things I've created that span all types of
+        works. i hope you enjoy.
+      </p>
+      <p>
+        i'm an artist and a perfectionist - meaning i hate showing off my work.
+        but maybe you won't see all the tiny mistakes i hate. hell, you might
+        even enjoy it.
+      </p>
     </div>
+    <div class="center">
+      <RecentArt />
+    </div>
+  </div>
 
-    <div slot="full">
-        <h2>gallery</h2>
-        <h3>miniatures</h3>
-        <div class="shrine">
-            <div class="shrineitem">
-                <img class="shrinehero" src="/blog/art/garden7.jpg" />
-                <a href="/posts/post-4/"><h4>mini garden</h4></a>
-            </div>
-            <div class="shrineitem">
-                <img class="shrinehero" src="/blog/art/w9.jpg" />
-                <a href="/posts/post-18/"><h4>witches house</h4></a>
-            </div>
-        </div>
-        <h3>web stickers</h3>
-        <div class="shrine">
-            <div class="shrineitem">
-                <img
-                    class="shrinehero"
-                    src="/blog/art/sugarplumstickers/sppreview.png"
-                />
-                <a href="/posts/post-21"><h4>sugarplum stickers</h4></a>
-            </div>
-        </div>
+  <div slot="full">
+    <h2>gallery</h2>
+    <h3>miniatures</h3>
+    <div class="shrine">
+      <div class="shrineitem">
+        <img class="shrinehero" src="/blog/art/garden7.jpg" />
+        <a href="/posts/post-4/"><h4>mini garden</h4></a>
+      </div>
+      <div class="shrineitem">
+        <img class="shrinehero" src="/blog/art/w9.jpg" />
+        <a href="/posts/post-18/"><h4>witches house</h4></a>
+      </div>
+      <div class="shrineitem">
+        <img
+          class="shrinehero"
+          src="https://64.media.tumblr.com/d554728f3ad4c51e6aa34a2f95b8d8b7/4ccbaaeb5b211621-e4/s2048x3072/b47289fd294f3e2c7b8437355e48e2557c43283d.jpg"
+        />
+        <a href="/posts/post-26/"><h4>muffin kitchenette</h4></a>
+      </div>
     </div>
+    <h3>web stickers</h3>
+    <div class="shrine">
+      <div class="shrineitem">
+        <img
+          class="shrinehero"
+          src="/blog/art/sugarplumstickers/sppreview.png"
+        />
+        <a href="/posts/post-21"><h4>sugarplum stickers</h4></a>
+      </div>
+    </div>
+  </div>
 
-    <div slot="left-half">
-        <h2>free use!</h2>
-        <p>
-            credit not needed to display, but claim as your own and hair will
-            grow on your teeth <img src="/smalls/sm-gf.gif" />
-        </p>
-        <hr />
-        <img src="/mine/thas01.jpg" />
-        <div class="artsmall">
-            <img src="/mine/ls_01.png" alt="purple light stick" />
-            <img src="/mine/ls_02.png" alt="red light stick" />
-            <img src="/mine/ls_03.png" alt="green light stick" />
-            <img src="/mine/ls_04.png" alt="yellow light stick" />
-            <img src="/mine/ls_05.png" alt="orange light stick" />
-            <img src="/mine/ls_06.png" alt="dark blue light stick" />
-            <img src="/mine/ls_07.png" alt="white light stick" />
-            <img src="/mine/ls_09.png" alt="pink light stick" />
-            <img src="/mine/ls_08.png" alt="blue light stick" />
-            <img src="/mine/balldog.webp" alt="pillowed af balloon dog" />
-            <img src="/mine/pombud.png" />
-            <img src="/mine/icefora.png" />
-            <img src="/mine/swan.png" alt="little swan" />
-            <img src="/mine/mintcholiday.png" />
-        </div>
+  <div slot="left-half">
+    <h2>free use!</h2>
+    <p>
+      credit not needed to display, but claim as your own and hair will grow on
+      your teeth <img src="/smalls/sm-gf.gif" />
+    </p>
+    <hr />
+    <img src="/mine/thas01.jpg" />
+    <div class="artsmall">
+      <img src="/mine/ls_01.png" alt="purple light stick" />
+      <img src="/mine/ls_02.png" alt="red light stick" />
+      <img src="/mine/ls_03.png" alt="green light stick" />
+      <img src="/mine/ls_04.png" alt="yellow light stick" />
+      <img src="/mine/ls_05.png" alt="orange light stick" />
+      <img src="/mine/ls_06.png" alt="dark blue light stick" />
+      <img src="/mine/ls_07.png" alt="white light stick" />
+      <img src="/mine/ls_09.png" alt="pink light stick" />
+      <img src="/mine/ls_08.png" alt="blue light stick" />
+      <img src="/mine/balldog.webp" alt="pillowed af balloon dog" />
+      <img src="/mine/pombud.png" />
+      <img src="/mine/icefora.png" />
+      <img src="/mine/swan.png" alt="little swan" />
+      <img src="/mine/mintcholiday.png" />
     </div>
-    <div slot="right-half">
-        <h2>piccrews</h2>
-        <div class="shrine">
-            <a href="https://picrew.me/en/image_maker/58420" target="_blank"
-                ><img src="/avatar/gamergel.png" /></a
-            >
-            <a href="https://picrew.me/en/image_maker/58420" target="_blank"
-                ><img src="/avatar/wotagel.png" /></a
-            >
-            <a href="https://picrew.me/en/image_maker/2675184" target="_blank"
-                ><img src="/avatar/animegel.png" /></a
-            >
-            <a href="https://picrew.me/en/image_maker/2307052" target="_blank"
-                ><img src="/avatar/blogicon.png" /></a
-            >
-            <a href="https://picrew.me/en/image_maker/549603" target="_blank"
-                ><img src="/avatar/clowncreator.png" /></a
-            >
-            <a href="https://picrew.me/ja/image_maker/596695" target="_blank"
-                ><img src="/avatar/egg.png" /></a
-            >
-        </div>
+  </div>
+  <div slot="right-half">
+    <h2>piccrews</h2>
+    <div class="shrine">
+      <a href="https://picrew.me/en/image_maker/58420" target="_blank"
+        ><img src="/avatar/gamergel.png" /></a
+      >
+      <a href="https://picrew.me/en/image_maker/58420" target="_blank"
+        ><img src="/avatar/wotagel.png" /></a
+      >
+      <a href="https://picrew.me/en/image_maker/2675184" target="_blank"
+        ><img src="/avatar/animegel.png" /></a
+      >
+      <a href="https://picrew.me/en/image_maker/2307052" target="_blank"
+        ><img src="/avatar/blogicon.png" /></a
+      >
+      <a href="https://picrew.me/en/image_maker/549603" target="_blank"
+        ><img src="/avatar/clowncreator.png" /></a
+      >
+      <a href="https://picrew.me/ja/image_maker/596695" target="_blank"
+        ><img src="/avatar/egg.png" /></a
+      >
     </div>
+  </div>
 </Layout>
